@@ -6,7 +6,10 @@ using UnityEngine;
 public class PlayerScript : MonoBehaviour
 {
     private BoxCollider2D _boxCollider;
-    private Vector3 _moveDelta;
+    private RaycastHit2D _raycastHit;
+    private Vector3 _moveVector;
+
+    private static float _movementMultiplier = 0.5f;
 
     void Start()
     {
@@ -21,14 +24,15 @@ public class PlayerScript : MonoBehaviour
 
         ResetMoveVector(xAxis, yAxis);
 
-        OrientatePlayerModelOnMovement(_moveDelta.x);
+        OrientatePlayerModelOnMovement(_moveVector.x);
 
-        MovePlayer(_moveDelta);
+        MovePlayer(_moveVector);
     }
 
+    #region Private Methods
     private void ResetMoveVector(float x, float y)
     {
-        _moveDelta = new Vector3(x, y, 0);
+        _moveVector = new Vector3(x, y, 0);
     }
 
     private void OrientatePlayerModelOnMovement(float x)
@@ -43,8 +47,39 @@ public class PlayerScript : MonoBehaviour
         }
     }
 
-    private void MovePlayer(Vector3 vector)
+    private void CheckRaycastHitForCurrentMovementDirection(Vector3 moveVector)
     {
-        transform.Translate(vector * Time.deltaTime);
+        _raycastHit = Physics2D.BoxCast(
+            origin: transform.position, 
+            size: _boxCollider.size, 
+            angle: 0, 
+            direction: new Vector2(moveVector.x, moveVector.y), 
+            distance: GetMovementDistance(moveVector), 
+            layerMask: LayerMask.GetMask("Entity", "Construction")
+            );
     }
+
+    private float GetMovementDistance(Vector3 moveVector)
+    {
+        float xDistance = GetMovementDistanceForDirection(moveVector.x);
+        float yDistance = GetMovementDistanceForDirection(moveVector.y);
+
+        var result = Mathf.Sqrt(Mathf.Pow(xDistance, 2) + Mathf.Pow(yDistance, 2));
+
+        return result;
+
+        float GetMovementDistanceForDirection(float vector)
+        {
+            return Mathf.Abs(_movementMultiplier * Time.deltaTime * vector);
+        }
+    }
+
+    private void MovePlayer(Vector3 moveVector)
+    {
+        if (_raycastHit.collider == null)
+        {
+            transform.Translate(_movementMultiplier * Time.deltaTime * moveVector);
+        }
+    }
+    #endregion
 }
