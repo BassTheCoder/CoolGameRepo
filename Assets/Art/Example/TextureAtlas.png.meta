@@ -818,6 +818,48 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: environment_wall_side_left_topCorner
+      rect:
+        serializedVersion: 2
+        x: 304
+        y: 224
+        width: 5
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b483566aee1cac640a56ab9c597322b4
+      internalID: 690329788
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: environment_wall_side_right_topCorner
+      rect:
+        serializedVersion: 2
+        x: 331
+        y: 224
+        width: 5
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f5adf5e9b2898a940830ec6a9f2483e7
+      internalID: -2009941695
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -856,11 +898,13 @@ TextureImporter:
       environment_door_closed: -1684836471
       chest_normal_opened_full: -1827161032
       environment_door_opened: -1594933834
+      environment_wall_side_left_topCorner: 690329788
       player_knight: -561506416
       weapon_broadSword_rusty: 700401192
       potion_mana_small: -1769183733
       potion_health_small: -61848272
       player_mage: 559405445
+      environment_wall_side_right_topCorner: -2009941695
       environment_wall_side_right_bottom: -2144793464
       environment_wall_front_top_long: -1818589619
       chest_normal_opened_empty: 1751803847

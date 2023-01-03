@@ -18,8 +18,6 @@ public class PlayerScript : EntityScript
 
         ResetMoveVector(xAxis, yAxis);
 
-        OrientateEntityModelOnMovement(MoveVector.x);
-
         Move(MoveVector);
     }
 }

@@ -5,18 +5,35 @@ using UnityEngine;
 public class EnemyScript : EntityScript
 {
     private GameObject _player;
+    private bool _isCollidingWithPlayer;
 
     void Start()
     {
+        _player = GameObject.FindGameObjectWithTag("Player");
         BoxCollider = GetComponent<BoxCollider2D>();
         MovementSpeedMultiplier = 0.3f;
-        _player = GameObject.FindGameObjectWithTag("Player");
     }
 
     void FixedUpdate()
     {
         var step = Time.deltaTime * MovementSpeedMultiplier;
 
-        MoveTowards(_player.transform, step);
+        if (!_isCollidingWithPlayer)
+        {
+            MoveTowards(_player.transform, step);
+        }
+    }
+
+    void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.tag == "Player")
+        {
+            _isCollidingWithPlayer = true;
+        }
+    }
+
+    private void OnCollisionExit2D(Collision2D collision)
+    {
+        _isCollidingWithPlayer = false;
     }
 }
