@@ -696,9 +696,9 @@ TextureImporter:
       name: environment_wall_side_left
       rect:
         serializedVersion: 2
-        x: 267
+        x: 304
         y: 208
-        width: 5
+        width: 4
         height: 35
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -717,9 +717,9 @@ TextureImporter:
       name: environment_wall_side_right
       rect:
         serializedVersion: 2
-        x: 288
+        x: 332
         y: 208
-        width: 5
+        width: 4
         height: 35
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -738,7 +738,7 @@ TextureImporter:
       name: environment_wall_side_left_bottom
       rect:
         serializedVersion: 2
-        x: 267
+        x: 304
         y: 192
         width: 5
         height: 16
@@ -759,7 +759,7 @@ TextureImporter:
       name: environment_wall_side_right_bottom
       rect:
         serializedVersion: 2
-        x: 288
+        x: 331
         y: 192
         width: 5
         height: 16

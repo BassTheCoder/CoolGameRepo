@@ -26,6 +26,8 @@ public class PlayerScript : MonoBehaviour
 
         OrientatePlayerModelOnMovement(_moveVector.x);
 
+        CheckRaycastHitForCurrentMovementDirection(_moveVector);
+
         MovePlayer(_moveVector);
     }
 
@@ -54,12 +56,12 @@ public class PlayerScript : MonoBehaviour
             size: _boxCollider.size, 
             angle: 0, 
             direction: new Vector2(moveVector.x, moveVector.y), 
-            distance: GetMovementDistance(moveVector), 
+            distance: GetMovementDistanceForNextFrame(moveVector), 
             layerMask: LayerMask.GetMask("Entity", "Construction")
             );
     }
 
-    private float GetMovementDistance(Vector3 moveVector)
+    private float GetMovementDistanceForNextFrame(Vector3 moveVector)
     {
         float xDistance = GetMovementDistanceForDirection(moveVector.x);
         float yDistance = GetMovementDistanceForDirection(moveVector.y);
