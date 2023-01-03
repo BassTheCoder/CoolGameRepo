@@ -9,7 +9,7 @@ public class PlayerScript : MonoBehaviour
     private RaycastHit2D _raycastHit;
     private Vector3 _moveVector;
 
-    private static float _movementMultiplier = 0.5f;
+    private static float _playerMovementMultiplier = 0.75f;
 
     void Start()
     {
@@ -72,7 +72,7 @@ public class PlayerScript : MonoBehaviour
 
         float GetMovementDistanceForDirection(float vector)
         {
-            return Mathf.Abs(_movementMultiplier * Time.deltaTime * vector);
+            return Mathf.Abs(_playerMovementMultiplier * Time.deltaTime * vector);
         }
     }
 
@@ -80,7 +80,7 @@ public class PlayerScript : MonoBehaviour
     {
         if (_raycastHit.collider == null)
         {
-            transform.Translate(_movementMultiplier * Time.deltaTime * moveVector);
+            transform.Translate(_playerMovementMultiplier * Time.deltaTime * moveVector);
         }
     }
     #endregion
