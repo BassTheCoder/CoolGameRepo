@@ -8,8 +8,6 @@ public class PlayerScript : EntityScript
     void Start()
     {
         BoxCollider = GetComponent<BoxCollider2D>();
-
-        MovementColliderLayerNames = new string[] { "Entity", "Construction" };
     }
 
 

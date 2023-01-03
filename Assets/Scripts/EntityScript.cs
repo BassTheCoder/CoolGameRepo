@@ -8,7 +8,7 @@ public class EntityScript : MonoBehaviour
     protected RaycastHit2D RaycastHit;
     protected Vector3 MoveVector;
 
-    protected string[] MovementColliderLayerNames = Array.Empty<string>();
+    protected string[] MovementColliderLayerNames = new string[] { "Entity", "Construction" };
     protected float MovementSpeedMultiplier = 0.75f;
 
     #region Private Methods
@@ -38,7 +38,18 @@ public class EntityScript : MonoBehaviour
         }
     }
 
-    private void CheckCollisionForCurrentMovementDirection(Vector3 moveVector)
+    protected void MoveTowards(Transform targetTransform, float step)
+    {
+        MoveVector = Vector3.MoveTowards(transform.position, targetTransform.position, step);
+
+        CheckCollisionForCurrentMovementDirection(MoveVector);
+        if (Vector3.Distance(transform.position, targetTransform.position) > 0.001f && RaycastHit.collider == null)
+        {
+            transform.position = MoveVector;
+        }
+    }
+
+    protected void CheckCollisionForCurrentMovementDirection(Vector3 moveVector)
     {
         RaycastHit = Physics2D.BoxCast(
             origin: transform.position,
