@@ -1,39 +1,46 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UIElements;
 
 public class EnemyScript : EntityScript
 {
-    private GameObject _player;
-    private bool _isCollidingWithPlayer;
+    protected GameObject PlayerObject;
+    protected bool IsCollidingWithPlayer;
 
     void Start()
     {
-        _player = GameObject.FindGameObjectWithTag("Player");
         BoxCollider = GetComponent<BoxCollider2D>();
+        Rigidbody = GetComponent<Rigidbody2D>();
+        PlayerObject = GameObject.FindGameObjectWithTag("Player");
         MovementSpeedMultiplier = 0.3f;
     }
 
     void FixedUpdate()
     {
-        var step = Time.deltaTime * MovementSpeedMultiplier;
-
-        if (!_isCollidingWithPlayer)
+        if (IsCollidingWithPlayer)
         {
-            MoveTowards(_player.transform, step);
+            FreezePosition();
+        }
+        else
+        {
+            ResetFreeze();
+            MoveVector = GetNormalizedVectorTowardsTarget(PlayerObject.transform);
+            OrientateEntityModelOnMovement(MoveVector.x, isReversed: true);
+            Move(MoveVector);
         }
     }
 
     void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.tag == "Player")
+        if (collision.gameObject.CompareTag("Player"))
         {
-            _isCollidingWithPlayer = true;
+            IsCollidingWithPlayer = true;
         }
     }
 
-    private void OnCollisionExit2D(Collision2D collision)
+    void OnCollisionExit2D(Collision2D collision)
     {
-        _isCollidingWithPlayer = false;
+        IsCollidingWithPlayer = false;
     }
 }

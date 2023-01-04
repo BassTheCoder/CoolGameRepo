@@ -13,6 +13,6 @@ public class Camera_FollowPlayer : MonoBehaviour
         direction.Normalize();
         var distance = direction.magnitude;
         var vector = direction/distance;
-        transform.position = PlayerPosition.position + new Vector3(vector.x/3, vector.y/3, -1);
+        transform.position = PlayerPosition.position + new Vector3(vector.x/4, vector.y/4, -1);
     }
 }
