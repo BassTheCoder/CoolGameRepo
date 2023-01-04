@@ -1,4 +1,3 @@
-using System;
 using UnityEngine;
 
 [RequireComponent(typeof(BoxCollider2D))]
@@ -8,6 +7,8 @@ public class EntityScript : MonoBehaviour
     protected BoxCollider2D BoxCollider;
     protected Rigidbody2D Rigidbody;
     protected Vector3 MoveVector;
+
+    protected bool IsModelReversed = false;
 
     protected float MovementSpeedMultiplier = 0.75f;
 
@@ -22,9 +23,9 @@ public class EntityScript : MonoBehaviour
         transform.Translate(MovementSpeedMultiplier * Time.deltaTime * moveVector);
     }
 
-    protected void OrientateEntityModelOnMovement(float x, bool isReversed = false)
+    protected void OrientateEntityModelOnMovement(float x)
     {
-        if (isReversed)
+        if (IsModelReversed)
         {
             if (x > 0)
             {

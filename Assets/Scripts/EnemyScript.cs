@@ -1,7 +1,4 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UIElements;
 
 public class EnemyScript : EntityScript
 {
@@ -14,6 +11,7 @@ public class EnemyScript : EntityScript
         Rigidbody = GetComponent<Rigidbody2D>();
         PlayerObject = GameObject.FindGameObjectWithTag("Player");
         MovementSpeedMultiplier = 0.3f;
+        IsModelReversed = true;
     }
 
     void FixedUpdate()
@@ -26,7 +24,7 @@ public class EnemyScript : EntityScript
         {
             ResetFreeze();
             MoveVector = GetNormalizedVectorTowardsTarget(PlayerObject.transform);
-            OrientateEntityModelOnMovement(MoveVector.x, isReversed: true);
+            OrientateEntityModelOnMovement(MoveVector.x);
             Move(MoveVector);
         }
     }
