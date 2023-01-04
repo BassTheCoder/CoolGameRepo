@@ -5,7 +5,7 @@ public class PlayerScript : EntityScript
     void Start()
     {
         BoxCollider = GetComponent<BoxCollider2D>();
-        Rigidbody= GetComponent<Rigidbody2D>();
+        Rigidbody = GetComponent<Rigidbody2D>();
     }
 
 

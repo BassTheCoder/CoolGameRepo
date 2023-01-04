@@ -1,14 +1,13 @@
-using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class SceneSwapper : MonoBehaviour
+public static class SceneSwapper
 {
-    public void LoadGameScene()
+    public static void LoadGameScene()
     {
         SceneManager.LoadScene("Game");
     }
 
-    public void LoadMenuScene()
+    public static void LoadMenuScene()
     {
         SceneManager.LoadScene("Menu");
     }

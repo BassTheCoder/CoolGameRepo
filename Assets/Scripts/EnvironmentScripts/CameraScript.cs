@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class Camera_FollowPlayer : MonoBehaviour
+public class CameraScript : MonoBehaviour
 {
     public Transform PlayerPosition;
 
