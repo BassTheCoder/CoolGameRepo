@@ -13,7 +13,7 @@ TagManager:
   - UI
   - Construction
   - Entity
-  - 
+  - Portal
   - 
   - 
   - 
@@ -44,6 +44,12 @@ TagManager:
   - name: Construction
     uniqueID: 1870981237
     locked: 0
+  - name: Portal
+    uniqueID: 1620385497
+    locked: 0
   - name: Entity
     uniqueID: 580791791
+    locked: 0
+  - name: UI
+    uniqueID: 3986499923
     locked: 0

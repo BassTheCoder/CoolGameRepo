@@ -827,7 +827,7 @@ TextureImporter:
         width: 5
         height: 20
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -848,7 +848,7 @@ TextureImporter:
         width: 5
         height: 20
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -856,6 +856,216 @@ TextureImporter:
       bones: []
       spriteID: f5adf5e9b2898a940830ec6a9f2483e7
       internalID: -2009941695
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: environment_floor_edge_bottom
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 112
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6fb75b92ed48f954597a62e6690cfe11
+      internalID: -242883801
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: environment_floor_edge_top
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 112
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c6a4734249a566d4487afaa62c77a5b2
+      internalID: 2010221854
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: environment_floor_edge_left
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 112
+        width: 31
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ecf33e288afeb9446842373f8a809a20
+      internalID: 627872360
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: environment_floor_edge_right
+      rect:
+        serializedVersion: 2
+        x: 191
+        y: 112
+        width: 33
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb35e9458b5b8544db9f291338a66b65
+      internalID: -582656531
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: environment_stairs
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 215
+        width: 32
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a3c074d0eb237a41b46e8c25d2802d3
+      internalID: 1021177493
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: environment_well
+      rect:
+        serializedVersion: 2
+        x: 289
+        y: 131
+        width: 14
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd25413628a1b5b499cdc74e572f9b02
+      internalID: -822823178
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: environment_wall_turn_right
+      rect:
+        serializedVersion: 2
+        x: 267
+        y: 192
+        width: 21
+        height: 52
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b4748a6b519183c41aa37f73c619837b
+      internalID: -425896069
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: environment_wall_turn_left
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 192
+        width: 21
+        height: 52
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0bfd439f78a597744b532eb894e1f4ac
+      internalID: -1426851846
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: environment_wall_turn_left_bottom
+      rect:
+        serializedVersion: 2
+        x: 325
+        y: 192
+        width: 11
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 61418c53ccf4b1e4193ed4ff1ac197b8
+      internalID: 1174576350
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: environment_wall_turn_right_bottom
+      rect:
+        serializedVersion: 2
+        x: 304
+        y: 192
+        width: 10
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f582ee61cd4d76a49800eb5774c36217
+      internalID: 1425501829
       vertices: []
       indices: 
       edges: []
@@ -871,42 +1081,52 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      environment_wall_front_bottom_short: -1705359400
-      environment_wall_side_left: 2123123846
       environment_floor: -2076780440
       potion_mana_big: 943018078
       weapon_broadSword: -1587271876
-      player_mage_santa: 818446510
       weapon_broadSword_wooden: -1231296136
       potion_health_big: -2010118322
+      environment_wall_turn_right_bottom: 1425501829
       enemyBOSS_Belcher: -874672050
-      environment_wall_front_top_short: -149737667
-      enemy_zombie_small: -462780591
       enemy_earthElemental: -1757025392
       enemy_zombie_tall: 1662475617
       player_knight_gold: -146190053
+      environment_floor_edge_bottom: -242883801
       environment_wall_short: -1704311079
       environment_wall_side_left_bottom: 1392461837
       chest_rare_opened_empty: 144327229
       enemy_fireElemental: -93820259
-      chest_normal_closed: -1579614154
+      environment_wall_turn_right: -425896069
       enemy_waterElemental: -2084812129
-      chest_rare_closed: 166970977
       enemy_bat: -534162406
       chest_rare_opened_full: -368414818
-      environment_wall_side_right: -1312663446
       environment_door_closed: -1684836471
       chest_normal_opened_full: -1827161032
-      environment_door_opened: -1594933834
-      environment_wall_side_left_topCorner: 690329788
       player_knight: -561506416
-      weapon_broadSword_rusty: 700401192
       potion_mana_small: -1769183733
-      potion_health_small: -61848272
+      environment_floor_edge_left: 627872360
+      environment_floor_edge_right: -582656531
       player_mage: 559405445
-      environment_wall_side_right_topCorner: -2009941695
       environment_wall_side_right_bottom: -2144793464
       environment_wall_front_top_long: -1818589619
+      environment_wall_front_bottom_short: -1705359400
+      environment_wall_side_left: 2123123846
+      player_mage_santa: 818446510
+      environment_wall_front_top_short: -149737667
+      enemy_zombie_small: -462780591
+      environment_floor_edge_top: 2010221854
+      chest_normal_closed: -1579614154
+      environment_wall_side_right: -1312663446
+      environment_wall_turn_left: -1426851846
+      chest_rare_closed: 166970977
+      environment_wall_turn_left_bottom: 1174576350
+      environment_door_opened: -1594933834
+      environment_wall_side_left_topCorner: 690329788
+      weapon_broadSword_rusty: 700401192
+      environment_stairs: 1021177493
+      environment_well: -822823178
+      potion_health_small: -61848272
+      environment_wall_side_right_topCorner: -2009941695
       chest_normal_opened_empty: 1751803847
   spritePackingTag: 
   pSDRemoveMatte: 0

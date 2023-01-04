@@ -46,8 +46,7 @@ public class Camera_FollowPlayer : MonoBehaviour
     private Vector3 GetVectorFromPlayerToMouse() //todo: make it prettier
     {
         var mousePosition = Camera.main.ScreenToWorldPoint(new Vector3(Input.mousePosition.x, Input.mousePosition.y, PlayerPosition.position.z));
-        var direction = mousePosition - PlayerPosition.position;
-        direction.Normalize();
+        var direction = (mousePosition - PlayerPosition.position).normalized;
         var distance = direction.magnitude;
         var vector = direction / distance;
 
