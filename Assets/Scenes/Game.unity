@@ -2047,7 +2047,7 @@ GameObject:
   - component: {fileID: 676403447}
   - component: {fileID: 676403448}
   m_Layer: 7
-  m_Name: player_mage_santa
+  m_Name: Player
   m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2104,9 +2104,9 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 580791791
-  m_SortingLayer: 2
+  m_SortingLayer: 3
   m_SortingOrder: 0
-  m_Sprite: {fileID: 818446510, guid: 5610f7cf1c0bbbd4f9a66ba1dcb400ad, type: 3}
+  m_Sprite: {fileID: -146190053, guid: 5610f7cf1c0bbbd4f9a66ba1dcb400ad, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -2125,7 +2125,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 676403443}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.484, y: -0.294, z: 0.009271557}
+  m_LocalPosition: {x: -0.401, y: -0.292, z: 0.009271557}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2145,18 +2145,18 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.009948747, y: -0.024965264}
+  m_Offset: {x: 0.009739757, y: -0.019755438}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.16, y: 0.16}
+    oldSize: {x: 0.15, y: 0.2}
     newSize: {x: 0.16, y: 0.16}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.100231096, y: 0.11006947}
+  m_Size: {x: 0.111346245, y: 0.14095616}
   m_EdgeRadius: 0
 --- !u!50 &676403448
 Rigidbody2D:
@@ -2493,7 +2493,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.2, y: 0.26}
+  m_Size: {x: 0.18170917, y: 0.26}
   m_EdgeRadius: 0
 --- !u!212 &705105054
 SpriteRenderer:
@@ -2534,7 +2534,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 580791791
-  m_SortingLayer: 2
+  m_SortingLayer: 3
   m_SortingOrder: 0
   m_Sprite: {fileID: -874672050, guid: 5610f7cf1c0bbbd4f9a66ba1dcb400ad, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -4662,6 +4662,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   PlayerPosition: {fileID: 676403446}
+  MoveWithCursorExtension: 1
+  CameraMovementDeadzone_X: 0.15
+  CameraMovementDeadzone_Y: 0.15
 --- !u!1 &1565105016
 GameObject:
   m_ObjectHideFlags: 0

@@ -25,27 +25,13 @@ public class EntityScript : MonoBehaviour
 
     protected void OrientateEntityModelOnMovement(float x)
     {
-        if (IsModelReversed)
+        if (x > 0)
         {
-            if (x > 0)
-            {
-                transform.localScale = new Vector3(-1, 1, 1);
-            }
-            else if (x < 0)
-            {
-                transform.localScale = new Vector3(1, 1, 1);
-            }
+            transform.localScale = new Vector3(IsModelReversed ? -1 : 1, 1, 1);
         }
-        else
+        else if (x < 0)
         {
-            if (x > 0)
-            {
-                transform.localScale = new Vector3(1, 1, 1);
-            }
-            else if (x < 0)
-            {
-                transform.localScale = new Vector3(-1, 1, 1);
-            }
+            transform.localScale = new Vector3(IsModelReversed ? 1 : -1, 1, 1);
         }
 
     }
