@@ -9,7 +9,7 @@ public class GamePortalScript : PortalScript
         if (IsCollidingWithPlayer && Input.GetKeyDown(KeyCode.Space))
         {
             Debug.Log("Portal to game scene taken");
-            SceneSwapper.LoadGameScene();
+            SceneSwapperScript.LoadGameScene();
         }
     }
 }

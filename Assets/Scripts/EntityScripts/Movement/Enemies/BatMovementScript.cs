@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class DefaultEnemyScript : EnemyMovementScript
+public class BatMovementScript : EnemyMovementScript
 {
     void Start()
     {
@@ -8,5 +8,7 @@ public class DefaultEnemyScript : EnemyMovementScript
         PlayerObject = GameObject.FindGameObjectWithTag("Player");
         IsModelReversed = true;
         FollowPlayer = PlayerObject != null;
+
+        MovementSpeedMultiplier = 0.8f;
     }
 }

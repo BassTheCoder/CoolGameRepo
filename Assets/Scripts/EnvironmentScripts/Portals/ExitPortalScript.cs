@@ -7,7 +7,7 @@ public class ExitPortalScript : PortalScript
         if (IsCollidingWithPlayer && Input.GetKeyDown(KeyCode.Space))
         {
             Debug.Log("exit command invoked.");
-            ExitProgram.ExitGame();
+            ExitProgramScript.ExitGame();
         }
     }
 }

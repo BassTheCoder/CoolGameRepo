@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class BelcherScript : EnemyMovementScript
+public class BelcherMovementScript : EnemyMovementScript
 {
     void Start()
     {

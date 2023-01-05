@@ -7,7 +7,7 @@ public class GotoMenuScript : MonoBehaviour
         var playerObject = GameObject.FindGameObjectWithTag("Player");
         if (Input.GetKeyDown(KeyCode.Escape) || playerObject == null)
         {
-            SceneSwapper.LoadMenuScene();
+            SceneSwapperScript.LoadMenuScene();
         }
     }
 }

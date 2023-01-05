@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public static class ExitProgram
+public static class ExitProgramScript
 {
     public static void ExitGame()
     {

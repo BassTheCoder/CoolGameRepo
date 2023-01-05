@@ -1,6 +1,6 @@
 using UnityEngine.SceneManagement;
 
-public static class SceneSwapper
+public static class SceneSwapperScript
 {
     public static void LoadGameScene()
     {
