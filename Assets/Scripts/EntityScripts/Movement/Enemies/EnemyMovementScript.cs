@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class EnemyMovementScript : EntityMovementScript
 {
-    protected GameObject PlayerObject;
+    protected Transform PlayerObjectTransform;
     protected bool IsCollidingWithPlayer = false;
     
     public bool FollowPlayer = true;
@@ -24,7 +24,7 @@ public class EnemyMovementScript : EntityMovementScript
             else
             {
                 UnfreezePosition();
-                MoveVector = GetNormalizedVectorTowardsTarget(PlayerObject.transform);
+                MoveVector = GetNormalizedVectorTowardsTarget(PlayerObjectTransform);
                 Move(MoveVector);
             }
         }
@@ -41,5 +41,23 @@ public class EnemyMovementScript : EntityMovementScript
     void OnCollisionExit2D(Collision2D collision)
     {
         IsCollidingWithPlayer = false;
+    }
+
+    protected void GetPlayerObjectTransform()
+    {
+        PlayerObjectTransform = GetPlayerObject().transform;
+    }
+
+    protected void DoNotFollowIfTheresNoPlayer()
+    {
+        if (FollowPlayer && GetPlayerObject() == null)
+        {
+            FollowPlayer = false;
+        }
+    }
+
+    private GameObject GetPlayerObject()
+    {
+        return GameObject.FindGameObjectWithTag("Player");
     }
 }

@@ -664,7 +664,7 @@ GameObject:
   - component: {fileID: 133876379}
   m_Layer: 0
   m_Name: GameManager
-  m_TagString: Untagged
+  m_TagString: GameController
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2988,7 +2988,7 @@ GameObject:
   - component: {fileID: 566322988}
   m_Layer: 7
   m_Name: Enemies
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3182,7 +3182,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 580791791
   m_SortingLayer: 4
-  m_SortingOrder: 0
+  m_SortingOrder: 100
   m_Sprite: {fileID: -64935029, guid: 04c527eb66edc8249ba5d659061fa091, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -6229,7 +6229,7 @@ GameObject:
   - component: {fileID: 1096126404}
   m_Layer: 7
   m_Name: enemyBOSS_Belcher
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8746,7 +8746,7 @@ GameObject:
   - component: {fileID: 1518848655}
   m_Layer: 7
   m_Name: enemyBOSS_Belcher (2)
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10725,7 +10725,7 @@ GameObject:
   - component: {fileID: 1886011227}
   m_Layer: 7
   m_Name: enemy_bat
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10857,7 +10857,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   EntityAnimator: {fileID: 0}
-  FollowPlayer: 0
+  FollowPlayer: 1
 --- !u!95 &1886011227
 Animator:
   serializedVersion: 5
@@ -10972,13 +10972,14 @@ GameObject:
   m_Component:
   - component: {fileID: 1927501301}
   - component: {fileID: 1927501302}
+  - component: {fileID: 1927501303}
   m_Layer: 7
   m_Name: PlayerAttackArea
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1927501301
 Transform:
   m_ObjectHideFlags: 0
@@ -11020,9 +11021,21 @@ PolygonCollider2D:
   m_Points:
     m_Paths:
     - - {x: 0.0060731173, y: -0.099366374}
-      - {x: 0.08160299, y: -0.07246657}
-      - {x: 0.080649376, y: 0.02371395}
-      - {x: 0.0068858266, y: 0.061576337}
+      - {x: 0.09676254, y: -0.029744089}
+      - {x: 0.09649807, y: 0.060234774}
+      - {x: 0.017221868, y: 0.109811395}
+--- !u!114 &1927501303
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1927501300}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 10850c59904f31b45b46616f246fa08d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1978758938
 GameObject:
   m_ObjectHideFlags: 0

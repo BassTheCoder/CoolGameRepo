@@ -6,10 +6,8 @@ public class AllahAkbarScript : EnemyMovementScript
     void Start()
     {
         GetPhysicsProperties();
-        gameObject.tag = "TouchKiller";
-        PlayerObject = GameObject.FindGameObjectWithTag("Player");
+        GetPlayerObjectTransform();
         IsModelReversed = true;
-        FollowPlayer = PlayerObject != null;
 
         MovementSpeedMultiplier = 0.8f;
     }
@@ -25,6 +23,6 @@ public class AllahAkbarScript : EnemyMovementScript
     private void ExecuteOrder66()
     {
         Destroy(gameObject);
-        Destroy(PlayerObject);
+        Destroy(GameObject.FindGameObjectWithTag("Player"));
     }
 }
