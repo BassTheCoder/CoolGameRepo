@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: e645cd9020f841b47add842684c5d8a5
+guid: d6cde920bd79b4d4b99b4d1d4a57bd4f
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -105,7 +105,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: red_run_spritesheet_0
+      name: red_attack_spritesheet_0
       rect:
         serializedVersion: 2
         x: 0
@@ -119,17 +119,17 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5a6fe75d5eb199c498c9f838e5536884
-      internalID: -1122265017
+      spriteID: a398715f97822d54fafeaa937e17cfc7
+      internalID: -1507532217
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: red_run_spritesheet_1
+      name: red_attack_spritesheet_1
       rect:
         serializedVersion: 2
-        x: 18
+        x: 19
         y: 0
         width: 18
         height: 20
@@ -140,17 +140,17 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: eff42badcc4c3264499f8f604160155f
-      internalID: 1540516906
+      spriteID: 004bd3de22e15554fa9ae7b7a86542a9
+      internalID: -373639909
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: red_run_spritesheet_2
+      name: red_attack_spritesheet_2
       rect:
         serializedVersion: 2
-        x: 36
+        x: 40
         y: 0
         width: 18
         height: 20
@@ -161,17 +161,17 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7018dfa0ceed3ae4393a7878b273d228
-      internalID: -487238445
+      spriteID: 58e637e460d7bd44bb8980d4b07995a8
+      internalID: 151498795
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: red_run_spritesheet_3
+      name: red_attack_spritesheet_3
       rect:
         serializedVersion: 2
-        x: 54
+        x: 60
         y: 0
         width: 18
         height: 20
@@ -182,17 +182,17 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 19667576cf1eb0f4eb1309887cc4729a
-      internalID: 254628400
+      spriteID: 61119f0dd164eb848aedc2d2251f3563
+      internalID: -888990959
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: red_run_spritesheet_4
+      name: red_attack_spritesheet_4
       rect:
         serializedVersion: 2
-        x: 72
+        x: 80
         y: 0
         width: 18
         height: 20
@@ -203,29 +203,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d567d663cf864ce4aa1cdef7c32b4c32
-      internalID: -1730774381
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: red_run_spritesheet_5
-      rect:
-        serializedVersion: 2
-        x: 90
-        y: 0
-        width: 18
-        height: 20
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 0b166f92282837045aa031250492e4e3
-      internalID: 68905059
+      spriteID: e4db1a1916872eb459c9eb9baea749dc
+      internalID: 528848716
       vertices: []
       indices: 
       edges: []
@@ -241,12 +220,11 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      red_run_spritesheet_4: -1730774381
-      red_run_spritesheet_0: -1122265017
-      red_run_spritesheet_2: -487238445
-      red_run_spritesheet_1: 1540516906
-      red_run_spritesheet_3: 254628400
-      red_run_spritesheet_5: 68905059
+      red_attack_spritesheet_3: -888990959
+      red_attack_spritesheet_1: -373639909
+      red_attack_spritesheet_2: 151498795
+      red_attack_spritesheet_4: 528848716
+      red_attack_spritesheet_0: -1507532217
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

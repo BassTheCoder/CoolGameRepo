@@ -6,7 +6,7 @@ public class GamePortalScript : PortalScript
 {
     private void Update()
     {
-        if (IsCollidingWithPlayer && Input.GetKeyDown(KeyCode.Space))
+        if (IsCollidingWithPlayer && Input.GetKeyDown(Keybinds.Interact))
         {
             Debug.Log("Portal to game scene taken");
             SceneSwapperScript.LoadGameScene();
