@@ -3,16 +3,14 @@ using UnityEngine;
 public class EnemyMovementScript : EntityMovementScript
 {
     protected GameObject PlayerObject;
-    protected bool IsCollidingWithPlayer;
-
+    protected bool IsCollidingWithPlayer = false;
+    
     public bool FollowPlayer = true;
 
-    void Start()
+    private void Start()
     {
-        GetPhysicsProperties();
-        PlayerObject = GameObject.FindGameObjectWithTag("Player");
-        MovementSpeedMultiplier = 0.3f;
         IsModelReversed = true;
+        MovementSpeedMultiplier = 0.5f;
     }
 
     void FixedUpdate()
@@ -21,7 +19,7 @@ public class EnemyMovementScript : EntityMovementScript
         {
             if (IsCollidingWithPlayer)
             {
-                FreezePosition();
+                FreezePosition();                
             }
             else
             {

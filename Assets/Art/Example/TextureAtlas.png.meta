@@ -105,48 +105,6 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: player_mage_santa
-      rect:
-        serializedVersion: 2
-        x: 127
-        y: 16
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 5dc1e99faaaa70945a82dadbc73f949a
-      internalID: 818446510
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: player_mage
-      rect:
-        serializedVersion: 2
-        x: 143
-        y: 16
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: f8dfb44447c4c884ab4e80598bd1fd0d
-      internalID: 559405445
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: enemy_zombie_small
       rect:
         serializedVersion: 2
@@ -273,216 +231,6 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: chest_normal_closed
-      rect:
-        serializedVersion: 2
-        x: 224
-        y: 64
-        width: 16
-        height: 14
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: ab31a057eac181b4683fa07e492bfcd7
-      internalID: -1579614154
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: chest_normal_opened_empty
-      rect:
-        serializedVersion: 2
-        x: 224
-        y: 48
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: dc451687e7dc413428f1c4b12dce5b5f
-      internalID: 1751803847
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: chest_normal_opened_full
-      rect:
-        serializedVersion: 2
-        x: 224
-        y: 32
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 56f93584b66582b42a709b6385c5f7f8
-      internalID: -1827161032
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: chest_rare_closed
-      rect:
-        serializedVersion: 2
-        x: 240
-        y: 64
-        width: 16
-        height: 14
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 03d04a1f660c76e408ff3d6f7654f034
-      internalID: 166970977
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: chest_rare_opened_empty
-      rect:
-        serializedVersion: 2
-        x: 240
-        y: 48
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 35e525c6a55cf234bb7340227b8be03b
-      internalID: 144327229
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: chest_rare_opened_full
-      rect:
-        serializedVersion: 2
-        x: 240
-        y: 32
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 96fc4626462ad5645a431b8666cb1287
-      internalID: -368414818
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: potion_health_big
-      rect:
-        serializedVersion: 2
-        x: 196
-        y: 65
-        width: 9
-        height: 11
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 6d8033de16b8dc4449426de95b1d7c50
-      internalID: -2010118322
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: potion_mana_big
-      rect:
-        serializedVersion: 2
-        x: 196
-        y: 33
-        width: 9
-        height: 11
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 06cfe0cd44ea1624f97c84561918f5c9
-      internalID: 943018078
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: potion_health_small
-      rect:
-        serializedVersion: 2
-        x: 117
-        y: 33
-        width: 7
-        height: 11
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 3657fa3cf266730429755e27266dc777
-      internalID: -61848272
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: potion_mana_small
-      rect:
-        serializedVersion: 2
-        x: 149
-        y: 33
-        width: 7
-        height: 11
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 6a1151dd512980843b6735b4798ed0ec
-      internalID: -1769183733
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: environment_door_closed
       rect:
         serializedVersion: 2
@@ -520,48 +268,6 @@ TextureImporter:
       bones: []
       spriteID: f349c5a6f454400498356ee67b1679ed
       internalID: -1594933834
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: weapon_broadSword_wooden
-      rect:
-        serializedVersion: 2
-        x: 148
-        y: 225
-        width: 8
-        height: 21
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 25caa4e9da78a73499a563762aeea039
-      internalID: -1231296136
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: weapon_broadSword_rusty
-      rect:
-        serializedVersion: 2
-        x: 163
-        y: 225
-        width: 10
-        height: 21
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 49b5990cf31cc1644883661d796d9184
-      internalID: 700401192
       vertices: []
       indices: 
       edges: []
@@ -1037,7 +743,7 @@ TextureImporter:
         width: 11
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1058,7 +764,7 @@ TextureImporter:
         width: 10
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1066,6 +772,69 @@ TextureImporter:
       bones: []
       spriteID: f582ee61cd4d76a49800eb5774c36217
       internalID: 1425501829
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: environment_floorClutter_stain
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 123
+        width: 52
+        height: 38
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db9454227a0fe974d875d20e61960e4f
+      internalID: -765281095
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: environment_floorClutter_crack
+      rect:
+        serializedVersion: 2
+        x: 449
+        y: 161
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f9cf108f67ea2f4ba4c767f10471832
+      internalID: -980667854
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: environment_pillar
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 42
+        width: 16
+        height: 33
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 21a31d9ced3b7544593dd808d0633f34
+      internalID: 8100592
       vertices: []
       indices: 
       edges: []
@@ -1095,6 +864,7 @@ TextureImporter:
       environment_wall_short: -1704311079
       environment_wall_side_left_bottom: 1392461837
       chest_rare_opened_empty: 144327229
+      environment_floorClutter_stain: -765281095
       enemy_fireElemental: -93820259
       environment_wall_turn_right: -425896069
       enemy_waterElemental: -2084812129
@@ -1124,9 +894,11 @@ TextureImporter:
       environment_wall_side_left_topCorner: 690329788
       weapon_broadSword_rusty: 700401192
       environment_stairs: 1021177493
+      environment_pillar: 8100592
       environment_well: -822823178
       potion_health_small: -61848272
       environment_wall_side_right_topCorner: -2009941695
+      environment_floorClutter_crack: -980667854
       chest_normal_opened_empty: 1751803847
   spritePackingTag: 
   pSDRemoveMatte: 0

@@ -3,7 +3,8 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - TouchKiller
   layers:
   - Default
   - TransparentFX
@@ -41,14 +42,20 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
-  - name: Construction
-    uniqueID: 1870981237
+  - name: Construction_UnderEntity
+    uniqueID: 2852280303
+    locked: 0
+  - name: FloorClutter
+    uniqueID: 4075839235
     locked: 0
   - name: Portal
     uniqueID: 1620385497
     locked: 0
   - name: Entity
     uniqueID: 580791791
+    locked: 0
+  - name: Construction
+    uniqueID: 1870981237
     locked: 0
   - name: UI
     uniqueID: 3986499923

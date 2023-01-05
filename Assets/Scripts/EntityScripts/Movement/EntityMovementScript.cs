@@ -6,7 +6,6 @@ public class EntityMovementScript : MonoBehaviour
 {
     public Animator EntityAnimator;
 
-    protected GameObject Self;
     protected BoxCollider2D BoxCollider;
     protected Rigidbody2D Rigidbody;
     protected Vector3 MoveVector;
@@ -15,15 +14,9 @@ public class EntityMovementScript : MonoBehaviour
 
     protected float MovementSpeedMultiplier = 0.5f;
 
-    private void Start()
-    {
-        UnfreezePosition();
-    }
-
     #region Methods
     protected void GetPhysicsProperties()
     {
-        Self = GetComponent<GameObject>();
         BoxCollider = GetComponent<BoxCollider2D>();
         Rigidbody = GetComponent<Rigidbody2D>();
     }

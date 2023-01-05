@@ -14,13 +14,16 @@ public class CameraScript : MonoBehaviour
 
     void Update()
     {
-        if (MoveWithCursorExtension)
+        if (_playerPosition != null)
         {
-            Movement_WithCursorExtension();
-        }
-        else
-        {
-            Movement_Classic();
+            if (MoveWithCursorExtension)
+            {
+                Movement_WithCursorExtension();
+            }
+            else
+            {
+                Movement_Classic();
+            }
         }
     }
 
