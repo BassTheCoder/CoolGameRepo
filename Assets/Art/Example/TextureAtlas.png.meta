@@ -839,6 +839,48 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: enemy_bat_BRRRRR_0
+      rect:
+        serializedVersion: 2
+        x: 266
+        y: 86
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 528cc17a5c0248f488b81d2fd31eaab3
+      internalID: 1028944913
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_bat_BRRRRR_1
+      rect:
+        serializedVersion: 2
+        x: 284
+        y: 86
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a9976ae0d78e664f8f99edc1444d55a
+      internalID: -1110406798
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -877,6 +919,7 @@ TextureImporter:
       environment_floor_edge_left: 627872360
       environment_floor_edge_right: -582656531
       player_mage: 559405445
+      enemy_bat_BRRRRR_1: -1110406798
       environment_wall_side_right_bottom: -2144793464
       environment_wall_front_top_long: -1818589619
       environment_wall_front_bottom_short: -1705359400
@@ -892,6 +935,7 @@ TextureImporter:
       environment_wall_turn_left_bottom: 1174576350
       environment_door_opened: -1594933834
       environment_wall_side_left_topCorner: 690329788
+      enemy_bat_BRRRRR_0: 1028944913
       weapon_broadSword_rusty: 700401192
       environment_stairs: 1021177493
       environment_pillar: 8100592
