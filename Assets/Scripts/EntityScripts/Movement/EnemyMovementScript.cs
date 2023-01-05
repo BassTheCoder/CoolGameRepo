@@ -1,14 +1,15 @@
 using UnityEngine;
 
-public class EnemyScript : EntityScript
+public class EnemyMovementScript : EntityMovementScript
 {
     protected GameObject PlayerObject;
     protected bool IsCollidingWithPlayer;
 
+    public bool FollowPlayer = true;
+
     void Start()
     {
-        BoxCollider = GetComponent<BoxCollider2D>();
-        Rigidbody = GetComponent<Rigidbody2D>();
+        GetPhysicsProperties();
         PlayerObject = GameObject.FindGameObjectWithTag("Player");
         MovementSpeedMultiplier = 0.3f;
         IsModelReversed = true;
@@ -16,16 +17,18 @@ public class EnemyScript : EntityScript
 
     void FixedUpdate()
     {
-        if (IsCollidingWithPlayer)
+        if (FollowPlayer)
         {
-            FreezePosition();
-        }
-        else
-        {
-            ResetFreeze();
-            MoveVector = GetNormalizedVectorTowardsTarget(PlayerObject.transform);
-            OrientateEntityModelOnMovement(MoveVector.x);
-            Move(MoveVector);
+            if (IsCollidingWithPlayer)
+            {
+                FreezePosition();
+            }
+            else
+            {
+                UnfreezePosition();
+                MoveVector = GetNormalizedVectorTowardsTarget(PlayerObject.transform);
+                Move(MoveVector);
+            }
         }
     }
 

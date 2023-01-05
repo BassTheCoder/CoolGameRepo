@@ -2,25 +2,47 @@ using UnityEngine;
 
 [RequireComponent(typeof(BoxCollider2D))]
 [RequireComponent(typeof(Rigidbody2D))]
-public class EntityScript : MonoBehaviour
+public class EntityMovementScript : MonoBehaviour
 {
+    public Animator EntityAnimator;
+
+    protected GameObject Self;
     protected BoxCollider2D BoxCollider;
     protected Rigidbody2D Rigidbody;
     protected Vector3 MoveVector;
 
     protected bool IsModelReversed = false;
 
-    protected float MovementSpeedMultiplier = 0.75f;
+    protected float MovementSpeedMultiplier = 0.5f;
 
-    #region Private Methods
-    protected void ResetMoveVector(float x = 0, float y = 0)
+    private void Start()
+    {
+        UnfreezePosition();
+    }
+
+    #region Methods
+    protected void GetPhysicsProperties()
+    {
+        Self = GetComponent<GameObject>();
+        BoxCollider = GetComponent<BoxCollider2D>();
+        Rigidbody = GetComponent<Rigidbody2D>();
+    }
+
+    protected void GetMoveVector(float x = 0, float y = 0)
     {
         MoveVector = new Vector3(x, y, 0);
     }
 
     protected void Move(Vector3 moveVector)
     {
-        transform.Translate(MovementSpeedMultiplier * Time.deltaTime * moveVector);
+        OrientateEntityModelOnMovement(MoveVector.x);
+
+        if (EntityAnimator != null)
+        {
+            EntityAnimator.SetFloat("Speed", moveVector.sqrMagnitude);
+        }
+
+        transform.Translate(MovementSpeedMultiplier * Time.fixedDeltaTime * moveVector);
     }
 
     protected void OrientateEntityModelOnMovement(float x)
@@ -46,7 +68,7 @@ public class EntityScript : MonoBehaviour
         Rigidbody.constraints = RigidbodyConstraints2D.FreezeAll;
     }
 
-    protected void ResetFreeze()
+    protected void UnfreezePosition()
     {
         Rigidbody.constraints = RigidbodyConstraints2D.FreezeRotation;
     }

@@ -2,11 +2,15 @@ using UnityEngine;
 
 public class CameraScript : MonoBehaviour
 {
-    public Transform PlayerPosition;
+    private Transform _playerPosition;
 
     public bool MoveWithCursorExtension = true;
-    public float CameraMovementDeadzone_X = 0.15f;
-    public float CameraMovementDeadzone_Y = 0.15f;
+    public float CameraMovementDeadzone = 0.1f;
+
+    private void Start()
+    {
+        _playerPosition = GameObject.FindGameObjectWithTag("Player").transform;
+    }
 
     void Update()
     {
@@ -23,15 +27,15 @@ public class CameraScript : MonoBehaviour
     private void Movement_Classic()
     {
         var deltaVector = Vector3.zero;
-        float deltaX = PlayerPosition.position.x - transform.position.x;
-        if (deltaX > CameraMovementDeadzone_X || deltaX < -CameraMovementDeadzone_X)
+        float deltaX = _playerPosition.position.x - transform.position.x;
+        if (deltaX > CameraMovementDeadzone || deltaX < -CameraMovementDeadzone)
         {
-            deltaVector.x = transform.position.x < PlayerPosition.position.x ? deltaX - CameraMovementDeadzone_X : deltaX + CameraMovementDeadzone_X;
+            deltaVector.x = transform.position.x < _playerPosition.position.x ? deltaX - CameraMovementDeadzone : deltaX + CameraMovementDeadzone;
         }
-        float deltaY = PlayerPosition.position.y - transform.position.y;
-        if (deltaY > CameraMovementDeadzone_Y || deltaY < -CameraMovementDeadzone_Y)
+        float deltaY = _playerPosition.position.y - transform.position.y;
+        if (deltaY > CameraMovementDeadzone || deltaY < -CameraMovementDeadzone)
         {
-            deltaVector.y = transform.position.y < PlayerPosition.position.y ? deltaY - CameraMovementDeadzone_Y : deltaY + CameraMovementDeadzone_Y;
+            deltaVector.y = transform.position.y < _playerPosition.position.y ? deltaY - CameraMovementDeadzone : deltaY + CameraMovementDeadzone;
         }
 
         transform.position += new Vector3(deltaVector.x, deltaVector.y, 0);
@@ -40,13 +44,13 @@ public class CameraScript : MonoBehaviour
     private void Movement_WithCursorExtension()
     {
         var vector = GetVectorFromPlayerToMouse();
-        transform.position = PlayerPosition.position + new Vector3(vector.x, vector.y, -1);
+        transform.position = _playerPosition.position + new Vector3(vector.x, vector.y, -1);
     }
 
     private Vector3 GetVectorFromPlayerToMouse() //todo: make it prettier
     {
-        var mousePosition = Camera.main.ScreenToWorldPoint(new Vector3(Input.mousePosition.x, Input.mousePosition.y, PlayerPosition.position.z));
-        var direction = (mousePosition - PlayerPosition.position).normalized;
+        var mousePosition = Camera.main.ScreenToWorldPoint(new Vector3(Input.mousePosition.x, Input.mousePosition.y, _playerPosition.position.z));
+        var direction = (mousePosition - _playerPosition.position).normalized;
         var distance = direction.magnitude;
         var vector = direction / distance;
 
