@@ -8,7 +8,6 @@ public class BelcherMovementScript : EnemyMovementScript
         GetPlayerObjectTransform();
         DoNotFollowIfTheresNoPlayer();
 
-        IsModelReversed = true;
         MovementSpeedMultiplier = 0.3f;
     }
 }

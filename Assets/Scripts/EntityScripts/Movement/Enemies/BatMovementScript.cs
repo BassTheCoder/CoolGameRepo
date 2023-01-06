@@ -8,7 +8,6 @@ public class BatMovementScript : EnemyMovementScript
         GetPlayerObjectTransform();
         DoNotFollowIfTheresNoPlayer();
 
-        IsModelReversed = true;
         MovementSpeedMultiplier = 0.8f;
     }
 }

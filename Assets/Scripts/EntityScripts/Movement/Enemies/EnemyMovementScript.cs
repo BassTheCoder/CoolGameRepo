@@ -7,12 +7,6 @@ public class EnemyMovementScript : EntityMovementScript
     
     public bool FollowPlayer = true;
 
-    private void Start()
-    {
-        IsModelReversed = true;
-        MovementSpeedMultiplier = 0.5f;
-    }
-
     void FixedUpdate()
     {
         if (FollowPlayer)

@@ -10,8 +10,6 @@ public class EntityMovementScript : MonoBehaviour
     protected Rigidbody2D Rigidbody;
     protected Vector3 MoveVector;
 
-    protected bool IsModelReversed = false;
-
     protected float MovementSpeedMultiplier = 0.5f;
 
     #region Methods
@@ -42,11 +40,11 @@ public class EntityMovementScript : MonoBehaviour
     {
         if (x > 0)
         {
-            transform.localScale = new Vector3(IsModelReversed ? -1 : 1, 1, 1);
+            transform.localScale = new Vector3(1, 1, 1);
         }
         else if (x < 0)
         {
-            transform.localScale = new Vector3(IsModelReversed ? 1 : -1, 1, 1);
+            transform.localScale = new Vector3(-1, 1, 1);
         }
 
     }

@@ -7,7 +7,6 @@ public class AllahAkbarScript : EnemyMovementScript
     {
         GetPhysicsProperties();
         GetPlayerObjectTransform();
-        IsModelReversed = true;
 
         MovementSpeedMultiplier = 0.8f;
     }

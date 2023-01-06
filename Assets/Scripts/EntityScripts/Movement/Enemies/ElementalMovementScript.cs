@@ -8,7 +8,6 @@ public class ElementalMovementScript : EnemyMovementScript
         GetPlayerObjectTransform();
         DoNotFollowIfTheresNoPlayer();
 
-        IsModelReversed = true;
         MovementSpeedMultiplier = 0.5f;
     }
 }
