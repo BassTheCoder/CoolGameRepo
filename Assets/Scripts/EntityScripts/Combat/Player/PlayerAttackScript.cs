@@ -10,6 +10,7 @@ public class PlayerAttackScript : MonoBehaviour
 
     private float _attackTimeWindow = 0.25f;
     private float _attackTimer = 0f;
+    private float _attackWindowDelay = 0.1f;
 
 
     void Start()
@@ -27,13 +28,14 @@ public class PlayerAttackScript : MonoBehaviour
 
         if (_isPlayerAttacking)
         {
+            OpenAttackWindowAfterDelay(_attackWindowDelay);
             DisablePlayerAttackAction();
             _attackTimer += Time.deltaTime;
 
             if (_attackTimer >= _attackTimeWindow)
             {
-                _attackTimer= 0f;
-                _isPlayerAttacking= false;
+                ResetAttackTimer();
+                _isPlayerAttacking = false;
                 SetAnimatorAttackingState(_isPlayerAttacking);
                 CloseAttackWindow();
                 EnablePlayerAttackAction();
@@ -45,7 +47,6 @@ public class PlayerAttackScript : MonoBehaviour
     {
         _isPlayerAttacking = true;
         SetAnimatorAttackingState(_isPlayerAttacking);
-        OpenAttackWindowAfterDelay(0f);
     }
 
     private void OpenAttackWindowAfterDelay(float delay)
@@ -74,6 +75,11 @@ public class PlayerAttackScript : MonoBehaviour
     private void EnablePlayerAttackAction()
     {
         _canPlayerAttack = true;
+    }
+
+    private void ResetAttackTimer()
+    {
+        _attackTimer = 0f;
     }
 
     private void SetAnimatorAttackingState(bool attackingState)
