@@ -7,7 +7,5 @@ public class BelcherMovementScript : EnemyMovementScript
         GetPhysicsProperties();
         GetPlayerObjectTransform();
         DoNotFollowIfTheresNoPlayer();
-
-        MovementSpeedMultiplier = 0.3f;
     }
 }

@@ -10,7 +10,7 @@ public class EntityMovementScript : MonoBehaviour
     protected Rigidbody2D Rigidbody;
     protected Vector3 MoveVector;
 
-    protected float MovementSpeedMultiplier = 0.5f;
+    public float MovementSpeedMultiplier = 0.5f;
 
     #region Methods
     protected void GetPhysicsProperties()

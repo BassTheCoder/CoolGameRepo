@@ -22,6 +22,10 @@ public class EnemyMovementScript : EntityMovementScript
                 Move(MoveVector);
             }
         }
+        else
+        {
+            TryStartFollowingPlayer();
+        }
     }
 
     void OnCollisionEnter2D(Collision2D collision)
@@ -47,6 +51,14 @@ public class EnemyMovementScript : EntityMovementScript
         if (FollowPlayer && GetPlayerObject() == null)
         {
             FollowPlayer = false;
+        }
+    }
+
+    private void TryStartFollowingPlayer()
+    {
+        if (!FollowPlayer && GetPlayerObject() != null)
+        {
+            FollowPlayer = true;
         }
     }
 

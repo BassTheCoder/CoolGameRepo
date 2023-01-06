@@ -3095,6 +3095,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   EntityAnimator: {fileID: 570749326}
+  MovementSpeedMultiplier: 0.5
 --- !u!50 &570749328
 Rigidbody2D:
   serializedVersion: 4
@@ -6361,6 +6362,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   EntityAnimator: {fileID: 0}
+  MovementSpeedMultiplier: 0.3
   FollowPlayer: 1
 --- !u!1 &1116919240
 GameObject:
@@ -8878,6 +8880,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   EntityAnimator: {fileID: 0}
+  MovementSpeedMultiplier: 0.3
   FollowPlayer: 1
 --- !u!1 &1532792062
 GameObject:
@@ -10857,6 +10860,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   EntityAnimator: {fileID: 0}
+  MovementSpeedMultiplier: 0.8
   FollowPlayer: 1
 --- !u!95 &1886011227
 Animator:

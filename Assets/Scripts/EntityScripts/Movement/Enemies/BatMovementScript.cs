@@ -7,7 +7,5 @@ public class BatMovementScript : EnemyMovementScript
         GetPhysicsProperties();
         GetPlayerObjectTransform();
         DoNotFollowIfTheresNoPlayer();
-
-        MovementSpeedMultiplier = 0.8f;
     }
 }
