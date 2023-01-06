@@ -4,27 +4,32 @@ public class EnemyMovementScript : EntityMovementScript
 {
     protected Transform PlayerObjectTransform;
     protected bool IsCollidingWithPlayer = false;
-    
-    public bool FollowPlayer = true;
+
+    public bool ShouldFollowPlayer = true;
+
+    private bool _followingPlayer = true;
 
     void FixedUpdate()
     {
-        if (FollowPlayer)
+        if (ShouldFollowPlayer)
         {
-            if (IsCollidingWithPlayer)
+            if (_followingPlayer)
             {
-                FreezePosition();                
+                if (IsCollidingWithPlayer)
+                {
+                    FreezePosition();
+                }
+                else
+                {
+                    UnfreezePosition();
+                    MoveVector = GetNormalizedVectorTowardsTarget(PlayerObjectTransform);
+                    Move(MoveVector);
+                }
             }
             else
             {
-                UnfreezePosition();
-                MoveVector = GetNormalizedVectorTowardsTarget(PlayerObjectTransform);
-                Move(MoveVector);
+                TryStartFollowingPlayer();
             }
-        }
-        else
-        {
-            TryStartFollowingPlayer();
         }
     }
 
@@ -48,17 +53,17 @@ public class EnemyMovementScript : EntityMovementScript
 
     protected void DoNotFollowIfTheresNoPlayer()
     {
-        if (FollowPlayer && GetPlayerObject() == null)
+        if (_followingPlayer && GetPlayerObject() == null)
         {
-            FollowPlayer = false;
+            _followingPlayer = false;
         }
     }
 
     private void TryStartFollowingPlayer()
     {
-        if (!FollowPlayer && GetPlayerObject() != null)
+        if (!_followingPlayer && GetPlayerObject() != null)
         {
-            FollowPlayer = true;
+            _followingPlayer = true;
         }
     }
 

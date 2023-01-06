@@ -6244,7 +6244,7 @@ Transform:
   m_GameObject: {fileID: 1096126398}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0.7711545, y: 0.11461797, z: -0.0023157736}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: -1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 566322988}
@@ -6363,7 +6363,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   EntityAnimator: {fileID: 0}
   MovementSpeedMultiplier: 0.3
-  FollowPlayer: 1
+  ShouldFollowPlayer: 0
 --- !u!1 &1116919240
 GameObject:
   m_ObjectHideFlags: 0
@@ -8762,7 +8762,7 @@ Transform:
   m_GameObject: {fileID: 1518848649}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -0.05962098, y: -0.47513008, z: -0.0023157736}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: -1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 566322988}
@@ -8881,7 +8881,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   EntityAnimator: {fileID: 0}
   MovementSpeedMultiplier: 0.3
-  FollowPlayer: 1
+  ShouldFollowPlayer: 1
 --- !u!1 &1532792062
 GameObject:
   m_ObjectHideFlags: 0
@@ -10742,7 +10742,7 @@ Transform:
   m_GameObject: {fileID: 1886011220}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0.834, y: -0.661, z: -0.0023157736}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: -1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 566322988}
@@ -10861,7 +10861,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   EntityAnimator: {fileID: 0}
   MovementSpeedMultiplier: 0.8
-  FollowPlayer: 1
+  ShouldFollowPlayer: 1
 --- !u!95 &1886011227
 Animator:
   serializedVersion: 5
