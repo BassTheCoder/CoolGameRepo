@@ -3095,7 +3095,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   EntityAnimator: {fileID: 570749326}
-  MovementSpeedMultiplier: 0.5
+  MovementSpeedMultiplier: 0.8
 --- !u!50 &570749328
 Rigidbody2D:
   serializedVersion: 4
@@ -8979,8 +8979,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 58818df5ee95dea42b7847d11a3a5096, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MoveWithCursorExtension: 1
-  CameraMovementDeadzone: 0.15
+  MoveWithCursorExtension: 0
+  CameraMovementDeadzone: 0.1
 --- !u!1 &1559345447
 GameObject:
   m_ObjectHideFlags: 0
@@ -10782,7 +10782,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.004840106, y: 0.039670855}
+  m_Offset: {x: 0.005264312, y: 0.039670855}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -11040,6 +11040,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 10850c59904f31b45b46616f246fa08d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  EntityAnimator: {fileID: 0}
 --- !u!1 &1978758938
 GameObject:
   m_ObjectHideFlags: 0
