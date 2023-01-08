@@ -7,15 +7,6 @@ public class CombatBase : MonoBehaviour
 
     private bool _isEntityAlive = true;
 
-    private void Update()
-    {
-        CheckDeath();
-        if (!_isEntityAlive)
-        {
-            Die();
-        }
-    }
-
     protected bool RollForCrit()
     {
         var random = new System.Random();
@@ -39,7 +30,19 @@ public class CombatBase : MonoBehaviour
 
     protected void GetHitFor(int damage)
     {
-        Stats.CurrentHP -= damage;
+        var finalDamage = CalculateDamage(damage);
+        Stats.CurrentHP -= finalDamage;
+    }
+
+    private int CalculateDamage(int damage)
+    {
+        var damageRegardingDefense = damage * GetDefenseAsDamageMultiplier();
+        var finalDamage = Mathf.FloorToInt(damageRegardingDefense);
+        if (finalDamage < 1)
+        {
+            finalDamage = 1;
+        }
+        return finalDamage;
     }
 
     protected void UpdateMaxHpFor(int amount)
@@ -57,6 +60,25 @@ public class CombatBase : MonoBehaviour
         Stats.Defense += amount;
     }
 
+    protected int GetCurrentHp()
+    {
+        return Stats.CurrentHP;
+    }
+
+    protected int GetCurrentHpPercent()
+    {
+        var maxHp = (float)Stats.MaxHP;
+        var currentHp = (float)Stats.CurrentHP;
+
+        return Mathf.FloorToInt((currentHp / maxHp) * 100);
+    }
+
+    protected bool IsAlive()
+    {
+        CheckDeath();
+        return _isEntityAlive;
+    }
+
     protected void CheckDeath()
     {
         if (Stats.CurrentHP <= 0) 
@@ -68,5 +90,10 @@ public class CombatBase : MonoBehaviour
     protected void Die()
     {
         Destroy(gameObject);
+    }
+
+    private float GetDefenseAsDamageMultiplier()
+    {
+        return 1 - (float)Stats.Defense / 100;
     }
 }

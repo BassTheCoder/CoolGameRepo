@@ -11,14 +11,25 @@ public class ShowHP : MonoBehaviour
     {
         _character = gameObject.transform.parent.parent.gameObject;
         _characterStats = _character.GetComponent<Stats>();
+        GetHpValues();
+        if (_hpPercent == 1)
+        {
+            gameObject.SetActive(false);
+        }
     }
 
     // Update is called once per frame
     void Update()
     {
+        GetHpValues();
+        gameObject.transform.localScale = new Vector3(_hpPercent, 1, 1);
+    }
+
+    private void GetHpValues()
+    {
+
         GetHp();
         GetHpPercent();
-        gameObject.transform.localScale = new Vector3(_hpPercent, 1, 1);
     }
 
     private void GetHp()

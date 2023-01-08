@@ -46,7 +46,6 @@ public class EntityMovementScript : MonoBehaviour
         {
             transform.localScale = new Vector3(-1, 1, 1);
         }
-
     }
 
     protected Vector3 GetNormalizedVectorTowardsTarget(Transform targetTransform)

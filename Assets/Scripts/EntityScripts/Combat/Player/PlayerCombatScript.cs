@@ -19,6 +19,11 @@ public class PlayerCombatScript : CombatBase
 
     void Update()
     {
+        if (!IsAlive())
+        {
+            Die();
+        }
+
         if (!_isPlayerAttacking && Input.GetKeyDown(Keybinds.Attack))
         {
             Attack();
