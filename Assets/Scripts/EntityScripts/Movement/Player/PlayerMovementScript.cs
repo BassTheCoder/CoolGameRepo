@@ -5,7 +5,6 @@ public class PlayerMovementScript : EntityMovementScript
     private void Start()
     {
         GetPhysicsProperties();
-        MovementSpeedMultiplier = 0.8f;
     }
 
     void FixedUpdate()

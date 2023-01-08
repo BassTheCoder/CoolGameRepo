@@ -881,6 +881,27 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: white_pixel
+      rect:
+        serializedVersion: 2
+        x: 22
+        y: 107
+        width: 1
+        height: 1
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a6e95c333f2146b418496e75ab839449
+      internalID: -966233578
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -940,6 +961,7 @@ TextureImporter:
       environment_stairs: 1021177493
       environment_pillar: 8100592
       environment_well: -822823178
+      white_pixel: -966233578
       potion_health_small: -61848272
       environment_wall_side_right_topCorner: -2009941695
       environment_floorClutter_crack: -980667854

@@ -1,35 +1,31 @@
 using UnityEngine;
 
-public class PlayerAttackScript : MonoBehaviour
+public class PlayerCombatScript : CombatBase
 {
     public Animator EntityAnimator = default;
-    private GameObject _playerAttackArea = default;
+    private GameObject _attackArea;
 
-    private bool _canPlayerAttack = true;
     private bool _isPlayerAttacking = false;
 
     private float _attackTimeWindow = 0.25f;
     private float _attackTimer = 0f;
-    private float _attackWindowDelay = 0.1f;
-
 
     void Start()
     {
-        _playerAttackArea = transform.GetChild(0).gameObject;
-        _playerAttackArea.SetActive(false);
+        GetStats();
+        _attackArea = transform.GetChild(0).gameObject;
+        _attackArea.SetActive(false);
     }
 
     void Update()
     {
-        if (_canPlayerAttack && Input.GetKeyDown(Keybinds.Attack))
+        if (!_isPlayerAttacking && Input.GetKeyDown(Keybinds.Attack))
         {
             Attack();
         }
 
         if (_isPlayerAttacking)
         {
-            OpenAttackWindowAfterDelay(_attackWindowDelay);
-            DisablePlayerAttackAction();
             _attackTimer += Time.deltaTime;
 
             if (_attackTimer >= _attackTimeWindow)
@@ -38,7 +34,6 @@ public class PlayerAttackScript : MonoBehaviour
                 _isPlayerAttacking = false;
                 SetAnimatorAttackingState(_isPlayerAttacking);
                 CloseAttackWindow();
-                EnablePlayerAttackAction();
             }
         }
     }
@@ -46,6 +41,7 @@ public class PlayerAttackScript : MonoBehaviour
     private void Attack()
     {
         _isPlayerAttacking = true;
+        OpenAttackWindow();
         SetAnimatorAttackingState(_isPlayerAttacking);
     }
 
@@ -59,22 +55,18 @@ public class PlayerAttackScript : MonoBehaviour
 
     private void OpenAttackWindow()
     {
-        _playerAttackArea.SetActive(true);
+        if (_isPlayerAttacking && _attackArea != null)
+        {
+            _attackArea.SetActive(true);
+        }
     }
 
     private void CloseAttackWindow()
     {
-        _playerAttackArea.SetActive(false);
-    }
-
-    private void DisablePlayerAttackAction()
-    {
-        _canPlayerAttack = false;
-    }
-
-    private void EnablePlayerAttackAction()
-    {
-        _canPlayerAttack = true;
+        if (_attackArea != null)
+        {
+            _attackArea.SetActive(false);
+        }
     }
 
     private void ResetAttackTimer()

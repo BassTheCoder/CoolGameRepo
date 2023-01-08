@@ -31,6 +31,11 @@ public class EnemyMovementScript : EntityMovementScript
                 TryStartFollowingPlayer();
             }
         }
+        else
+        {
+            FreezePosition();
+        }
+
     }
 
     void OnCollisionEnter2D(Collision2D collision)
