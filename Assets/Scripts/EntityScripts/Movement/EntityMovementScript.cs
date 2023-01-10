@@ -17,6 +17,7 @@ public class EntityMovementScript : MonoBehaviour
     {
         BoxCollider = GetComponent<BoxCollider2D>();
         Rigidbody = GetComponent<Rigidbody2D>();
+        Rigidbody.gravityScale = 0;
     }
 
     protected void GetMoveVector(float x = 0, float y = 0)

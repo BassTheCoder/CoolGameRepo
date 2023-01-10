@@ -6,7 +6,7 @@ public class ShowHP : MonoBehaviour
     private Stats _characterStats;
     private float _hp;
     private float _hpPercent;
-    // Start is called before the first frame update
+    
     void Start()
     {
         _character = gameObject.transform.parent.parent.gameObject;
@@ -18,7 +18,6 @@ public class ShowHP : MonoBehaviour
         }
     }
 
-    // Update is called once per frame
     void Update()
     {
         GetHpValues();

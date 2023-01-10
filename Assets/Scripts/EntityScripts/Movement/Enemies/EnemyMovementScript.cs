@@ -9,6 +9,13 @@ public class EnemyMovementScript : EntityMovementScript
 
     private bool _followingPlayer = true;
 
+    private void Start()
+    {
+        GetPhysicsProperties();
+        GetPlayerObjectTransform();
+        DoNotFollowIfTheresNoPlayer();
+    }
+
     void FixedUpdate()
     {
         if (ShouldFollowPlayer)
