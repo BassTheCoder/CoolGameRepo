@@ -1,42 +1,49 @@
 using System;
-using System.Collections.Generic;
-using Unity.VisualScripting;
 using UnityEngine;
 
 public class EnemySpawner : MonoBehaviour
 {
-    public GameObject Enemy1 = null;
-    public GameObject Enemy2 = null;
-    public GameObject Enemy3 = null;
+    public int AmountOfEnemiesToKill = 9;
+    public int MaxEnemiesOnBoard = 3;
 
-    private List<GameObject> _levelEnemies = default;
+    public GameObject[] LevelEnemies = Array.Empty<GameObject>();
+
     private int _enemiesCount = default;
+    private int _spawnCount = 0;
 
-    private void Start()
-    {
-        _levelEnemies = new List<GameObject>();
-        GetLevelEnemiesList();
-    }
+    private bool _allEnemiesKilled = false;
 
     private void Update()
     {
-        UpdateEnemyCount();
-        if (_enemiesCount == 0 && _levelEnemies.Count > 0)
+        if (LevelEnemies.Length < 1)
         {
-            SpawnEnemy(GetRandomEnemyFromList());
-            SpawnEnemy(GetRandomEnemyFromList());
-            SpawnEnemy(GetRandomEnemyFromList());
+            if (!_allEnemiesKilled)
+            {
+                UpdateEnemyCount();
+                if (_enemiesCount == 0 && LevelEnemies.Length > 0)
+                {
+                    for (int i = 1; i <= MaxEnemiesOnBoard; i++)
+                    {
+                        if (_spawnCount < AmountOfEnemiesToKill)
+                        {
+                            SpawnEnemy(GetRandomEnemyFromList());
+                        }
+                        else
+                        {
+                            _allEnemiesKilled = true;
+                        }
+                    }
+                }
+            }
+            else
+            {
+                Debug.Log($"GZ! You've killed {AmountOfEnemiesToKill} enemies!");
+            }
         }
-    }
-
-    private void GetLevelEnemiesList()
-    {
-        if (Enemy1 != null)
-            _levelEnemies.Add(Enemy1);
-        if (Enemy2 != null)
-            _levelEnemies.Add(Enemy2); 
-        if (Enemy3 != null)
-            _levelEnemies.Add(Enemy3);
+        else
+        {
+            Debug.Log("Add enemies to enemiest list for the level.");
+        }
     }
 
     private void UpdateEnemyCount()
@@ -58,6 +65,8 @@ public class EnemySpawner : MonoBehaviour
         var position = GetRandomSpawnPoint();
 
         Instantiate(enemyGameObject, position, Quaternion.identity, GameObject.Find("Enemies").transform);
+
+        _spawnCount++;
     }
 
     private Vector3 GetRandomSpawnPoint()
@@ -70,12 +79,13 @@ public class EnemySpawner : MonoBehaviour
             new Vector3(1f, 0.5f),
         };
 
-        return possibleSpawnPoints[UnityEngine.Random.Range(0, possibleSpawnPoints.Length)];
+        var randomIndex = UnityEngine.Random.Range(0, possibleSpawnPoints.Length);
+        return possibleSpawnPoints[randomIndex];
     }
 
     private GameObject GetRandomEnemyFromList()
     {
-        var randomIndex = UnityEngine.Random.Range(0,_levelEnemies.Count);
-        return _levelEnemies[randomIndex];
+        var randomIndex = UnityEngine.Random.Range(0,LevelEnemies.Length);
+        return LevelEnemies[randomIndex];
     }
 }
