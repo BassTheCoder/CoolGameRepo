@@ -15,12 +15,12 @@ public class EnemySpawner : MonoBehaviour
 
     private void Update()
     {
-        if (LevelEnemies.Length < 1)
+        if (LevelEnemies.Length > 0)
         {
             if (!_allEnemiesKilled)
             {
                 UpdateEnemyCount();
-                if (_enemiesCount == 0 && LevelEnemies.Length > 0)
+                if (_enemiesCount == 0)
                 {
                     for (int i = 1; i <= MaxEnemiesOnBoard; i++)
                     {
