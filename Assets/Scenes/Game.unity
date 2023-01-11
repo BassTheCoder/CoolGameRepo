@@ -722,9 +722,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e720ab8d82827e84f81bb1066b93091c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Enemy1: {fileID: 5106158128120698154, guid: 67deb78966054e646a868e5ed60a04ee, type: 3}
-  Enemy2: {fileID: 2580045782849826653, guid: 6afec17b256f6ad498df8c0dbab784d6, type: 3}
-  Enemy3: {fileID: 0}
+  AmountOfEnemiesToKill: 9
+  MaxEnemiesOnBoard: 3
+  LevelEnemies:
+  - {fileID: 7937360840160794624, guid: 291657c219c3bd8498916600f757ffc6, type: 3}
+  - {fileID: 8791920912943786326, guid: 1234cbc4272dbb24c8aa8c68672c2825, type: 3}
+  LevelBoss: {fileID: 2580045782849826653, guid: 6afec17b256f6ad498df8c0dbab784d6, type: 3}
 --- !u!1 &135916858
 GameObject:
   m_ObjectHideFlags: 0

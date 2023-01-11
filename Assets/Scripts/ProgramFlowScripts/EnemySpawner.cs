@@ -1,4 +1,5 @@
 using System;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class EnemySpawner : MonoBehaviour
@@ -7,42 +8,47 @@ public class EnemySpawner : MonoBehaviour
     public int MaxEnemiesOnBoard = 3;
 
     public GameObject[] LevelEnemies = Array.Empty<GameObject>();
+    public GameObject LevelBoss = null;
 
     private int _enemiesCount = default;
     private int _spawnCount = 0;
 
     private bool _allEnemiesKilled = false;
+    private bool _bossSpawned = false;
+
+    private void Start()
+    {
+        if (LevelEnemies.Length == 0 || LevelBoss == null)
+        {
+            Debug.Log("Enemies or Boss missing for the level. (add in enemy spawner)");
+        }
+    }
 
     private void Update()
     {
-        if (LevelEnemies.Length > 0)
+        if (LevelEnemies.Length > 0 && LevelBoss != null)
         {
-            if (!_allEnemiesKilled)
+            UpdateEnemyCount();
+            CheckIfAllEnemiesAreKilled();
+
+            if (!IsEverythingKilled())
             {
-                UpdateEnemyCount();
-                if (_enemiesCount == 0)
+                if (!IsEverythingKilledExceptBoss())
                 {
-                    for (int i = 1; i <= MaxEnemiesOnBoard; i++)
+                    if (IsWaveKilled() && ShouldSpawnNextWave())
                     {
-                        if (_spawnCount < AmountOfEnemiesToKill)
-                        {
-                            SpawnEnemy(GetRandomEnemyFromList());
-                        }
-                        else
-                        {
-                            _allEnemiesKilled = true;
-                        }
+                        SpawnWave();
                     }
+                }
+                else
+                {
+                    SpawnBoss();
                 }
             }
             else
             {
-                Debug.Log($"GZ! You've killed {AmountOfEnemiesToKill} enemies!");
+                Debug.Log("Congrats! You finished the level!");
             }
-        }
-        else
-        {
-            Debug.Log("Add enemies to enemiest list for the level.");
         }
     }
 
@@ -56,17 +62,45 @@ public class EnemySpawner : MonoBehaviour
         return GameObject.FindGameObjectsWithTag("Enemy");
     }
 
-    private void SpawnEnemy(GameObject enemyGameObject, Stats stats = null)
+    private void SpawnWave()
     {
-        if (enemyGameObject.TryGetComponent(typeof(Stats), out var objectStats))
+        for (int i = 1; i <= MaxEnemiesOnBoard; i++)
         {
-            objectStats = stats ?? objectStats;
+            if (_spawnCount < AmountOfEnemiesToKill)
+            {
+                SpawnEnemy(GetRandomEnemyFromList());
+            }
+            else
+            {
+                return;
+            }
         }
+    }
+
+    private void SpawnEnemy(GameObject enemyGameObject, Stats stats = null, bool isBoss = false)
+    {
+        if (stats != null)
+        {
+            enemyGameObject.SetStats(stats);
+        }
+
         var position = GetRandomSpawnPoint();
 
         Instantiate(enemyGameObject, position, Quaternion.identity, GameObject.Find("Enemies").transform);
 
-        _spawnCount++;
+        if (!isBoss)
+        {
+            _spawnCount++;
+        }
+        else
+        {
+            _bossSpawned = true;
+        }
+    }
+
+    private void SpawnBoss()
+    {
+        SpawnEnemy(LevelBoss, isBoss: true);
     }
 
     private Vector3 GetRandomSpawnPoint()
@@ -85,7 +119,43 @@ public class EnemySpawner : MonoBehaviour
 
     private GameObject GetRandomEnemyFromList()
     {
-        var randomIndex = UnityEngine.Random.Range(0,LevelEnemies.Length);
+        var randomIndex = UnityEngine.Random.Range(0, LevelEnemies.Length);
         return LevelEnemies[randomIndex];
+    }
+
+    private void CheckIfAllEnemiesAreKilled()
+    {
+        if (_spawnCount >= AmountOfEnemiesToKill)
+        {
+            _allEnemiesKilled = true;
+        }
+    }
+
+    private bool IsWaveKilled()
+    {
+        return _enemiesCount == 0;
+    }
+
+    private bool ShouldSpawnNextWave()
+    {
+        return 
+            _enemiesCount == 0 && 
+            !_allEnemiesKilled;
+    }
+
+    private bool IsEverythingKilledExceptBoss()
+    {
+        return
+            _enemiesCount == 0 &&
+            _allEnemiesKilled &&
+            !_bossSpawned;
+    }
+
+    private bool IsEverythingKilled()
+    {
+        return
+            _enemiesCount == 0 &&
+            _allEnemiesKilled &&
+            _bossSpawned;
     }
 }

@@ -96,4 +96,17 @@ public class CombatBase : MonoBehaviour
     {
         return 1 - (float)Stats.Defense / 100;
     }
+
+    protected void SetStats(int maxHp, int attackPower, int defense, int critChancePercent)
+    {
+        Stats.MaxHP = maxHp;
+        Stats.AttackPower = attackPower;
+        Stats.Defense = defense;
+        Stats.CritChancePercent = critChancePercent;
+    }
+
+    public void SetStats(Stats stats)
+    {
+        Stats = stats;
+    }
 }
