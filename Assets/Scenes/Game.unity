@@ -663,6 +663,7 @@ GameObject:
   - component: {fileID: 133876377}
   - component: {fileID: 133876379}
   - component: {fileID: 133876380}
+  - component: {fileID: 133876381}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: GameController
@@ -728,6 +729,19 @@ MonoBehaviour:
   - {fileID: 7937360840160794624, guid: 291657c219c3bd8498916600f757ffc6, type: 3}
   - {fileID: 8791920912943786326, guid: 1234cbc4272dbb24c8aa8c68672c2825, type: 3}
   LevelBoss: {fileID: 2580045782849826653, guid: 6afec17b256f6ad498df8c0dbab784d6, type: 3}
+--- !u!114 &133876381
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 133876376}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6eb5da9e55818314eb400ecaf73fa8cd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  IsLevelFinished: 0
 --- !u!1 &135916858
 GameObject:
   m_ObjectHideFlags: 0

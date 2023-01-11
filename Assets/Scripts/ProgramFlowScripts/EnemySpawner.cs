@@ -2,6 +2,7 @@ using System;
 using Unity.VisualScripting;
 using UnityEngine;
 
+[RequireComponent(typeof(WinCondition))]
 public class EnemySpawner : MonoBehaviour
 {
     public int AmountOfEnemiesToKill = 9;
@@ -48,6 +49,7 @@ public class EnemySpawner : MonoBehaviour
             else
             {
                 Debug.Log("Congrats! You finished the level!");
+                gameObject.GetComponent<WinCondition>().IsLevelFinished = true;
             }
         }
     }

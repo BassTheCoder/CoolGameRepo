@@ -9,5 +9,11 @@ public class GotoMenuScript : MonoBehaviour
         {
             SceneSwapperScript.LoadMenuScene();
         }
+
+        var winCondition = gameObject.GetComponent<WinCondition>()?.IsLevelFinished;
+        if (winCondition != null && winCondition == true) 
+        {
+            SceneSwapperScript.LoadMenuScene();
+        }
     }
 }

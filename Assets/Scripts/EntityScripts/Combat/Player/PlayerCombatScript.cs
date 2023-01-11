@@ -24,7 +24,7 @@ public class PlayerCombatScript : CombatBase
             Die();
         }
 
-        if (!_isPlayerAttacking && Input.GetKeyDown(Keybinds.Attack))
+        if (!_isPlayerAttacking && Input.GetKeyDown(Keybinds.AttackMeele))
         {
             Attack();
         }
