@@ -154,7 +154,7 @@ SpriteRenderer:
   m_SortingLayerID: 580791791
   m_SortingLayer: 4
   m_SortingOrder: 100
-  m_Sprite: {fileID: -64935029, guid: 04c527eb66edc8249ba5d659061fa091, type: 3}
+  m_Sprite: {fileID: 1175353788, guid: 480caa5fb576fef43805321d6f4e3513, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -178,18 +178,18 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.024723172, y: -0.024793744}
+  m_Offset: {x: 0.0049602687, y: -0.015132502}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.18, y: 0.2}
+    oldSize: {x: 0.16, y: 0.2}
     newSize: {x: 0.1, y: 0.16}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.049467325, y: 0.13057768}
+  m_Size: {x: 0.0502674, y: 0.13023111}
   m_EdgeRadius: 0
 --- !u!50 &6851744093692570323
 Rigidbody2D:
@@ -271,6 +271,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9de9c84d9d253a04282a4833fc3d1c9f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  OverrideDefaultStats: 1
   MaxHP: 100
   CurrentHP: 100
   AttackPower: 10
