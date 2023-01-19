@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 7edd25230e46553439ad0e00e602d91a
+guid: 04be6315622b4f742a8dffc85227ed86
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -105,211 +105,148 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: zombie idle_0
+      name: red attack improved_1
       rect:
         serializedVersion: 2
         x: 0
-        y: 0
-        width: 16
-        height: 16
+        y: 30
+        width: 19
+        height: 20
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2ed395e71b1a33f439fa279f0e3675ef
-      internalID: 363575884
+      spriteID: 8a805073d31d77a4ead3d7448ec51c8b
+      internalID: -1680764677
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: zombie idle_1
+      name: red attack improved_2
       rect:
         serializedVersion: 2
-        x: 16
-        y: 0
-        width: 16
-        height: 16
+        x: 20
+        y: 3
+        width: 19
+        height: 20
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 49f292341a9cf5e47a50f4445af9fa42
-      internalID: -1923938901
+      spriteID: b83b6a4603ac50646a87b17bf7b90663
+      internalID: -1882029970
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: zombie idle_2
+      name: red attack improved_3
       rect:
         serializedVersion: 2
-        x: 32
-        y: 0
-        width: 16
-        height: 16
+        x: 40
+        y: 30
+        width: 19
+        height: 20
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1dd936238982bb343aed71c001a5bb37
-      internalID: 373928298
+      spriteID: 47c630c605a4a7f4d8b67ba697c959d9
+      internalID: 1803067756
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: zombie idle_3
+      name: red attack improved_4
       rect:
         serializedVersion: 2
-        x: 48
-        y: 0
-        width: 16
-        height: 16
+        x: 57
+        y: 3
+        width: 28
+        height: 20
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d9eb55aff73253346a1a8d8bb223477e
-      internalID: 1241795555
+      spriteID: afe9a43c7d62d6645a335bf4322d7f11
+      internalID: 1920643095
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: zombie idle_4
+      name: red attack improved_5
       rect:
         serializedVersion: 2
-        x: 64
-        y: 0
-        width: 16
-        height: 16
+        x: 76
+        y: 30
+        width: 29
+        height: 20
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 358241e786091dd47ac4281392ba91ad
-      internalID: 1257490381
+      spriteID: 96c8479b1aaeef84fbe4c730817ac3da
+      internalID: 1116525831
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: zombie idle_5
+      name: red attack improved_6
       rect:
         serializedVersion: 2
-        x: 80
-        y: 0
-        width: 16
-        height: 16
+        x: 97
+        y: 3
+        width: 26
+        height: 20
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a8ae2208eb5a4d24688b9b2d64b14249
-      internalID: 453802180
+      spriteID: 361b0d77ed4123640928f3c04bac821c
+      internalID: -1893326939
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: zombie idle_6
+      name: red attack improved_7
       rect:
         serializedVersion: 2
-        x: 96
-        y: 0
-        width: 16
-        height: 16
+        x: 121
+        y: 30
+        width: 19
+        height: 20
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 92d7d1cbceba9ad43bef4f38c68c8386
-      internalID: -44689806
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: zombie idle_7
-      rect:
-        serializedVersion: 2
-        x: 112
-        y: 0
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 994e69c86d002a6439b75e35fa953e80
-      internalID: -2098170949
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: zombie idle_8
-      rect:
-        serializedVersion: 2
-        x: 128
-        y: 0
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: f3d2953776602be41a7621c0385d5300
-      internalID: 273511970
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: zombie idle_9
-      rect:
-        serializedVersion: 2
-        x: 144
-        y: 0
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 8eb0472e814eacb49b6eaf643be0b87c
-      internalID: -846262490
+      spriteID: 313b64a404d8f444481f9a777e354312
+      internalID: -1712104493
       vertices: []
       indices: 
       edges: []
@@ -325,16 +262,13 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      zombie idle_0: 363575884
-      zombie idle_4: 1257490381
-      zombie idle_7: -2098170949
-      zombie idle_1: -1923938901
-      zombie idle_3: 1241795555
-      zombie idle_5: 453802180
-      zombie idle_9: -846262490
-      zombie idle_2: 373928298
-      zombie idle_6: -44689806
-      zombie idle_8: 273511970
+      red attack improved_6: -1893326939
+      red attack improved_4: 1920643095
+      red attack improved_7: 1862963101
+      red attack improved_1: -1680764677
+      red attack improved_2: -1882029970
+      red attack improved_3: 1803067756
+      red attack improved_5: 1116525831
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
