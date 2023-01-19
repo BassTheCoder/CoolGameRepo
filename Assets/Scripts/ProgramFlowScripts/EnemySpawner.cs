@@ -1,11 +1,11 @@
 using System;
-using Unity.VisualScripting;
 using UnityEngine;
 
-[RequireComponent(typeof(WinCondition))]
+[RequireComponent(typeof(BoxCollider2D))]
 public class EnemySpawner : MonoBehaviour
 {
     public bool ShouldSpawn = true;
+    public bool StopSpawningIfExitedArea = false;
 
     public Vector3[] PossibleSpawnPoints = null;
     public int AmountOfEnemiesToKill = 9;
@@ -39,7 +39,7 @@ public class EnemySpawner : MonoBehaviour
 
     private void OnTriggerExit2D(Collider2D collision)
     {
-        if (collision.CompareTag("Player"))
+        if (!StopSpawningIfExitedArea && collision.CompareTag("Player"))
         {
             _isPlayerInTriggerBox = false;
         }
@@ -71,7 +71,7 @@ public class EnemySpawner : MonoBehaviour
                 else
                 {
                     Debug.Log("Congrats! You finished the level!");
-                    transform.parent.gameObject.GetComponent<WinCondition>().IsLevelFinished = true;
+                    transform.parent.transform.parent.gameObject.GetComponent<WinCondition>().IsLevelFinished = true;
                 }
             }
         }
