@@ -5,6 +5,8 @@ using UnityEngine;
 [RequireComponent(typeof(WinCondition))]
 public class EnemySpawner : MonoBehaviour
 {
+    public bool ShouldSpawn = true;
+
     public int AmountOfEnemiesToKill = 9;
     public int MaxEnemiesOnBoard = 3;
 
@@ -27,29 +29,32 @@ public class EnemySpawner : MonoBehaviour
 
     private void Update()
     {
-        if (LevelEnemies.Length > 0 && LevelBoss != null)
+        if (ShouldSpawn)
         {
-            UpdateEnemyCount();
-            CheckIfAllEnemiesAreKilled();
-
-            if (!IsEverythingKilled())
+            if (LevelEnemies.Length > 0 && LevelBoss != null)
             {
-                if (!IsEverythingKilledExceptBoss())
+                UpdateEnemyCount();
+                CheckIfAllEnemiesAreKilled();
+
+                if (!IsEverythingKilled())
                 {
-                    if (IsWaveKilled() && ShouldSpawnNextWave())
+                    if (!IsEverythingKilledExceptBoss())
                     {
-                        SpawnWave();
+                        if (IsWaveKilled() && ShouldSpawnNextWave())
+                        {
+                            SpawnWave();
+                        }
+                    }
+                    else
+                    {
+                        SpawnBoss();
                     }
                 }
                 else
                 {
-                    SpawnBoss();
+                    Debug.Log("Congrats! You finished the level!");
+                    gameObject.GetComponent<WinCondition>().IsLevelFinished = true;
                 }
-            }
-            else
-            {
-                Debug.Log("Congrats! You finished the level!");
-                gameObject.GetComponent<WinCondition>().IsLevelFinished = true;
             }
         }
     }

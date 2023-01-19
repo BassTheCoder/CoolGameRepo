@@ -109,11 +109,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 104
+        y: 184
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -130,11 +130,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 16
-        y: 104
+        y: 184
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -151,11 +151,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 32
-        y: 104
+        y: 184
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -172,11 +172,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 48
-        y: 104
+        y: 184
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -193,11 +193,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 64
-        y: 104
+        y: 184
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -214,11 +214,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 80
-        y: 104
+        y: 184
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -235,11 +235,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 96
-        y: 104
+        y: 184
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -256,11 +256,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 112
-        y: 104
+        y: 184
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -277,11 +277,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 128
-        y: 104
+        y: 184
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -298,11 +298,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 144
-        y: 104
+        y: 184
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -319,11 +319,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 160
-        y: 104
+        y: 184
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -340,11 +340,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 176
-        y: 104
+        y: 184
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -361,11 +361,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 88
+        y: 168
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -382,11 +382,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 16
-        y: 88
+        y: 168
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -403,11 +403,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 32
-        y: 88
+        y: 168
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -424,11 +424,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 48
-        y: 88
+        y: 168
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -445,11 +445,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 64
-        y: 88
+        y: 168
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -466,11 +466,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 80
-        y: 88
+        y: 168
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -487,11 +487,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 96
-        y: 88
+        y: 168
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -508,11 +508,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 48
-        y: 72
+        y: 152
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -529,11 +529,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 64
-        y: 72
+        y: 152
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -550,11 +550,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 80
-        y: 72
+        y: 152
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -570,12 +570,12 @@ TextureImporter:
       name: floor_clean
       rect:
         serializedVersion: 2
-        x: 96
-        y: 72
+        x: 16
+        y: 152
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -592,11 +592,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 55
+        y: 136
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -613,11 +613,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 16
-        y: 55
+        y: 136
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -634,11 +634,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 32
-        y: 55
+        y: 136
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -655,11 +655,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 48
-        y: 56
+        y: 136
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -676,11 +676,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 64
-        y: 56
+        y: 136
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -697,11 +697,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 80
-        y: 56
+        y: 136
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -718,11 +718,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 48
-        y: 40
+        y: 120
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -739,11 +739,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 64
-        y: 40
+        y: 120
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -760,11 +760,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 80
-        y: 40
+        y: 120
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -777,15 +777,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: dungeon tileset wip_40
+      name: stairs_north_top_left
       rect:
         serializedVersion: 2
-        x: 0
-        y: 24
+        x: 96
+        y: 152
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -798,15 +798,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: dungeon tileset wip_41
+      name: stairs_north_top_middle
       rect:
         serializedVersion: 2
-        x: 16
-        y: 24
+        x: 112
+        y: 152
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -819,15 +819,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: dungeon tileset wip_42
+      name: stairs_north_top_right
       rect:
         serializedVersion: 2
-        x: 32
-        y: 24
+        x: 128
+        y: 152
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -844,11 +844,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 48
-        y: 24
+        y: 104
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -865,11 +865,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 64
-        y: 24
+        y: 104
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -886,11 +886,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 80
-        y: 24
+        y: 104
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -903,15 +903,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: dungeon tileset wip_46
+      name: stairs_north_bottom_left
       rect:
         serializedVersion: 2
-        x: 0
-        y: 8
+        x: 96
+        y: 136
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -924,15 +924,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: dungeon tileset wip_47
+      name: stairs_north_bottom_middle
       rect:
         serializedVersion: 2
-        x: 16
-        y: 8
+        x: 112
+        y: 136
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -945,11 +945,830 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: dungeon tileset wip_48
+      name: stairs_north_bottom_right
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 136
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 235fc84cfe446fd44b9c39b7b8d0f71e
+      internalID: -541723110
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wall_left_extension
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 152
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f6d750d1046db3a4c851d70400d06d45
+      internalID: 1852382991
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wall_right_extension
       rect:
         serializedVersion: 2
         x: 32
-        y: 8
+        y: 152
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7933d18259165274eb65988e6cd9de7f
+      internalID: 892774654
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wall_bottom_corner_left_edge
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 104
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d1afd55ad234c2b4e8142fef986b119d
+      internalID: -1022016437
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wall_bottom_edge
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 104
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5076d3b4a2167e648a93e8e3ae5aa202
+      internalID: -548859023
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wall_bottom_corner_right_edge
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 104
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5fa6e1ab792efb848a865e87a909958b
+      internalID: -413555628
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wall_bottom_corner_right_inverted
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 24
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4000e8a77abd87f43814956fef3832ee
+      internalID: 1937305370
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wall_bottom_corner_left_inverted
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 24
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9791132afd6aabe4c8153a30db24a9db
+      internalID: 1482988059
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wall_top_corner_left_inverted
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 88
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 90a703b59f05c0a46b26aed60c557f99
+      internalID: 1818851810
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wall_top_corner_right_inverted
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 88
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d94fc1209158f8f479289fdc2fde9424
+      internalID: 166111609
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wall_left_bottom_corner_inverted
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 40
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd1095e72b08c454e8a0ee9cb513aed9
+      internalID: -1776197568
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wall_right_bottom_corner_inverted
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 40
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b935ba20e79982d49824f96318848507
+      internalID: -2049075755
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wall_left_extension_inverted_withwall_ending
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 56
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 25ee85b6e34151849ab0a12e99774020
+      internalID: 1870131408
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wall_right_extension_inverted_withwall_ending
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 56
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 264f0b492f25f414d8173c97fea433a3
+      internalID: 283261390
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wall_right_extension_inverted_withwall
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 72
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 03ec7351d2082fd41939ac1ca6c8bd42
+      internalID: -1354864670
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wall_left_extension_inverted_withwall
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 72
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 41c373bc6f9d22547985e50176259d2b
+      internalID: -837039650
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wall_bottom_extension
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 120
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 61732de6f286a0b4098616f8befd9b3b
+      internalID: -739613982
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wall_bottom_right_extension
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 120
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3862d4e183b6977449c35cf4c1ddc6ab
+      internalID: -1870093753
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wall_bottom_left_extension
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 120
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4bf89c611b23aa545b3944a7cf267968
+      internalID: -263952216
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wall_bottom_corner_left_withwall_ending
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 88
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 156ee46aef40c2748badef47fdc9d961
+      internalID: 1941853036
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wall_bottom_corner_right_withwall_ending
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 88
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca471647f9cd5ea43a2a5efafe0b4fae
+      internalID: 1914301307
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stairs_south_bottom_left
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 152
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd626ea4ab75c114eb912ef7f807763c
+      internalID: 341463114
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stairs_south_bottom_middle
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 152
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b7a75d56a7c821e44ac14b4f41653fcf
+      internalID: -1423380363
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stairs_south_bottom_right
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 152
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c203cb8df510ac46b35baa950f85623
+      internalID: 1250739938
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stairs_south_top_left
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 136
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e4485159089c0774f9e69257007bdc63
+      internalID: 178441325
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stairs_south_top_middle
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 136
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d58f6e3e74b4f51498e3c6393f8a8ce0
+      internalID: -294912432
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stairs_south_top_right
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 136
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a82527eb217c5764e8d68a6c63da7b75
+      internalID: 2003598064
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stairs_east_bottom_left
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 120
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e5606947ef0082458f9bb3d8958fa9f
+      internalID: 1244727656
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stairs_east_top_left
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 120
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e8d527327d6c9344aaee724eb0e1a61f
+      internalID: 453597456
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stairs_east_bottom_middle
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 104
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f1ba2b4287d15e419ede55cc8150253
+      internalID: 1932283347
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stairs_east_top_middle
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 104
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 017d9c1e398e168479c70fe606514ecd
+      internalID: -1071719728
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stairs_west_top_right
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 120
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ef70a26311ece54f8f346422a79cd5d
+      internalID: 1068524077
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stairs_west_top_middle
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 104
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d4db506ce8021e4ca8b018cc446f8aa
+      internalID: 1518268066
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stairs_east_bottom_right
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 88
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf75493094737a34a80bc3a7fbc17cf8
+      internalID: 881015899
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stairs_east_top_right
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 88
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0fe2fe26abb5a7345b73b3b1ddffc14f
+      internalID: 1444032534
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stairs_west_top_left
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 88
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 00890eadb3c4866488b6c64366cc29ad
+      internalID: -972976275
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stairs_west_bottom_right
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 120
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0fb8bf18550c61d45b5ba9bc756589e2
+      internalID: -543880365
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stairs_west_bottom_middle
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 104
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 80ba6a7e027283349877054c9c5b9794
+      internalID: 394877668
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stairs_west_bottom_left
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 88
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 216c2ffa0fae5834fbdbca75f0cd830b
+      internalID: -1970788986
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pixel_black
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 168
         width: 16
         height: 16
       alignment: 0
@@ -959,8 +1778,92 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 235fc84cfe446fd44b9c39b7b8d0f71e
-      internalID: -541723110
+      spriteID: bf179cc4b50f2d54a8a03c6b28f854a1
+      internalID: -1893836924
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pixel_white
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 168
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7610d9e275491f5488adab9591a14ed3
+      internalID: 753327357
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pixel_gray_dark
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 168
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 59cf45ae4a45b9b41b8d4c718631fb51
+      internalID: 533830760
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pixel_gray
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 168
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d776769239fa4a459b848fb48ac5e0b
+      internalID: 1529265647
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pixel_gray_light
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 168
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 315bb00c43f38e74c9a094cad8369a1f
+      internalID: 1276213042
       vertices: []
       indices: 
       edges: []
@@ -976,58 +1879,101 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      dungeon tileset wip_40: -2138412607
-      dungeon tileset wip_20: -94894389
+      stairs_south_bottom_middle: 178441325
       dungeon tileset wip_39: 1148373601
-      dungeon tileset wip_49: 1981541262
+      wall_top_corner_left_inverted: 1818851810
       wall_left: 2035381147
-      dungeon tileset wip_51: -879601500
-      floor_tile_6: 814309442
-      dungeon tileset wip_46: -45910825
-      floor_bigtile_2: 1412633711
+      wall_bottom_corner_right_inverted: 1937305370
       torch_0: 1856145496
+      stairs_west_top_left: -972976275
+      stairs_south_top_right: 2003598064
+      stairs_west_top_middle: 1518268066
       wall_top: -753474543
-      floor_tile_0: 235698177
-      floor_tile_7: -608018402
-      floor_bigtile_0: -1524278001
-      torch_2: -1274184417
-      floor_tile_3: 1764998887
+      stairs_north_top_right: 750202712
+      stairs_west_top_right: 1068524077
+      stairs_west_bottom_right: -543880365
       wall_bottom: 877555230
-      dungeon tileset wip_47: 1693153567
+      stairs_north_top_left: -2138412607
       dungeon tileset wip_34: -1377081026
       floor_clean: 1344990438
+      wall_left_extension_inverted_withwall_ending: 1870131408
       dungeon tileset wip_19: 799804992
       floor_tile_5: 162966080
       dungeon tileset wip_50: 1976995106
       wall_right: 586666504
-      torch_4: -872421551
+      stairs_west_bottom_middle: 394877668
+      wall_bottom_corner_right_withwall_ending: 341463114
+      floor_bigtile_3: -558945455
+      wall_bottom_corner_left: 488745548
+      wall_top_corner_right_inverted: 166111609
+      stairs_south_bottom_right: 178441325
+      floor_tile_2: -1886819911
+      floor_pebbles_2: 840701020
+      floor_bigtile_4: 1016162995
+      stairs_east_bottom_left: 1244727656
+      floor_bigtile_7: 178624920
+      wall_bottom_corner_left_edge: -604364714
+      pixel_gray: 1529265647
+      wall_right_extension_inverted_withwall_ending: -1870093753
+      dungeon tileset wip_32: 1693153567
+      pixel_gray_dark: 533830760
+      wall_front: -263952216
+      wall_bottom_left_extension: -1475996252
+      wall_bottom_corner_left_inverted: -1536142855
+      floor_pebbles_0: 1710415976
+      pixel_white: 753327357
+      wall_top_corner_left: 1852382991
+      pixel_black: -1893836924
+      dungeon tileset wip_20: -94894389
+      dungeon tileset wip_49: 1981541262
+      floor_tile_6: 814309442
+      dungeon tileset wip_51: -879601500
+      wall_left_extension_inverted_withwall: -837039650
+      floor_bigtile_2: 1412633711
+      stairs_north_bottom_left: -45910825
+      stairs_north_bottom_middle: 1693153567
+      floor_tile_0: 235698177
+      floor_tile_7: -608018402
+      torch_2: -1274184417
+      wall_left_bottom_corner_inverted: -1776197568
+      wall_bottom_corner_right_edge: -413555628
+      floor_bigtile_0: -1524278001
+      floor_tile_3: 1764998887
+      wall_bottom_edge: -548859023
+      wall_right_bottom_corner_inverted: -2049075755
+      wall_bottom_corner_left_withwall_ending: 1914301307
+      stairs_east_top_right: 1444032534
+      stairs_north_top_middle: 1662495058
       torch_3: -601651185
+      torch_4: -872421551
+      wall_right_extension_inverted_withwall: -1354864670
+      stairs_west_bottom_left: -1970788986
       floor_tile_4: -1224296626
       floor_pebbles_1: -650339321
       torch_1: 70309623
-      floor_bigtile_3: -558945455
-      wall_bottom_corner_left: 488745548
-      dungeon tileset wip_42: 750202712
-      floor_tile_2: -1886819911
-      floor_pebbles_2: 840701020
+      pixel_gray_light: 1276213042
+      wall_right_extension: 892774654
+      wall_bottom_extension: -739613982
+      stairs_east_bottom_middle: 1932283347
       floor_bigtile_6: 1415561949
+      stairs_east_top_middle: -1071719728
       dungeon tileset wip_35: -1540517115
-      floor_bigtile_4: 1016162995
-      floor_bigtile_7: 178624920
-      dungeon tileset wip_41: 1662495058
-      dungeon tileset wip_48: -541723110
-      floor_tile_1: -604364714
-      floor_bigtile_5: -187573798
-      floor_bigtile_8: -1121427874
-      floor_bigtile_1: -2094419593
-      dungeon tileset wip_32: -1913770904
-      dungeon tileset wip_33: -42044124
-      wall_front: -1161244643
-      wall_top_corner_right: -1475996252
-      dungeon tileset wip_21: -1536142855
-      floor_pebbles_0: -650339321
-      wall_top_corner_left: 1710415976
-      wall_bottom_corner_right: -1248001218
+      stairs_south_bottom_left: 178441325
+      floor_tile_1: -187573798
+      floor_bigtile_5: -1121427874
+      floor_bigtile_8: -2094419593
+      stairs_east_bottom_right: 881015899
+      floor_bigtile_1: 283261390
+      wall_bottom_right_extension: -1913770904
+      stairs_north_bottom_right: -541723110
+      stairs_south_top_left: 178441325
+      dungeon tileset wip_33: -1161244643
+      wall_top_corner_right: 1482988059
+      dungeon tileset wip_21: -45910825
+      stairs_east_top_left: 453597456
+      wall_left_extension: -1248001218
+      stairs_south_top_middle: -294912432
+      wall_bottom_corner_right: 1941853036
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
