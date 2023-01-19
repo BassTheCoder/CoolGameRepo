@@ -7,6 +7,7 @@ public class EnemySpawner : MonoBehaviour
 {
     public bool ShouldSpawn = true;
 
+    public Vector3[] PossibleSpawnPoints = null;
     public int AmountOfEnemiesToKill = 9;
     public int MaxEnemiesOnBoard = 3;
 
@@ -18,6 +19,7 @@ public class EnemySpawner : MonoBehaviour
 
     private bool _allEnemiesKilled = false;
     private bool _bossSpawned = false;
+    private bool _isPlayerInTriggerBox = false;
 
     private void Start()
     {
@@ -27,9 +29,25 @@ public class EnemySpawner : MonoBehaviour
         }
     }
 
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.CompareTag("Player"))
+        {
+            _isPlayerInTriggerBox = true;
+        } 
+    }
+
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        if (collision.CompareTag("Player"))
+        {
+            _isPlayerInTriggerBox = false;
+        }
+    }
+
     private void Update()
     {
-        if (ShouldSpawn)
+        if (ShouldSpawn && _isPlayerInTriggerBox)
         {
             if (LevelEnemies.Length > 0 && LevelBoss != null)
             {
@@ -53,7 +71,7 @@ public class EnemySpawner : MonoBehaviour
                 else
                 {
                     Debug.Log("Congrats! You finished the level!");
-                    gameObject.GetComponent<WinCondition>().IsLevelFinished = true;
+                    transform.parent.gameObject.GetComponent<WinCondition>().IsLevelFinished = true;
                 }
             }
         }
@@ -112,16 +130,8 @@ public class EnemySpawner : MonoBehaviour
 
     private Vector3 GetRandomSpawnPoint()
     {
-        Vector3[] possibleSpawnPoints = new Vector3[]
-        {
-            new Vector3(-1.2f, -0.8f),
-            new Vector3(-1.2f, 0.5f),
-            new Vector3(1f, -0.8f),
-            new Vector3(1f, 0.5f),
-        };
-
-        var randomIndex = UnityEngine.Random.Range(0, possibleSpawnPoints.Length);
-        return possibleSpawnPoints[randomIndex];
+        var randomIndex = UnityEngine.Random.Range(0, PossibleSpawnPoints.Length);
+        return PossibleSpawnPoints[randomIndex];
     }
 
     private GameObject GetRandomEnemyFromList()

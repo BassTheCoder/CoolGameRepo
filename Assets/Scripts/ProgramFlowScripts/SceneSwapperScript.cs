@@ -7,6 +7,11 @@ public static class SceneSwapperScript
         SceneManager.LoadScene("Game");
     }
 
+    public static void LoadLevel1Scene()
+    {
+        SceneManager.LoadScene("Level 1");
+    }
+
     public static void LoadMenuScene()
     {
         SceneManager.LoadScene("Menu");
