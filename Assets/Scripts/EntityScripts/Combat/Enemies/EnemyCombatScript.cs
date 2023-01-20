@@ -9,9 +9,6 @@ public class EnemyCombatScript : CombatBase
     private bool _isCollidingWithPlayer = false;
     private float _nextAttackTime = 0;
 
-    private bool _isAttacking = false;
-    private float _attackWindowTimer = 0f;
-
     void Start()
     {
         GetStats();
@@ -20,28 +17,22 @@ public class EnemyCombatScript : CombatBase
 
     void FixedUpdate()
     {
-        if (!IsAlive())
-        {
-            Die();
-        }
-
         var currentHpPercent = GetCurrentHpPercent();
         if (currentHpPercent < 100 && !_isHpBarActive)
         {
             ActivateHpBar();
         }
 
+        if (!IsAlive())
+        {
+            Die();
+        }
+
         if (_isCollidingWithPlayer && CanAttackPlayer())
         {
             AttackPlayer();
-            _nextAttackTime = Time.timeSinceLevelLoad + Stats.AttackSpeed;
+            DetermineTimeForNextAttack();
         }
-    }
-
-    private void AttackPlayer()
-    {
-        _isAttacking = true;
-        _player.GetComponent<Stats>().CurrentHP -= Stats.AttackPower;
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
@@ -58,6 +49,16 @@ public class EnemyCombatScript : CombatBase
         {
             _isCollidingWithPlayer = false;
         }
+    }
+
+    private void AttackPlayer()
+    {
+        _player.GetComponent<Stats>().CurrentHP -= Stats.AttackPower;
+    }
+
+    private void DetermineTimeForNextAttack()
+    {
+        _nextAttackTime = Time.timeSinceLevelLoad + Stats.AttackSpeed;
     }
 
     private bool CanAttackPlayer()

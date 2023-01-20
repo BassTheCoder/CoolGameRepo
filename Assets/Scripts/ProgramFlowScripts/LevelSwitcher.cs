@@ -1,7 +1,8 @@
 using UnityEngine;
 
-public class GotoMenuScript : MonoBehaviour
+public class LevelSwitcher : MonoBehaviour
 {
+    public int NextLevel = 0;
     void Update()
     {
         var playerObject = GameObject.FindGameObjectWithTag("Player");
@@ -13,7 +14,19 @@ public class GotoMenuScript : MonoBehaviour
         var winCondition = gameObject.GetComponent<WinCondition>()?.IsLevelFinished;
         if (winCondition != null && winCondition == true) 
         {
+            ChangeScene();
+        }
+    }
+
+    private void ChangeScene()
+    {
+        if (NextLevel == 0)
+        {
             SceneSwapperScript.LoadMenuScene();
+        }
+        else
+        {
+            SceneSwapperScript.LoadLevelScene(NextLevel);
         }
     }
 }

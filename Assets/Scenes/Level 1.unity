@@ -1400,6 +1400,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 31aeb6668a0daab438a977d0d7131fd6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  NextLevel: 2
 --- !u!114 &133876381
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10659,7 +10660,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ShouldSpawn: 1
-  StopSpawningIfExitedArea: 0
+  StopSpawningIfExitedArea: 1
   PossibleSpawnPoints:
   - {x: 0.65, y: 0.7, z: 0}
   - {x: 2.62, y: 0.7, z: 0}
