@@ -26,7 +26,6 @@ public class ShowHP : MonoBehaviour
 
     private void GetHpValues()
     {
-
         GetHp();
         GetHpPercent();
     }

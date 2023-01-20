@@ -47,6 +47,9 @@ TagManager:
   - name: Floor
     uniqueID: 656214599
     locked: 0
+  - name: FloorTexture
+    uniqueID: 407190377
+    locked: 0
   - name: FloorClutter
     uniqueID: 4075839235
     locked: 0
@@ -58,6 +61,9 @@ TagManager:
     locked: 0
   - name: Entity
     uniqueID: 580791791
+    locked: 0
+  - name: FloorItems
+    uniqueID: 3108644803
     locked: 0
   - name: Construction
     uniqueID: 1870981237

@@ -1,14 +1,24 @@
+using System;
 using UnityEngine;
 
 public class EnemyCombatScript : CombatBase
 {
+    private GameObject _player = default;
+
     private bool _isHpBarActive = false;
+    private bool _isCollidingWithPlayer = false;
+    private float _nextAttackTime = 0;
+
+    private bool _isAttacking = false;
+    private float _attackWindowTimer = 0f;
+
     void Start()
     {
         GetStats();
+        GetPlayerGameObject();
     }
 
-    void Update()
+    void FixedUpdate()
     {
         if (!IsAlive())
         {
@@ -20,6 +30,39 @@ public class EnemyCombatScript : CombatBase
         {
             ActivateHpBar();
         }
+
+        if (_isCollidingWithPlayer && CanAttackPlayer())
+        {
+            AttackPlayer();
+            _nextAttackTime = Time.timeSinceLevelLoad + Stats.AttackSpeed;
+        }
+    }
+
+    private void AttackPlayer()
+    {
+        _isAttacking = true;
+        _player.GetComponent<Stats>().CurrentHP -= Stats.AttackPower;
+    }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.CompareTag("Player"))
+        {
+            _isCollidingWithPlayer = true;
+        }
+    }
+
+    private void OnCollisionExit2D(Collision2D collision)
+    {
+        if (collision.gameObject.CompareTag("Player"))
+        {
+            _isCollidingWithPlayer = false;
+        }
+    }
+
+    private bool CanAttackPlayer()
+    {
+        return Time.timeSinceLevelLoad >= _nextAttackTime;
     }
 
     public void Damage(int damage)
@@ -36,5 +79,10 @@ public class EnemyCombatScript : CombatBase
         {
             child.gameObject.SetActive(true);
         }
+    }
+
+    private void GetPlayerGameObject()
+    {
+        _player = GameObject.FindGameObjectWithTag("Player");
     }
 }

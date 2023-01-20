@@ -5,7 +5,7 @@ using UnityEngine;
 public class EnemySpawner : MonoBehaviour
 {
     public bool ShouldSpawn = true;
-    public bool StopSpawningIfExitedArea = false;
+    public bool StopSpawningIfExitedArea = true;
 
     public Vector3[] PossibleSpawnPoints = null;
     public int AmountOfEnemiesToKill = 9;
@@ -39,7 +39,7 @@ public class EnemySpawner : MonoBehaviour
 
     private void OnTriggerExit2D(Collider2D collision)
     {
-        if (!StopSpawningIfExitedArea && collision.CompareTag("Player"))
+        if (StopSpawningIfExitedArea && collision.CompareTag("Player"))
         {
             _isPlayerInTriggerBox = false;
         }
