@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
@@ -25,6 +26,29 @@ public static class Extensions
         else
         {
             combatGameObject.GetComponent<CombatBase>().SetStats(stats);
+        }
+    }
+
+    public static float GetPlayersCurrentHpPercent(this GameObject player)
+    {
+        if (player.CompareTag("Player"))
+        {
+            var stats = player.GetComponent<Stats>();
+            var result = ((float)stats.CurrentHP / (float)stats.MaxHP);
+            if (result > 1)
+            {
+                result = 1;
+            }
+            else if (result < 0)
+            {
+                result = 0;
+            }
+            return result;
+        }
+        else
+        {
+            Debug.Log("This method is supported for player object only.");
+            return 0f;
         }
     }
 }

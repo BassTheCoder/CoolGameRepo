@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Enemy
   - Friendly
+  - UI_HpBar
   layers:
   - Default
   - TransparentFX
