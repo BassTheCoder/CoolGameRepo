@@ -1,4 +1,7 @@
 using System;
+using System.Collections.Generic;
+using System.Linq;
+using Unity.VisualScripting;
 using UnityEngine;
 
 [RequireComponent(typeof(BoxCollider2D))]
@@ -67,12 +70,9 @@ public class EnemySpawner : MonoBehaviour
                             SpawnWave();
                         }
                     }
-                    else
+                    else if (IsEverythingKilledExceptBoss() && LevelBoss != null)
                     {
-                        if (LevelBoss != null)
-                        {
-                            SpawnBoss();
-                        }
+                        SpawnBoss();
                     }
                 }
                 else
@@ -86,12 +86,21 @@ public class EnemySpawner : MonoBehaviour
 
     private void UpdateEnemyCount()
     {
-        _enemiesCount = GetActiveEnemies().Length;
+        _enemiesCount = GetActiveEnemies().Count;
     }
 
-    private GameObject[] GetActiveEnemies()
+    private List<GameObject> GetActiveEnemies()
     {
-        return GameObject.FindGameObjectsWithTag("Enemy");
+        var activeEnemies = GameObject.FindGameObjectsWithTag("Enemy").ToList();
+        if (LevelBoss != null && _bossSpawned)
+        {
+            var boss = GameObject.FindGameObjectWithTag("Boss");
+            if (boss != null)
+            {
+                activeEnemies.Add(boss);
+            }
+        }
+        return activeEnemies;
     }
 
     private void SpawnWave()
@@ -133,6 +142,13 @@ public class EnemySpawner : MonoBehaviour
     private void SpawnBoss()
     {
         SpawnEnemy(LevelBoss, isBoss: true);
+        SpawnBossHpBar();
+    }
+
+    private void SpawnBossHpBar()
+    {
+        GameObject.FindGameObjectWithTag("UI_BossHpBar").transform.GetChild(0).gameObject.SetActive(true);
+        GameObject.FindGameObjectWithTag("UI_BossHpBar").transform.GetChild(0).gameObject.GetComponent<UI_HpBarScript>().Entity = GameObject.FindGameObjectWithTag("Boss");
     }
 
     private Vector3 GetRandomSpawnPoint()

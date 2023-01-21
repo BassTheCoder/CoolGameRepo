@@ -66,14 +66,15 @@ public class EnemyCombatScript : CombatBase
 
     private void DetermineTimeForNextAttack()
     {
-        _nextAttackTime = Time.timeSinceLevelLoad + Stats.AttackSpeed;
+        var now = Time.time;
+        _nextAttackTime = now + Stats.AttackSpeed;
     }
 
     private bool CanAttackPlayer()
     {
         return
             _collisionFrames >= _attackDelayFrames &&
-            Time.timeSinceLevelLoad >= _nextAttackTime;
+            Time.time >= _nextAttackTime;
     }
 
     public void Damage(int damage)

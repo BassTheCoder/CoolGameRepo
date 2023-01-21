@@ -4,18 +4,21 @@ using UnityEngine;
 
 public class UI_HpBarScript : MonoBehaviour
 {
-    private GameObject Player = null;
+    public GameObject Entity = null;
 
     private void Start()
     {
-        Player = GameObject.FindGameObjectWithTag("Player");
+        if (Entity == null)
+        {
+            Debug.Log("Sctipt has no entity given to track health!");
+        }
     }
 
     void Update()
     {
-        if (Player != null)
+        if (Entity != null)
         {
-            var currentHpPercent = Player.GetPlayersCurrentHpPercent();
+            var currentHpPercent = Entity.GetEntityCurrentHpPercent();
             transform.GetChild(2).gameObject.transform.localScale = new Vector3(currentHpPercent, 1, 1);
         }
     }

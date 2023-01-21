@@ -16,7 +16,7 @@ public class PlayerAttackAreaScript : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.CompareTag("Enemy"))
+        if (collision.CompareTag("Enemy") || collision.CompareTag("Boss"))
         {
             var enemy = collision.GetComponent<EnemyCombatScript>();
             if (enemy != null)

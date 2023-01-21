@@ -29,11 +29,11 @@ public static class Extensions
         }
     }
 
-    public static float GetPlayersCurrentHpPercent(this GameObject player)
+    public static float GetEntityCurrentHpPercent(this GameObject entity)
     {
-        if (player.CompareTag("Player"))
+        var stats = entity.GetComponent<Stats>();
+        if (stats != null)
         {
-            var stats = player.GetComponent<Stats>();
             var result = ((float)stats.CurrentHP / (float)stats.MaxHP);
             if (result > 1)
             {
@@ -47,8 +47,8 @@ public static class Extensions
         }
         else
         {
-            Debug.Log("This method is supported for player object only.");
-            return 0f;
+            Debug.Log($"{entity.name} does not have Stats component.");
+            return 0;
         }
     }
 }

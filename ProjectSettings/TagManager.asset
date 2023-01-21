@@ -9,6 +9,8 @@ TagManager:
   - UI_HpBar
   - EnemySpawner
   - Portal
+  - UI_BossHpBar
+  - Boss
   layers:
   - Default
   - TransparentFX
