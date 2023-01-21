@@ -8,6 +8,8 @@ public class EnemySpawner : MonoBehaviour
     public bool StopSpawningIfExitedArea = true;
 
     public Vector3[] PossibleSpawnPoints = null;
+    public Vector3 BossSpawnPoint = default;
+
     public int AmountOfEnemiesToKill = 9;
     public int MaxEnemiesOnBoard = 3;
 
@@ -20,6 +22,8 @@ public class EnemySpawner : MonoBehaviour
     private bool _allEnemiesKilled = false;
     private bool _bossSpawned = false;
     private bool _isPlayerInTriggerBox = false;
+
+    public bool IsRoomFinished = false;
 
     private void Start()
     {
@@ -34,7 +38,7 @@ public class EnemySpawner : MonoBehaviour
         if (collision.CompareTag("Player"))
         {
             _isPlayerInTriggerBox = true;
-        } 
+        }
     }
 
     private void OnTriggerExit2D(Collider2D collision)
@@ -47,9 +51,9 @@ public class EnemySpawner : MonoBehaviour
 
     private void Update()
     {
-        if (ShouldSpawn && _isPlayerInTriggerBox)
+        if (ShouldSpawn && !IsRoomFinished && _isPlayerInTriggerBox)
         {
-            if (LevelEnemies.Length > 0 && LevelBoss != null)
+            if (LevelEnemies.Length > 0)
             {
                 UpdateEnemyCount();
                 CheckIfAllEnemiesAreKilled();
@@ -65,13 +69,16 @@ public class EnemySpawner : MonoBehaviour
                     }
                     else
                     {
-                        SpawnBoss();
+                        if (LevelBoss != null)
+                        {
+                            SpawnBoss();
+                        }
                     }
                 }
                 else
                 {
-                    Debug.Log("Congrats! You finished the level!");
-                    transform.parent.transform.parent.gameObject.GetComponent<WinCondition>().IsLevelFinished = true;
+                    Debug.Log("Congrats! You finished this room!");
+                    IsRoomFinished = true;
                 }
             }
         }
@@ -109,7 +116,7 @@ public class EnemySpawner : MonoBehaviour
             enemyGameObject.SetStats(stats);
         }
 
-        var position = GetRandomSpawnPoint();
+        var position = isBoss ? BossSpawnPoint : GetRandomSpawnPoint();
 
         Instantiate(enemyGameObject, position, Quaternion.identity, GameObject.Find("Enemies").transform);
 
@@ -155,8 +162,8 @@ public class EnemySpawner : MonoBehaviour
 
     private bool ShouldSpawnNextWave()
     {
-        return 
-            _enemiesCount == 0 && 
+        return
+            _enemiesCount == 0 &&
             !_allEnemiesKilled;
     }
 
@@ -170,9 +177,18 @@ public class EnemySpawner : MonoBehaviour
 
     private bool IsEverythingKilled()
     {
-        return
+        if (LevelBoss != null)
+        {
+            return
             _enemiesCount == 0 &&
             _allEnemiesKilled &&
             _bossSpawned;
+        }
+        else
+        {
+            return
+            _enemiesCount == 0 &&
+            _allEnemiesKilled;
+        }
     }
 }
