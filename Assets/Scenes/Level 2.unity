@@ -136,7 +136,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4520470995733881432, guid: 17a0142c0163a6f44bbddd5a3e2b1aa0, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 5.011
+      value: 4.866
       objectReference: {fileID: 0}
     - target: {fileID: 4520470995733881432, guid: 17a0142c0163a6f44bbddd5a3e2b1aa0, type: 3}
       propertyPath: m_LocalPosition.y
@@ -3588,6 +3588,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Entity: {fileID: 0}
+  DamageBlinkMaterial: {fileID: 2100000, guid: 6f27e158590cc3c4f8f65de0a73edd85, type: 2}
 --- !u!1 &581574557
 GameObject:
   m_ObjectHideFlags: 0
@@ -13061,6 +13062,22 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6851744093692570321, guid: cb0ac38ab7269fe4d8b0c006e0f3f76f, type: 3}
+      propertyPath: m_Color.a
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6851744093692570321, guid: cb0ac38ab7269fe4d8b0c006e0f3f76f, type: 3}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6851744093692570321, guid: cb0ac38ab7269fe4d8b0c006e0f3f76f, type: 3}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6851744093692570321, guid: cb0ac38ab7269fe4d8b0c006e0f3f76f, type: 3}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cb0ac38ab7269fe4d8b0c006e0f3f76f, type: 3}
 --- !u!1 &1322434589
@@ -13462,6 +13479,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Entity: {fileID: 5050111374608609310, guid: c1f1cb46ed0bb744b8d3a6bb2016f9b8, type: 3}
+  DamageBlinkMaterial: {fileID: 0}
 --- !u!1 &1582683057
 GameObject:
   m_ObjectHideFlags: 0
@@ -13541,7 +13559,7 @@ MonoBehaviour:
   - {x: 3.7, y: -0.9, z: 0}
   - {x: 5.8, y: -0.9, z: 0}
   BossSpawnPoint: {x: 5.8, y: 0, z: 0}
-  AmountOfEnemiesToKill: 20
+  AmountOfEnemiesToKill: 30
   MaxEnemiesOnBoard: 10
   LevelEnemies:
   - {fileID: 431705457544701453, guid: 4e4fa8f4af4c0c94aa84320451879d4a, type: 3}

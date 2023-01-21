@@ -15,6 +15,11 @@ public class WinCondition : MonoBehaviour
     private void Update()
     {
         CheckLevelFinish();
+        if (IsLevelFinished)
+        {
+            GameObject.FindGameObjectWithTag("Portal").GetComponent<SpriteRenderer>().enabled = true;
+            GameObject.FindGameObjectWithTag("Portal").GetComponent<BoxCollider2D>().enabled = true;
+        }
     }
 
     private void CheckLevelFinish()
