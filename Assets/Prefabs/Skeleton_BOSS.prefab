@@ -425,8 +425,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   OverrideDefaultStats: 1
-  MaxHP: 100
-  CurrentHP: 100
+  MaxHP: 130
+  CurrentHP: 130
   AttackPower: 5
   AttackSpeed: 0.5
   CritChancePercent: 0
