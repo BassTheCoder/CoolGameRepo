@@ -22,13 +22,8 @@ public class EnemyMovementScript : EntityMovementScript
         {
             if (_followingPlayer)
             {
-                if (IsCollidingWithPlayer)
+                if (!IsCollidingWithPlayer)
                 {
-                    FreezePosition();
-                }
-                else
-                {
-                    UnfreezePosition();
                     MoveVector = GetNormalizedVectorTowardsTarget(PlayerObjectTransform);
                     Move(MoveVector);
                 }
