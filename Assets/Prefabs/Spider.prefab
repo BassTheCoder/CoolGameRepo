@@ -411,7 +411,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   EntityAnimator: {fileID: 8791920912943786327}
-  MovementSpeedMultiplier: 0.5
+  MovementSpeedMultiplier: 0.7
   ShouldFollowPlayer: 1
 --- !u!114 &8791920912943786321
 MonoBehaviour:

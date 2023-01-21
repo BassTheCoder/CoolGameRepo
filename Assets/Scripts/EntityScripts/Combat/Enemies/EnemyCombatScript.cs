@@ -27,6 +27,7 @@ public class EnemyCombatScript : CombatBase
         if (!IsAlive())
         {
             Die();
+            ReplenishPlayerAmmo();
         }
 
         if (_isCollidingWithPlayer)
@@ -90,6 +91,11 @@ public class EnemyCombatScript : CombatBase
         {
             child.gameObject.SetActive(true);
         }
+    }
+
+    private void ReplenishPlayerAmmo() 
+    {
+        _player.GetComponent<Stats>().Ammo = _player.GetComponent<Stats>().MaxAmmo;
     }
 
     private void GetPlayerGameObject()

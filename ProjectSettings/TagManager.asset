@@ -11,6 +11,7 @@ TagManager:
   - Portal
   - UI_BossHpBar
   - Boss
+  - Construction
   layers:
   - Default
   - TransparentFX
