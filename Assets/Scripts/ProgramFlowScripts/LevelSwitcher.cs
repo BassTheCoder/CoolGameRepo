@@ -14,19 +14,8 @@ public class LevelSwitcher : MonoBehaviour
         var winCondition = gameObject.GetComponent<WinCondition>()?.IsLevelFinished;
         if (winCondition != null && winCondition == true) 
         {
-            ChangeScene();
-        }
-    }
-
-    private void ChangeScene()
-    {
-        if (NextLevel == 0)
-        {
-            SceneSwapperScript.LoadMenuScene();
-        }
-        else
-        {
-            SceneSwapperScript.LoadLevelScene(NextLevel);
+            GameObject.FindGameObjectWithTag("Portal").GetComponent<SpriteRenderer>().enabled = true;
+            GameObject.FindGameObjectWithTag("Portal").GetComponent<BoxCollider2D>().enabled = true;
         }
     }
 }

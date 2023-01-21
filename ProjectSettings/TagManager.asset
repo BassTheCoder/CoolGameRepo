@@ -8,6 +8,7 @@ TagManager:
   - Friendly
   - UI_HpBar
   - EnemySpawner
+  - Portal
   layers:
   - Default
   - TransparentFX
