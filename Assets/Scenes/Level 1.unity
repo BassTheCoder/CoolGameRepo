@@ -1646,7 +1646,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 31aeb6668a0daab438a977d0d7131fd6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  NextLevel: 2
 --- !u!114 &133876381
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5504,7 +5503,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Entity: {fileID: 0}
-  DamageBlinkMaterial: {fileID: 0}
+  DamageBlinkMaterial: {fileID: 2100000, guid: 6f27e158590cc3c4f8f65de0a73edd85, type: 2}
 --- !u!1 &807175121
 GameObject:
   m_ObjectHideFlags: 0

@@ -16,10 +16,8 @@ public class StartScript : MonoBehaviour
 
     private void ResetGame()
     {
-        DestroyAllObjectWithTag("Entity");
         DestroyAllObjectWithTag("Player");
         DestroyAllObjectWithTag("Enemy");
-        DestroyAllObjectWithTag("Friendly");
 
         Instantiate(Player, new Vector3(-1f, -0.6f, 0.005f), Quaternion.identity);
     }
