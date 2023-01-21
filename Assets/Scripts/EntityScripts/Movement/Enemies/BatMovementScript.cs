@@ -1,5 +1,3 @@
-using UnityEngine;
-
 public class BatMovementScript : EnemyMovementScript
 {
     void Start()
