@@ -8,6 +8,8 @@ public class EnemyCombatScript : CombatBase
     private bool _isHpBarActive = false;
     private bool _isCollidingWithPlayer = false;
     private float _nextAttackTime = 0;
+    private float _attackDelayFrames = 10;
+    private int _collisionFrames = 0;
 
     void Start()
     {
@@ -28,10 +30,15 @@ public class EnemyCombatScript : CombatBase
             Die();
         }
 
-        if (_isCollidingWithPlayer && CanAttackPlayer())
+        if (_isCollidingWithPlayer)
         {
-            AttackPlayer();
-            DetermineTimeForNextAttack();
+            _collisionFrames++;
+
+            if (CanAttackPlayer())
+            {
+                AttackPlayer();
+                DetermineTimeForNextAttack();
+            }
         }
     }
 
@@ -47,6 +54,7 @@ public class EnemyCombatScript : CombatBase
     {
         if (collision.gameObject.CompareTag("Player"))
         {
+            _collisionFrames = 0;
             _isCollidingWithPlayer = false;
         }
     }
@@ -63,7 +71,9 @@ public class EnemyCombatScript : CombatBase
 
     private bool CanAttackPlayer()
     {
-        return Time.timeSinceLevelLoad >= _nextAttackTime;
+        return
+            _collisionFrames >= _attackDelayFrames &&
+            Time.timeSinceLevelLoad >= _nextAttackTime;
     }
 
     public void Damage(int damage)
