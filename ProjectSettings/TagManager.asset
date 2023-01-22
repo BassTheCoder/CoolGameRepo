@@ -12,6 +12,7 @@ TagManager:
   - UI_BossHpBar
   - Boss
   - Construction
+  - MusicBox
   layers:
   - Default
   - TransparentFX
