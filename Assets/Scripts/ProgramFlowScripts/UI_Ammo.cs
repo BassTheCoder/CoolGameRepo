@@ -1,7 +1,7 @@
 using TMPro;
 using UnityEngine;
 
-public class Ammo : MonoBehaviour
+public class UI_Ammo : MonoBehaviour
 {
     private GameObject _player;
 

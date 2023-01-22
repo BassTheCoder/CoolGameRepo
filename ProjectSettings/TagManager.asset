@@ -13,6 +13,7 @@ TagManager:
   - Boss
   - Construction
   - MusicBox
+  - RewardChest
   layers:
   - Default
   - TransparentFX
@@ -64,6 +65,9 @@ TagManager:
     locked: 0
   - name: Portal
     uniqueID: 1620385497
+    locked: 0
+  - name: FloorItems_UnderEntity
+    uniqueID: 2352492651
     locked: 0
   - name: Entity
     uniqueID: 580791791
