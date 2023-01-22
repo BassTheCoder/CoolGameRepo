@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class ShotScript : MonoBehaviour
@@ -16,11 +14,12 @@ public class ShotScript : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        _shotDamage = GameObject.FindGameObjectWithTag("Player").GetComponent<Stats>().AttackPower;
+        _shotDamage = GameObject.FindGameObjectWithTag("Player").GetComponent<Stats>().ShootingPower;
         if (collision.gameObject.CompareTag("Enemy") || collision.gameObject.CompareTag("Boss"))
         {
             var enemy = collision.gameObject.GetComponent<EnemyCombatScript>();
             enemy.Damage(_shotDamage);
+            Destroy(gameObject);
         }
         else if (collision.gameObject.CompareTag("Construction"))
         {

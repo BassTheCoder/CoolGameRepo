@@ -394,6 +394,9 @@ MonoBehaviour:
   MaxHP: 100
   CurrentHP: 100
   AttackPower: 5
+  ShootingPower: 2
+  Ammo: 10
+  MaxAmmo: 10
   AttackSpeed: 0.3
   CritChancePercent: 5
   CritDamageMultiplier: 2
