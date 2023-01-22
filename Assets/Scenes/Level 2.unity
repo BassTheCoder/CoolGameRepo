@@ -8881,7 +8881,7 @@ MonoBehaviour:
   - {x: 0.69, y: -0.77, z: 0}
   - {x: 2.62, y: -0.77, z: 0}
   BossSpawnPoint: {x: 2.5, y: 0, z: 0}
-  AmountOfEnemiesToKill: 10
+  AmountOfEnemiesToKill: 1
   MaxEnemiesOnBoard: 5
   LevelEnemies:
   - {fileID: 431705457544701453, guid: 4e4fa8f4af4c0c94aa84320451879d4a, type: 3}
@@ -13980,7 +13980,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6851744093692570312, guid: cb0ac38ab7269fe4d8b0c006e0f3f76f, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6851744093692570319, guid: cb0ac38ab7269fe4d8b0c006e0f3f76f, type: 3}
       propertyPath: m_RootOrder
@@ -14585,8 +14585,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.013603369, y: 0.12092018}
-  m_SizeDelta: {x: 200, y: 50}
+  m_AnchoredPosition: {x: 0, y: 0.137}
+  m_SizeDelta: {x: 225.4627, y: 43.6343}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1459187293
 MonoBehaviour:
@@ -14611,7 +14611,7 @@ MonoBehaviour:
   m_text: John Souls
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: accdf0f88ee206e4c8a4703cbf8109ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: -882932932246888071, guid: accdf0f88ee206e4c8a4703cbf8109ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -15086,7 +15086,7 @@ MonoBehaviour:
   - {x: 3.7, y: -0.9, z: 0}
   - {x: 5.8, y: -0.9, z: 0}
   BossSpawnPoint: {x: 5.8, y: 0, z: 0}
-  AmountOfEnemiesToKill: 20
+  AmountOfEnemiesToKill: 1
   MaxEnemiesOnBoard: 10
   LevelEnemies:
   - {fileID: 431705457544701453, guid: 4e4fa8f4af4c0c94aa84320451879d4a, type: 3}

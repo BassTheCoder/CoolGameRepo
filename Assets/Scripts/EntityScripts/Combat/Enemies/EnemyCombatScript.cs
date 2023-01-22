@@ -2,6 +2,7 @@ using UnityEngine;
 
 public class EnemyCombatScript : CombatBase
 {
+    public Animator EntityAnimator = null;
     private GameObject _player = default;
 
     private bool _isHpBarActive = false;
@@ -47,6 +48,7 @@ public class EnemyCombatScript : CombatBase
         if (collision.gameObject.CompareTag("Player"))
         {
             _isCollidingWithPlayer = true;
+            UpdateAnimatorCollisionProperty(true);
         }
     }
 
@@ -56,6 +58,15 @@ public class EnemyCombatScript : CombatBase
         {
             _collisionFrames = 0;
             _isCollidingWithPlayer = false;
+            UpdateAnimatorCollisionProperty(false);
+        }
+    }
+
+    private void UpdateAnimatorCollisionProperty(bool isColliding)
+    {
+        if (EntityAnimator != null)
+        {
+            EntityAnimator.SetBool("IsCollidingWithPlayer", isColliding);
         }
     }
 
