@@ -8,12 +8,7 @@ public class RewardChoiceScript : MonoBehaviour
     private GameObject _rewardChest = null;
     private bool _shouldShowRewards = false;
     private bool _isShowingRewards = false;
-    private bool _isRewardChosen = false;
 
-    private void Start()
-    {
-        _rewardChest = GameObject.FindGameObjectWithTag("RewardChest");
-    }
 
     private void Update()
     {
@@ -32,8 +27,7 @@ public class RewardChoiceScript : MonoBehaviour
     {
         _shouldShowRewards =
             _rewardChest.GetComponent<RewardChestScript>().IsLooted &&
-           !_isShowingRewards &&
-           !_isRewardChosen;
+           !_isShowingRewards;
     }
 
     private void ShowRewards()

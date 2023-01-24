@@ -1,3 +1,4 @@
+using System.Reflection;
 using UnityEngine;
 
 public static class Extensions
@@ -46,5 +47,10 @@ public static class Extensions
             Debug.Log($"{entity.name} does not have Stats component.");
             return 0;
         }
+    }
+
+    public static void UpdateStatByFieldName(this Stats stats, string fieldName, int upgradeValue)
+    {
+        //todo
     }
 }

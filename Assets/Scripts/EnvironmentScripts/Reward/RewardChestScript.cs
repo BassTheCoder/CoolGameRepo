@@ -20,6 +20,7 @@ public class RewardChestScript : MonoBehaviour
         Rewards = new List<Reward>();
         _possibleRewards = GetComponent<PossibleRewards>();
         GetRewards();
+        AssignRewardTexts();
         Debug.Log($"{Rewards.Count} rewards drawn. {string.Join($", ", Rewards.Select(reward => $"{reward.StatToUpgrade} + {reward.UpgradeValue}"))}");
     }
 
@@ -66,6 +67,41 @@ public class RewardChestScript : MonoBehaviour
                 var randomIndex = random.Next(0, possibleRewards.Count - 1);
                 Rewards.Add(possibleRewards[randomIndex]);
                 possibleRewards.RemoveAt(randomIndex);
+            }
+        }
+    }
+
+    private void AssignRewardTexts()
+    {
+        foreach (var reward in Rewards)
+        {
+            if (reward.StatToUpgrade == "MaxHP")
+            {
+                reward.UpgradeText = $"MAX HP\n+\n{reward.UpgradeValue}";
+            }
+            else if (reward.StatToUpgrade == "CurrentHP")
+            {
+                reward.UpgradeText = $"HEAL\nFOR\n{reward.UpgradeValue}";
+            }
+            else if (reward.StatToUpgrade == "AttackPower")
+            {
+                reward.UpgradeText = $"MELEE DMG \n+\n{reward.UpgradeValue}";
+            }
+            else if (reward.StatToUpgrade == "ShootingPower")
+            {
+                reward.UpgradeText = $"SHOOTING DMG\n+\n{reward.UpgradeValue}";
+            }
+            else if (reward.StatToUpgrade == "MaxAmmo")
+            {
+                reward.UpgradeText = $"MAX AMMO\n+\n{reward.UpgradeValue}";
+            }
+            else if (reward.StatToUpgrade == "CritChancePercent")
+            {
+                reward.UpgradeText = $"CRIT CHANCE\n+\n{reward.UpgradeValue} %";
+            }
+            else if (reward.StatToUpgrade == "Defense")
+            {
+                reward.UpgradeText = $"DEFENSE\n+\n{reward.UpgradeValue}";
             }
         }
     }

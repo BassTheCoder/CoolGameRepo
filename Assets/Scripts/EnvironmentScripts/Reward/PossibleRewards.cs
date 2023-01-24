@@ -1,24 +1,39 @@
+using System;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class PossibleRewards : MonoBehaviour
 {
-    public int MaxHpUpgrade = 0;
-    public int Heal = 0;
-    public int AttackPowerUpgrade = 0;
-    public int ShootingPowerUpgrade = 0;
-    public int MaxAmmoUpgrade = 0;
-    public int CritChancePercentUpgrade = 0;
-    public int DefenseUpgrade = 0;
+    public int MaxHP = 0;
+    public int CurrentHP = 0;
+    public int AttackPower = 0;
+    public int ShootingPower = 0;
+    public int MaxAmmo = 0;
+    public int CritChancePercent = 0;
+    public int Defense = 0;
 
     public List<Reward> RewardsPool;
 
     private void Awake()
     {
         RewardsPool = new List<Reward>();
+        GetPossibleRewards();
         GetRewardsPool();
 
         Debug.Log($"{RewardsPool.Count} rewards available.");
+    }
+
+    private void GetPossibleRewards()
+    {
+        var chestSpawner = GameObject.FindGameObjectWithTag("GameController").GetComponent<ChestSpawnerScript>();
+
+        MaxHP = chestSpawner.MaxHP;
+        CurrentHP = chestSpawner.CurrentHP;
+        AttackPower = chestSpawner.AttackPower;
+        ShootingPower = chestSpawner.ShootingPower;
+        MaxAmmo = chestSpawner.MaxAmmo;
+        CritChancePercent = chestSpawner.CritChancePercent;
+        Defense = chestSpawner.Defense;
     }
 
     private void GetRewardsPool()
