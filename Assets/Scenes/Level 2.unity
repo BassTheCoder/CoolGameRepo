@@ -20717,6 +20717,10 @@ PrefabInstance:
       propertyPath: m_RootOrder
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 434388024825368507, guid: 0a7f31beb330fe847bee5efc45fc8aca, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1192462549004144270, guid: 0a7f31beb330fe847bee5efc45fc8aca, type: 3}
       propertyPath: m_text
       value: John Souls
@@ -20824,6 +20828,14 @@ PrefabInstance:
     - target: {fileID: 1192462549714204622, guid: 0a7f31beb330fe847bee5efc45fc8aca, type: 3}
       propertyPath: m_text
       value: John Souls
+      objectReference: {fileID: 0}
+    - target: {fileID: 6524857800803181796, guid: 0a7f31beb330fe847bee5efc45fc8aca, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.2844329
+      objectReference: {fileID: 0}
+    - target: {fileID: 6524857800803181796, guid: 0a7f31beb330fe847bee5efc45fc8aca, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.018
       objectReference: {fileID: 0}
     - target: {fileID: 8546279360518155689, guid: 0a7f31beb330fe847bee5efc45fc8aca, type: 3}
       propertyPath: m_IsActive
