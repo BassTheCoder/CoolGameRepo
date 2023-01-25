@@ -25,7 +25,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 600055354732499537}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -0.0812, z: 0}
+  m_LocalPosition: {x: 0.0027, y: -0.084, z: 0}
   m_LocalScale: {x: 0.65, y: 0.67, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -71,7 +71,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 580791791
-  m_SortingLayer: 6
+  m_SortingLayer: 7
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 3e4aaee02dc1ee944b6d4d1f6de7ae3b, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 0.7529412}
@@ -246,7 +246,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -308467373
-  m_SortingLayer: 10
+  m_SortingLayer: 11
   m_SortingOrder: 1
   m_Sprite: {fileID: -966233578, guid: 5610f7cf1c0bbbd4f9a66ba1dcb400ad, type: 3}
   m_Color: {r: 1, g: 0, b: 0, a: 1}
@@ -330,7 +330,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -308467373
-  m_SortingLayer: 10
+  m_SortingLayer: 11
   m_SortingOrder: 0
   m_Sprite: {fileID: -966233578, guid: 5610f7cf1c0bbbd4f9a66ba1dcb400ad, type: 3}
   m_Color: {r: 0.6981132, g: 0.6981132, b: 0.6981132, a: 1}
@@ -374,7 +374,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8681190331387657573}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.09716644, y: 0.41710848, z: -0.0023157736}
+  m_LocalPosition: {x: 0.0008, y: 1.0798, z: -0.0023157736}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -422,7 +422,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 580791791
-  m_SortingLayer: 6
+  m_SortingLayer: 7
   m_SortingOrder: 1
   m_Sprite: {fileID: 1843036749, guid: 959cff418f0909d47bd5713971122e67, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -451,6 +451,9 @@ MonoBehaviour:
   MaxHP: 50
   CurrentHP: 50
   AttackPower: 3
+  ShootingPower: 3
+  Ammo: 10
+  MaxAmmo: 10
   AttackSpeed: 1
   CritChancePercent: 0
   CritDamageMultiplier: 2
@@ -467,6 +470,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1137dfe1da09bff43b93cbca54b62659, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  EntityAnimator: {fileID: 5278000332952643060}
 --- !u!61 &4972192597273830613
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -480,7 +484,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.009792013, y: -0.0041427985}
+  m_Offset: {x: 0.009643214, y: -0.005035557}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -491,7 +495,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.04249574, y: 0.1517144}
+  m_Size: {x: 0.040412545, y: 0.14992888}
   m_EdgeRadius: 0
 --- !u!50 &4288323959906596949
 Rigidbody2D:

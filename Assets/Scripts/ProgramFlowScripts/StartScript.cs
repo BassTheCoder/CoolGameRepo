@@ -6,10 +6,7 @@ public class StartScript : MonoBehaviour
 
     void Start()
     {
-        if (Player != null)
-        {
-            ResetGame();
-        }
+        ResetGame();
     }
 
     private void ResetGame()

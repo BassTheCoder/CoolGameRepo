@@ -14,6 +14,10 @@ public class ShootingScript : MonoBehaviour
 
     private void Update()
     {
+        if (_player == null)
+        {
+            _player = GameObject.FindGameObjectWithTag("Player");
+        }
         var ammo = _player.GetComponent<Stats>().Ammo;
         if (ammo > 0 && Input.GetKeyDown(Keybinds.AttackRanged))
         {
