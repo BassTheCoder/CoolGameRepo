@@ -2,6 +2,7 @@ using UnityEngine;
 
 public class PlayerCombatScript : CombatBase
 {
+    public bool CanPlayerAttack = true;
     public Animator EntityAnimator = default;
     private GameObject _attackArea;
 
@@ -24,7 +25,7 @@ public class PlayerCombatScript : CombatBase
             Die();
         }
 
-        if (!_isPlayerAttacking && Input.GetKeyDown(Keybinds.AttackMeele))
+        if (!_isPlayerAttacking && Input.GetKeyDown(Keybinds.AttackMelee) && CanPlayerAttack)
         {
             Attack();
         }

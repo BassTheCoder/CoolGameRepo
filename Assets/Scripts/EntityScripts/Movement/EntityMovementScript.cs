@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.UIElements;
 
 [RequireComponent(typeof(BoxCollider2D))]
 [RequireComponent(typeof(Rigidbody2D))]
@@ -23,6 +24,10 @@ public class EntityMovementScript : MonoBehaviour
     protected void GetMoveVector(float x = 0, float y = 0)
     {
         MoveVector = new Vector3(x, y, 0);
+        if (Mathf.Abs(MoveVector.x) == 1 && Mathf.Abs(MoveVector.y) == 1)
+        {
+            MoveVector = 0.72f * MoveVector;
+        }
     }
 
     protected void Move(Vector3 moveVector)

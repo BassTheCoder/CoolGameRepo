@@ -308,7 +308,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 62730140}
   m_LocalRotation: {x: 0, y: 0, z: 0.7071068, w: 0.7071068}
-  m_LocalPosition: {x: -322.1, y: 172.6, z: -22331.295}
+  m_LocalPosition: {x: -322.1, y: 157.9, z: 0}
   m_LocalScale: {x: 225.56863, y: 225.56863, z: 225.56863}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -5873,7 +5873,7 @@ MonoBehaviour:
   - {x: 0.69, y: -0.77, z: 0}
   - {x: 2.62, y: -0.77, z: 0}
   BossSpawnPoint: {x: 2.6, y: 0, z: 0}
-  AmountOfEnemiesToKill: 3
+  AmountOfEnemiesToKill: 6
   MaxEnemiesOnBoard: 3
   LevelEnemies:
   - {fileID: 431705457544701453, guid: 4e4fa8f4af4c0c94aa84320451879d4a, type: 3}
