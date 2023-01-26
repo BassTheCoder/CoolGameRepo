@@ -5,6 +5,7 @@ public class PlayerCombatScript : CombatBase
     public bool CanPlayerAttack = true;
     public Animator EntityAnimator = default;
     private GameObject _attackArea;
+    public int ActiveWeapon = 1;
 
     private bool _isPlayerAttacking = false;
 
@@ -23,6 +24,11 @@ public class PlayerCombatScript : CombatBase
         if (!IsAlive())
         {
             Die();
+        }
+
+        if (WeaponSwitchPressed())
+        {
+            SwitchWeapon();
         }
 
         if (!_isPlayerAttacking && Input.GetKeyDown(Keybinds.AttackMelee) && CanPlayerAttack)
@@ -85,6 +91,51 @@ public class PlayerCombatScript : CombatBase
         if (EntityAnimator != null)
         {
             EntityAnimator.SetBool("IsPlayerAttacking", attackingState);
+        }
+    }
+
+    private bool WeaponSwitchPressed()
+    {
+        if (Input.GetKeyDown(Keybinds.Weapon1))
+        {
+            ActiveWeapon = 1;
+            return true;
+        }
+        else if (Input.GetKeyDown(Keybinds.Weapon2))
+        {
+            ActiveWeapon = 2;
+            return true;
+        }
+        else if (Input.GetKeyDown(Keybinds.Weapon3))
+        {
+            ActiveWeapon = 3;
+            return true;
+        }
+        else
+        {
+            return false;
+        }
+    }
+
+    private void SwitchWeapon()
+    {
+        if (ActiveWeapon == 1)
+        {
+            GameObject.FindGameObjectWithTag("SwordSprite").GetComponent<WeaponSpriteScript>().Activate();
+            GameObject.FindGameObjectWithTag("AxeSprite").GetComponent<WeaponSpriteScript>().Deactivate();
+            GameObject.FindGameObjectWithTag("HammerSprite").GetComponent<WeaponSpriteScript>().Deactivate();
+        }
+        else if (ActiveWeapon == 2)
+        {
+            GameObject.FindGameObjectWithTag("SwordSprite").GetComponent<WeaponSpriteScript>().Deactivate();
+            GameObject.FindGameObjectWithTag("AxeSprite").GetComponent<WeaponSpriteScript>().Activate();
+            GameObject.FindGameObjectWithTag("HammerSprite").GetComponent<WeaponSpriteScript>().Deactivate();
+        }
+        else if (ActiveWeapon == 3)
+        {
+            GameObject.FindGameObjectWithTag("SwordSprite").GetComponent<WeaponSpriteScript>().Deactivate();
+            GameObject.FindGameObjectWithTag("AxeSprite").GetComponent<WeaponSpriteScript>().Deactivate();
+            GameObject.FindGameObjectWithTag("HammerSprite").GetComponent<WeaponSpriteScript>().Activate();
         }
     }
 }

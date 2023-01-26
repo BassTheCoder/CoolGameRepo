@@ -154,6 +154,7 @@ public class EnemySpawner : MonoBehaviour
     private void SpawnBossHpBar()
     {
         GameObject.FindGameObjectWithTag("UI_BossHpBar").transform.GetChild(0).gameObject.SetActive(true);
+        GameObject.FindGameObjectWithTag("UI_BossHpBar").transform.GetChild(1).gameObject.SetActive(true);
         GameObject.FindGameObjectWithTag("UI_BossHpBar").transform.GetChild(0).gameObject.GetComponent<UI_HpBarScript>().Entity = GameObject.FindGameObjectWithTag("Boss");
     }
 

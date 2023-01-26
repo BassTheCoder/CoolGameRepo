@@ -11,6 +11,9 @@ public class UI_Ammo : MonoBehaviour
     }
     void Update()
     {
-        GetComponent<TextMeshProUGUI>().text = _player.GetComponent<Stats>().Ammo.ToString();
+        if (_player != null)
+        {
+            GetComponent<TextMeshProUGUI>().text = _player.GetComponent<Stats>().Ammo.ToString();
+        }
     }
 }

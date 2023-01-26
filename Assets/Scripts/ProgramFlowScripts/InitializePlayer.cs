@@ -1,5 +1,6 @@
 using UnityEngine;
 
+[DefaultExecutionOrder(-1)]
 public class InitializePlayer : MonoBehaviour
 {
     public Vector3 StartingPosition = default;

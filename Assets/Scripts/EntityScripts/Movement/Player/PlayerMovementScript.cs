@@ -10,7 +10,7 @@ public class PlayerMovementScript : EntityMovementScript
     private float _dashStopTime = 0f;
     private float _dashDistance = 3.5f;
     private float _dashCooldown = 0.5f;
-    private float _dashCooldownTime = 1f;
+    private float _dashCooldownTime = 0f;
 
     private void Start()
     {
@@ -49,6 +49,7 @@ public class PlayerMovementScript : EntityMovementScript
         _canDash = false;
         _dashingVector = MoveVector * _dashDistance;
         _dashStopTime = Time.time + _dashDuration;
+        _dashCooldownTime = Time.time + _dashCooldown;
     }
 
     private void UpdateDashStatus()
@@ -57,11 +58,7 @@ public class PlayerMovementScript : EntityMovementScript
         {
             _isDashing = false;
             EntityAnimator.SetBool("IsPlayerDashing", false);
-
-            if (Time.time >= _dashCooldownTime)
-            {
-                _canDash = true;
-            }
+            _canDash = true;
         }
     }
 }
