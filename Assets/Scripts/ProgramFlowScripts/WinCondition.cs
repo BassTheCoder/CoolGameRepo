@@ -19,6 +19,7 @@ public class WinCondition : MonoBehaviour
         {
             GameObject.FindGameObjectWithTag("Portal").GetComponent<SpriteRenderer>().enabled = true;
             GameObject.FindGameObjectWithTag("Portal").GetComponent<BoxCollider2D>().enabled = true;
+            GameObject.FindGameObjectWithTag("Portal").GetComponent<EdgeCollider2D>().enabled = true;
         }
     }
 

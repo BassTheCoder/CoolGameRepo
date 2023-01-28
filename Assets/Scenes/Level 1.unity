@@ -8154,7 +8154,7 @@ MonoBehaviour:
   - {x: 0.69, y: -0.77, z: 0}
   - {x: 2.62, y: -0.77, z: 0}
   BossSpawnPoint: {x: 2.6, y: 0, z: 0}
-  AmountOfEnemiesToKill: 6
+  AmountOfEnemiesToKill: 1
   MaxEnemiesOnBoard: 3
   LevelEnemies:
   - {fileID: 431705457544701453, guid: 4e4fa8f4af4c0c94aa84320451879d4a, type: 3}
@@ -15112,7 +15112,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6851744093692570312, guid: cb0ac38ab7269fe4d8b0c006e0f3f76f, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6851744093692570319, guid: cb0ac38ab7269fe4d8b0c006e0f3f76f, type: 3}
       propertyPath: m_RootOrder
