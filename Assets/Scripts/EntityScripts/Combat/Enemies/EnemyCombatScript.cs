@@ -1,3 +1,4 @@
+using TMPro;
 using UnityEngine;
 
 public class EnemyCombatScript : CombatBase
@@ -7,9 +8,6 @@ public class EnemyCombatScript : CombatBase
     protected float AttackDelayFrames = 20;
 
     private bool _isHpBarActive = false;
-    private bool _isCollidingWithPlayer = false;
-    private float _nextAttackTime = 0;
-    private int _collisionFrames = 0;
 
     void Start()
     {
@@ -29,6 +27,7 @@ public class EnemyCombatScript : CombatBase
         {
             Die();
             ReplenishPlayerAmmo();
+            UpdateEnemyCounter();
         }
     }
 
@@ -36,7 +35,6 @@ public class EnemyCombatScript : CombatBase
     {
         if (collision.gameObject.CompareTag("Player"))
         {
-            _isCollidingWithPlayer = true;
             UpdateAnimatorCollisionProperty(true);
         }
     }
@@ -45,8 +43,6 @@ public class EnemyCombatScript : CombatBase
     {
         if (collision.gameObject.CompareTag("Player"))
         {
-            _collisionFrames = 0;
-            _isCollidingWithPlayer = false;
             UpdateAnimatorCollisionProperty(false);
         }
     }
@@ -57,24 +53,6 @@ public class EnemyCombatScript : CombatBase
         {
             EntityAnimator.SetBool("IsCollidingWithPlayer", isColliding);
         }
-    }
-
-    private void AttackPlayer()
-    {
-        _player.GetComponent<Stats>().CurrentHP -= Stats.AttackPower;
-    }
-
-    private void DetermineTimeForNextAttack()
-    {
-        var now = Time.time;
-        _nextAttackTime = now + Stats.AttackSpeed;
-    }
-
-    private bool CanAttackPlayer()
-    {
-        return
-            _collisionFrames >= AttackDelayFrames &&
-            Time.time >= _nextAttackTime;
     }
 
     private void ActivateHpBar()
@@ -88,9 +66,19 @@ public class EnemyCombatScript : CombatBase
         }
     }
 
-    private void ReplenishPlayerAmmo() 
+    private void ReplenishPlayerAmmo()
     {
         _player.GetComponent<Stats>().Ammo = _player.GetComponent<Stats>().MaxAmmo;
+    }
+
+    private void UpdateEnemyCounter()
+    {
+        var enemyCounter = GameObject.FindGameObjectWithTag("UI_EnemyCounter");
+        if (enemyCounter != null)
+        {
+            var textElement = enemyCounter.transform.GetChild(1).GetComponent<TextMeshProUGUI>();
+            textElement.text = (int.Parse(textElement.text) - 1).ToString();
+        }
     }
 
     private void GetPlayerGameObject()

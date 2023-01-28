@@ -1,6 +1,5 @@
 using UnityEngine;
 
-
 public class PlayerAttackAreaScript : AttackAreaScript
 {
     private void Start()
@@ -24,4 +23,5 @@ public class PlayerAttackAreaScript : AttackAreaScript
             }
         }
     }
+
 }

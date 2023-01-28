@@ -427,6 +427,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   EntityAnimator: {fileID: 6851744093692570317}
   MovementSpeedMultiplier: 0.8
+  PositionFreezingAnimations:
+  - {fileID: 7400000, guid: 2b800066ed91432489b14f1c4f74fde9, type: 2}
 --- !u!95 &6851744093692570317
 Animator:
   serializedVersion: 5
@@ -459,7 +461,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 04edd3169bd562b45adabf6157ef001e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  CanPlayerAttack: 1
   EntityAnimator: {fileID: 6851744093692570317}
   ActiveWeapon: 1
 --- !u!114 &6851744093692570320

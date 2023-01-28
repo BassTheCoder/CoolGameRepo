@@ -1,8 +1,11 @@
 using System.Collections;
+using System.Linq;
 using UnityEngine;
 
 public class PlayerMovementScript : EntityMovementScript
 {
+    public AnimationClip[] PositionFreezingAnimations = null;
+
     private bool _canDash = true;
     private bool _isDashing = false;
     private Vector3 _dashingVector = default;
@@ -30,7 +33,10 @@ public class PlayerMovementScript : EntityMovementScript
             float yAxis = Input.GetAxisRaw("Vertical");
 
             GetMoveVector(xAxis, yAxis);
-            Move(MoveVector);
+            if (!IsFreezingAnimationPlaying())
+            {
+                Move(MoveVector);
+            }
         }
     }
 
@@ -60,5 +66,14 @@ public class PlayerMovementScript : EntityMovementScript
             EntityAnimator.SetBool("IsPlayerDashing", false);
             _canDash = true;
         }
+    }
+
+    private bool IsFreezingAnimationPlaying()
+    {
+        if (PositionFreezingAnimations != null && PositionFreezingAnimations.Length > 0)
+        {
+            return PositionFreezingAnimations.Any(animation => EntityAnimator.GetCurrentAnimatorStateInfo(0).IsName(animation.name));
+        }
+        return false;
     }
 }

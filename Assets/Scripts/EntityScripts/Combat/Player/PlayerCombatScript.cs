@@ -2,21 +2,15 @@ using UnityEngine;
 
 public class PlayerCombatScript : CombatBase
 {
-    public bool CanPlayerAttack = true;
     public Animator EntityAnimator = default;
-    private GameObject _attackArea;
     public int ActiveWeapon = 1;
 
     private bool _isPlayerAttacking = false;
 
-    private float _attackTimeWindow = 0.25f;
-    private float _attackTimer = 0f;
-
     void Start()
     {
         GetStats();
-        _attackArea = transform.GetChild(0).gameObject;
-        _attackArea.SetActive(false);
+        SetActiveWeaponForAnimator();
     }
 
     void Update()
@@ -31,22 +25,17 @@ public class PlayerCombatScript : CombatBase
             SwitchWeapon();
         }
 
-        if (!_isPlayerAttacking && Input.GetKeyDown(Keybinds.AttackMelee) && CanPlayerAttack)
+        if (!_isPlayerAttacking && Input.GetKeyDown(Keybinds.AttackMelee))
         {
             Attack();
         }
+    }
 
+    private void FixedUpdate()
+    {
         if (_isPlayerAttacking)
         {
-            _attackTimer += Time.deltaTime;
-
-            if (_attackTimer >= _attackTimeWindow)
-            {
-                ResetAttackTimer();
-                _isPlayerAttacking = false;
-                SetAnimatorAttackingState(_isPlayerAttacking);
-                CloseAttackWindow();
-            }
+            StopAttacking();
         }
     }
 
@@ -56,33 +45,10 @@ public class PlayerCombatScript : CombatBase
         SetAnimatorAttackingState(_isPlayerAttacking);
     }
 
-    private void OpenAttackWindowAfterDelay(float delay)
+    private void StopAttacking()
     {
-        if (_attackTimer >= delay)
-        {
-            OpenAttackWindow();
-        }
-    }
-
-    private void OpenAttackWindow()
-    {
-        if (_isPlayerAttacking && _attackArea != null)
-        {
-            _attackArea.SetActive(true);
-        }
-    }
-
-    private void CloseAttackWindow()
-    {
-        if (_attackArea != null)
-        {
-            _attackArea.SetActive(false);
-        }
-    }
-
-    private void ResetAttackTimer()
-    {
-        _attackTimer = 0f;
+        _isPlayerAttacking = false;
+        SetAnimatorAttackingState(_isPlayerAttacking);
     }
 
     private void SetAnimatorAttackingState(bool attackingState)
@@ -137,11 +103,14 @@ public class PlayerCombatScript : CombatBase
             GameObject.FindGameObjectWithTag("HammerSprite").GetComponent<WeaponSpriteScript>().Activate();
         }
 
-        SetActiveWeaponForAnimator(ActiveWeapon);
+        SetActiveWeaponForAnimator();
     }
 
-    private void SetActiveWeaponForAnimator(int weaponId)
+    private void SetActiveWeaponForAnimator()
     {
-        EntityAnimator.SetInteger("ActiveWeapon", weaponId);
+        if (EntityAnimator != null)
+        {
+            EntityAnimator.SetInteger("ActiveWeapon", ActiveWeapon);
+        }
     }
 }

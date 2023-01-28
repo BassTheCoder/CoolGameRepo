@@ -17,6 +17,7 @@ TagManager:
   - SwordSprite
   - AxeSprite
   - HammerSprite
+  - UI_EnemyCounter
   layers:
   - Default
   - TransparentFX
