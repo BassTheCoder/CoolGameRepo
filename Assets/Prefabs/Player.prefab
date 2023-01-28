@@ -477,7 +477,7 @@ MonoBehaviour:
   OverrideDefaultStats: 1
   MaxHP: 100
   CurrentHP: 100
-  AttackPower: 5
+  AttackPower: 10
   ShootingPower: 2
   Ammo: 10
   MaxAmmo: 10

@@ -1,17 +1,11 @@
 using UnityEngine;
 
-public class PlayerAttackAreaScript : MonoBehaviour
-{
-    private int _damage;
-    private int _critChance;
-    private int _critDamage;
 
+public class PlayerAttackAreaScript : AttackAreaScript
+{
     private void Start()
     {
-        var playerStats = transform.parent.gameObject.GetComponent<Stats>();
-        _damage = playerStats.AttackPower;
-        _critChance = playerStats.CritChancePercent;
-        _critDamage = playerStats.CritDamageMultiplier * _damage;
+        InitiateStats();
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -26,33 +20,8 @@ public class PlayerAttackAreaScript : MonoBehaviour
             }
             else
             {
-                Debug.Log("This enemy is not combat ready yet and cannot be damaged.");
+                Debug.Log("This is not an enemy, therefore cannot be damaged.");
             }
         }
-    }
-
-    private int CountDamage()
-    {
-        var crit = RollForCrit(_critChance);
-        var damage = crit ? _critDamage : _damage;
-
-        //temp
-        if (crit)
-        {
-            Debug.Log($"Crit! Dealt {_critDamage} damage.");
-        }
-
-        return damage;
-    }
-
-    private bool RollForCrit(int critChancePercent)
-    {
-        var random = new System.Random();
-        var roll = random.Next(0, 100);
-        if (roll <= critChancePercent)
-        {
-            return true;
-        }
-        return false;
     }
 }

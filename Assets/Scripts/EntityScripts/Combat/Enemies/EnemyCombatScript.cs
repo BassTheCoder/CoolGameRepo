@@ -4,11 +4,11 @@ public class EnemyCombatScript : CombatBase
 {
     public Animator EntityAnimator = null;
     private GameObject _player = default;
+    protected float AttackDelayFrames = 20;
 
     private bool _isHpBarActive = false;
     private bool _isCollidingWithPlayer = false;
     private float _nextAttackTime = 0;
-    protected float AttackDelayFrames = 20;
     private int _collisionFrames = 0;
 
     void Start()
@@ -29,17 +29,6 @@ public class EnemyCombatScript : CombatBase
         {
             Die();
             ReplenishPlayerAmmo();
-        }
-
-        if (_isCollidingWithPlayer)
-        {
-            _collisionFrames++;
-
-            if (CanAttackPlayer())
-            {
-                AttackPlayer();
-                DetermineTimeForNextAttack();
-            }
         }
     }
 
@@ -86,11 +75,6 @@ public class EnemyCombatScript : CombatBase
         return
             _collisionFrames >= AttackDelayFrames &&
             Time.time >= _nextAttackTime;
-    }
-
-    public void Damage(int damage)
-    {
-        GetHitFor(damage);
     }
 
     private void ActivateHpBar()

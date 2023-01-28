@@ -3,9 +3,10 @@ using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
 
-[RequireComponent(typeof(BoxCollider2D))]
+[RequireComponent(typeof(Collider2D))]
 public class EnemySpawner : MonoBehaviour
 {
+    private SpriteRenderer _spriteRenderer = null;
     public bool ShouldSpawn = true;
     public bool StopSpawningIfExitedArea = true;
 
@@ -29,6 +30,11 @@ public class EnemySpawner : MonoBehaviour
 
     private void Start()
     {
+        _spriteRenderer = GetComponent<SpriteRenderer>();
+        if (_spriteRenderer != null)
+        {
+            _spriteRenderer.enabled = false;
+        }
         if (LevelEnemies.Length == 0 || LevelBoss == null)
         {
             Debug.Log("Enemies or Boss missing for the level. (add in enemy spawner)");

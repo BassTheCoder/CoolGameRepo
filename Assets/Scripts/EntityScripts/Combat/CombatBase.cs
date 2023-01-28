@@ -28,13 +28,18 @@ public class CombatBase : MonoBehaviour
         Stats.CurrentHP += amount;
     }
 
+    public void Damage(int damage)
+    {
+        GetHitFor(damage);
+    }
+
     protected void GetHitFor(int damage)
     {
-        var finalDamage = CalculateDamage(damage);
+        var finalDamage = GetDamageRegardingDefense(damage);
         Stats.CurrentHP -= finalDamage;
     }
 
-    private int CalculateDamage(int damage)
+    private int GetDamageRegardingDefense(int damage)
     {
         var damageRegardingDefense = damage * GetDefenseAsDamageMultiplier();
         var finalDamage = Mathf.FloorToInt(damageRegardingDefense);

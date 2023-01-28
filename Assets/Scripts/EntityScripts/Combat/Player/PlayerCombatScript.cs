@@ -53,7 +53,6 @@ public class PlayerCombatScript : CombatBase
     private void Attack()
     {
         _isPlayerAttacking = true;
-        OpenAttackWindow();
         SetAnimatorAttackingState(_isPlayerAttacking);
     }
 
