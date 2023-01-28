@@ -8,7 +8,7 @@ public class EnemyCombatScript : CombatBase
     private bool _isHpBarActive = false;
     private bool _isCollidingWithPlayer = false;
     private float _nextAttackTime = 0;
-    private float _attackDelayFrames = 10;
+    protected float AttackDelayFrames = 20;
     private int _collisionFrames = 0;
 
     void Start()
@@ -84,7 +84,7 @@ public class EnemyCombatScript : CombatBase
     private bool CanAttackPlayer()
     {
         return
-            _collisionFrames >= _attackDelayFrames &&
+            _collisionFrames >= AttackDelayFrames &&
             Time.time >= _nextAttackTime;
     }
 

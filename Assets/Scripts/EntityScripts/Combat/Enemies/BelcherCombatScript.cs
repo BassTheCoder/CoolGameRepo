@@ -2,6 +2,8 @@ public class BelcherCombatScript : EnemyCombatScript
 {
     void Start()
     {
+        AttackDelayFrames = 200;
+
         SetStats(
             maxHp: 200,
             attackPower: 20,

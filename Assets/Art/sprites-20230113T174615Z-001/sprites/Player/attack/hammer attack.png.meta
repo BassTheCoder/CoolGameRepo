@@ -108,12 +108,12 @@ TextureImporter:
       name: hammer attack_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
+        x: 8
+        y: 21
         width: 30
-        height: 21
+        height: 20
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -129,12 +129,12 @@ TextureImporter:
       name: hammer attack_1
       rect:
         serializedVersion: 2
-        x: 30
+        x: 20
         y: 0
         width: 30
-        height: 21
+        height: 20
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -150,12 +150,12 @@ TextureImporter:
       name: hammer attack_2
       rect:
         serializedVersion: 2
-        x: 60
-        y: 0
+        x: 50
+        y: 21
         width: 30
-        height: 21
+        height: 20
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -171,12 +171,12 @@ TextureImporter:
       name: hammer attack_3
       rect:
         serializedVersion: 2
-        x: 90
+        x: 74
         y: 0
-        width: 30
-        height: 21
+        width: 44
+        height: 20
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -192,12 +192,12 @@ TextureImporter:
       name: hammer attack_4
       rect:
         serializedVersion: 2
-        x: 120
-        y: 0
-        width: 30
-        height: 21
+        x: 105
+        y: 21
+        width: 42
+        height: 20
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -213,12 +213,12 @@ TextureImporter:
       name: hammer attack_5
       rect:
         serializedVersion: 2
-        x: 150
+        x: 141
         y: 0
         width: 30
-        height: 21
+        height: 20
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -234,12 +234,12 @@ TextureImporter:
       name: hammer attack_6
       rect:
         serializedVersion: 2
-        x: 180
-        y: 0
+        x: 171
+        y: 21
         width: 30
-        height: 21
+        height: 20
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -255,12 +255,12 @@ TextureImporter:
       name: hammer attack_7
       rect:
         serializedVersion: 2
-        x: 210
+        x: 201
         y: 0
         width: 30
-        height: 21
+        height: 20
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -276,12 +276,12 @@ TextureImporter:
       name: hammer attack_8
       rect:
         serializedVersion: 2
-        x: 240
-        y: 0
+        x: 231
+        y: 21
         width: 30
-        height: 21
+        height: 20
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
