@@ -8154,11 +8154,10 @@ MonoBehaviour:
   - {x: 0.69, y: -0.77, z: 0}
   - {x: 2.62, y: -0.77, z: 0}
   BossSpawnPoint: {x: 2.6, y: 0, z: 0}
-  AmountOfEnemiesToKill: 1
+  AmountOfEnemiesToKill: 3
   MaxEnemiesOnBoard: 3
   LevelEnemies:
-  - {fileID: 431705457544701453, guid: 4e4fa8f4af4c0c94aa84320451879d4a, type: 3}
-  - {fileID: 8681190331387657573, guid: b1b2aa3842d106d4cb6191bf6a6cd87c, type: 3}
+  - {fileID: 8791920912943786326, guid: 1234cbc4272dbb24c8aa8c68672c2825, type: 3}
   LevelBoss: {fileID: 2580045782849826653, guid: 6afec17b256f6ad498df8c0dbab784d6, type: 3}
   IsRoomFinished: 0
 --- !u!61 &951092180

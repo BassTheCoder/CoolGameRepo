@@ -137,5 +137,12 @@ public class PlayerCombatScript : CombatBase
             GameObject.FindGameObjectWithTag("AxeSprite").GetComponent<WeaponSpriteScript>().Deactivate();
             GameObject.FindGameObjectWithTag("HammerSprite").GetComponent<WeaponSpriteScript>().Activate();
         }
+
+        SetActiveWeaponForAnimator(ActiveWeapon);
+    }
+
+    private void SetActiveWeaponForAnimator(int weaponId)
+    {
+        EntityAnimator.SetInteger("ActiveWeapon", weaponId);
     }
 }
