@@ -1825,7 +1825,7 @@ MonoBehaviour:
   - {x: 2.74, y: -0.638, z: 0.005871862}
   - {x: 0.824, y: -0.63, z: 0.005871862}
   BossSpawnPoint: {x: 2.705, y: 0.102, z: 0.005871862}
-  AmountOfEnemiesToKill: 1
+  AmountOfEnemiesToKill: 9
   MaxEnemiesOnBoard: 3
   LevelEnemies:
   - {fileID: 8681190331387657573, guid: b1b2aa3842d106d4cb6191bf6a6cd87c, type: 3}
@@ -2038,6 +2038,25 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 7160645808042680627, guid: 5630a0313eade0443a380af8c43a07ca, type: 3}
   m_PrefabInstance: {fileID: 1813089803}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &443153231 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5204652951944977943, guid: 29407f7975eb11c428643b31fb7b688b, type: 3}
+  m_PrefabInstance: {fileID: 7840863662412111365}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &443153235
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 443153231}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4a568eb2f590cc043bb8132abec415ea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ActiveWeaponSprite: {fileID: 298956178, guid: c97ff31300ba61546a16e0843910449c, type: 3}
+  InactiveWeaponSprite: {fileID: -1681817275, guid: c97ff31300ba61546a16e0843910449c, type: 3}
 --- !u!1 &479300539
 GameObject:
   m_ObjectHideFlags: 0
@@ -12826,6 +12845,23 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1606636289 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7840863661209545928, guid: 29407f7975eb11c428643b31fb7b688b, type: 3}
+  m_PrefabInstance: {fileID: 7840863662412111365}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1606636293
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1606636289}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c44940d38acdf564086553dc2ae54f96, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1650855129
 GameObject:
   m_ObjectHideFlags: 0
@@ -14874,6 +14910,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6851744093692570320, guid: cb0ac38ab7269fe4d8b0c006e0f3f76f, type: 3}
+      propertyPath: MaxHP
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 6851744093692570320, guid: cb0ac38ab7269fe4d8b0c006e0f3f76f, type: 3}
+      propertyPath: CurrentHP
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 6851744093692570320, guid: cb0ac38ab7269fe4d8b0c006e0f3f76f, type: 3}
+      propertyPath: AttackPower
+      value: 20
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cb0ac38ab7269fe4d8b0c006e0f3f76f, type: 3}
 --- !u!1001 &2024337166
@@ -15036,5 +15084,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: UI
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 2808737790442817855, guid: 29407f7975eb11c428643b31fb7b688b, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 29407f7975eb11c428643b31fb7b688b, type: 3}

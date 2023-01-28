@@ -86,21 +86,21 @@ public class PlayerCombatScript : CombatBase
     {
         if (ActiveWeapon == 1)
         {
-            GameObject.FindGameObjectWithTag("SwordSprite").GetComponent<WeaponSpriteScript>().Activate();
-            GameObject.FindGameObjectWithTag("AxeSprite").GetComponent<WeaponSpriteScript>().Deactivate();
-            GameObject.FindGameObjectWithTag("HammerSprite").GetComponent<WeaponSpriteScript>().Deactivate();
+            GameObject.FindGameObjectWithTag("SwordSprite").GetComponent<UI_WeaponSpriteScript>().Activate();
+            GameObject.FindGameObjectWithTag("AxeSprite").GetComponent<UI_WeaponSpriteScript>().Deactivate();
+            GameObject.FindGameObjectWithTag("HammerSprite").GetComponent<UI_WeaponSpriteScript>().Deactivate();
         }
         else if (ActiveWeapon == 2)
         {
-            GameObject.FindGameObjectWithTag("SwordSprite").GetComponent<WeaponSpriteScript>().Deactivate();
-            GameObject.FindGameObjectWithTag("AxeSprite").GetComponent<WeaponSpriteScript>().Activate();
-            GameObject.FindGameObjectWithTag("HammerSprite").GetComponent<WeaponSpriteScript>().Deactivate();
+            GameObject.FindGameObjectWithTag("SwordSprite").GetComponent<UI_WeaponSpriteScript>().Deactivate();
+            GameObject.FindGameObjectWithTag("AxeSprite").GetComponent<UI_WeaponSpriteScript>().Activate();
+            GameObject.FindGameObjectWithTag("HammerSprite").GetComponent<UI_WeaponSpriteScript>().Deactivate();
         }
         else if (ActiveWeapon == 3)
         {
-            GameObject.FindGameObjectWithTag("SwordSprite").GetComponent<WeaponSpriteScript>().Deactivate();
-            GameObject.FindGameObjectWithTag("AxeSprite").GetComponent<WeaponSpriteScript>().Deactivate();
-            GameObject.FindGameObjectWithTag("HammerSprite").GetComponent<WeaponSpriteScript>().Activate();
+            GameObject.FindGameObjectWithTag("SwordSprite").GetComponent<UI_WeaponSpriteScript>().Deactivate();
+            GameObject.FindGameObjectWithTag("AxeSprite").GetComponent<UI_WeaponSpriteScript>().Deactivate();
+            GameObject.FindGameObjectWithTag("HammerSprite").GetComponent<UI_WeaponSpriteScript>().Activate();
         }
 
         SetActiveWeaponForAnimator();
