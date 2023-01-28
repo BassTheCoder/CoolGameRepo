@@ -1825,7 +1825,7 @@ MonoBehaviour:
   - {x: 2.74, y: -0.638, z: 0.005871862}
   - {x: 0.824, y: -0.63, z: 0.005871862}
   BossSpawnPoint: {x: 2.705, y: 0.102, z: 0.005871862}
-  AmountOfEnemiesToKill: 6
+  AmountOfEnemiesToKill: 1
   MaxEnemiesOnBoard: 3
   LevelEnemies:
   - {fileID: 8681190331387657573, guid: b1b2aa3842d106d4cb6191bf6a6cd87c, type: 3}
@@ -14940,6 +14940,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1320334251852610865, guid: 29407f7975eb11c428643b31fb7b688b, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -489085107, guid: 725793c375e0a5244b850d27e7f59de9, type: 3}
     - target: {fileID: 7840863662577231858, guid: 29407f7975eb11c428643b31fb7b688b, type: 3}
       propertyPath: m_Pivot.x
       value: 0

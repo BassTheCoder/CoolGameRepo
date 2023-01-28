@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 725793c375e0a5244b850d27e7f59de9
+guid: 05906da8b0d8810499cbf775264b1c08
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -105,85 +105,169 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: hp bar fancy_silver
+      name: belcher walk v2_0
       rect:
         serializedVersion: 2
-        x: 3
-        y: 20
-        width: 205
-        height: 19
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 55f9b9d0129ea4e4580444d6cf4394ff
-      internalID: -489085107
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: hp bar fancy_1
-      rect:
-        serializedVersion: 2
-        x: 152
-        y: 46
-        width: 1
-        height: 6
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: f02d683f1c95a2e4ea59154d78e8b1d2
-      internalID: 436525603
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: hp bar fancy_2
-      rect:
-        serializedVersion: 2
-        x: 154
-        y: 46
-        width: 1
-        height: 6
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: adb1999697c50da44a0f78e2c82465ab
-      internalID: 1440643267
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: hp bar fancy_gold
-      rect:
-        serializedVersion: 2
-        x: 3
+        x: 0
         y: 0
-        width: 205
-        height: 19
+        width: 32
+        height: 26
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: eba0197645b938340a04cb2315758b0c
-      internalID: 476755891
+      spriteID: 94fb9cfc65b633444ac6c4a8732b9544
+      internalID: -1979001744
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: belcher walk v2_1
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 0
+        width: 32
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 413484647881b7b46930143bf95268ae
+      internalID: -850060830
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: belcher walk v2_2
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 0
+        width: 32
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 88aeead1420e9c84cb1cd2f677dbdcd1
+      internalID: -1522952937
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: belcher walk v2_3
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 0
+        width: 32
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0fb955dcb56119b4da72534af1c06c83
+      internalID: 485228357
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: belcher walk v2_4
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 0
+        width: 32
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 148d83f5ebc657e4d9eb94fe34ce58ae
+      internalID: 175819009
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: belcher walk v2_5
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 0
+        width: 32
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf0b32e1710811d49ac080eaebfe428a
+      internalID: 596239104
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: belcher walk v2_6
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 0
+        width: 32
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d5ad6f57295b5de4d9b8638f7705cb8e
+      internalID: -886728835
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: belcher walk v2_7
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 0
+        width: 32
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 25b8c2df265aae447938fc9e8ca30433
+      internalID: -1853005701
       vertices: []
       indices: 
       edges: []
@@ -199,10 +283,14 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      hp bar fancy_gold: 476755891
-      hp bar fancy_2: 1440643267
-      hp bar fancy_1: 436525603
-      hp bar fancy_silver: -489085107
+      belcher walk v2_5: 596239104
+      belcher walk v2_7: -1853005701
+      belcher walk v2_4: 175819009
+      belcher walk v2_1: -850060830
+      belcher walk v2_2: -1522952937
+      belcher walk v2_3: 485228357
+      belcher walk v2_6: -886728835
+      belcher walk v2_0: -1979001744
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
