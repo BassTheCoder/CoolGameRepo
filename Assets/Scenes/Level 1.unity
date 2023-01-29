@@ -1600,6 +1600,7 @@ GameObject:
   - component: {fileID: 133876382}
   - component: {fileID: 133876383}
   - component: {fileID: 133876384}
+  - component: {fileID: 133876385}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: GameController
@@ -1673,7 +1674,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4ca8c6c87e90151429a2b2a7dc637824, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  StartingPosition: {x: -0.72, y: 1, z: 0.04069256}
+  StartingPosition: {x: -0.72, y: 1, z: 0}
 --- !u!114 &133876383
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1709,6 +1710,21 @@ MonoBehaviour:
   MaxAmmo: 1
   CritChancePercent: 5
   Defense: 1
+--- !u!114 &133876385
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 133876376}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbadb210f2cf65c40afa04c9fa242afc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  IsMenu: 0
+  Player: {fileID: 6851744093692570312, guid: cb0ac38ab7269fe4d8b0c006e0f3f76f, type: 3}
+  PlayerSpawnLocation: {x: -0.72, y: 1, z: 0}
 --- !u!4 &135808306 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7160645808042680627, guid: 5630a0313eade0443a380af8c43a07ca, type: 3}
@@ -12790,7 +12806,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1532792062}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -1}
+  m_LocalPosition: {x: -0.731, y: 0.86, z: -1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -14864,7 +14880,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6851744093692570312, guid: cb0ac38ab7269fe4d8b0c006e0f3f76f, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6851744093692570319, guid: cb0ac38ab7269fe4d8b0c006e0f3f76f, type: 3}
       propertyPath: m_RootOrder

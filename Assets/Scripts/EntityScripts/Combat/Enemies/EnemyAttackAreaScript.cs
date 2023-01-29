@@ -11,12 +11,17 @@ public class EnemyAttackAreaScript : AttackAreaScript
     {
         if (collision.CompareTag("Player"))
         {
-            var player = collision.GetComponent<PlayerCombatScript>();
-            if (player != null)
-            {
-                var damage = CountDamage();
-                player.Damage(damage);
-            }
+            DealDamage(collision);
+        }
+    }
+
+    protected void DealDamage(Collider2D collision)
+    {
+        var player = collision.GetComponent<PlayerCombatScript>();
+        if (player != null)
+        {
+            var damage = CountDamage();
+            player.Damage(damage);
         }
     }
 }

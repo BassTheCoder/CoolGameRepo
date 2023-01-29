@@ -1,3 +1,4 @@
+using System.Linq;
 using UnityEngine;
 
 [RequireComponent(typeof(BoxCollider2D))]
@@ -5,6 +6,7 @@ using UnityEngine;
 public class EntityMovementScript : MonoBehaviour
 {
     public Animator EntityAnimator;
+    public AnimationClip[] PositionFreezingAnimations = null;
 
     protected BoxCollider2D BoxCollider;
     protected Rigidbody2D Rigidbody;
@@ -31,14 +33,16 @@ public class EntityMovementScript : MonoBehaviour
 
     protected void Move(Vector3 moveVector)
     {
-        OrientateEntityModelOnMovement(MoveVector.x);
-
-        if (EntityAnimator != null)
+        if (!IsFreezingAnimationPlaying())
         {
-            EntityAnimator.SetFloat("Speed", moveVector.sqrMagnitude);
-        }
+            OrientateEntityModelOnMovement(MoveVector.x);
+            if (EntityAnimator != null)
+            {
+                EntityAnimator.SetFloat("Speed", moveVector.sqrMagnitude);
+            }
 
-        transform.Translate(MovementSpeedMultiplier * Time.fixedDeltaTime * moveVector);
+            transform.Translate(MovementSpeedMultiplier * Time.fixedDeltaTime * moveVector);
+        }
     }
 
     protected void OrientateEntityModelOnMovement(float x)
@@ -66,6 +70,15 @@ public class EntityMovementScript : MonoBehaviour
     protected void UnfreezePosition()
     {
         Rigidbody.constraints = RigidbodyConstraints2D.FreezeRotation;
+    }
+
+    private bool IsFreezingAnimationPlaying()
+    {
+        if (PositionFreezingAnimations != null && PositionFreezingAnimations.Length > 0)
+        {
+            return PositionFreezingAnimations.Any(animation => EntityAnimator.GetCurrentAnimatorStateInfo(0).IsName(animation.name));
+        }
+        return false;
     }
     #endregion
 }

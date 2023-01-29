@@ -9,8 +9,8 @@ public class UI_HpBarScript : MonoBehaviour
     private Material _defaultEntityRendererMaterial = default;
 
     private bool _isBlinking = false;
-    private int _currentBlinkFrames = 0;
-    private int _blinkFrames = 45;
+    private float _blinkingStopTime = 0;
+    private float _howLongShouldBlink = 0.2f;
 
     private void Start()
     {
@@ -28,15 +28,10 @@ public class UI_HpBarScript : MonoBehaviour
     {
         if (Entity != null)
         {
-            if (_isBlinking && _currentBlinkFrames >= _blinkFrames)
+            if (_isBlinking && Time.time >= _blinkingStopTime)
             {
                 Entity.GetComponent<SpriteRenderer>().material = _defaultEntityRendererMaterial;
                 _isBlinking = false;
-                _currentBlinkFrames = 0;
-            }
-            else if (_isBlinking)
-            {
-                _currentBlinkFrames++;
             }
 
             var currentHpPercent = Entity.GetEntityCurrentHpPercent();
@@ -44,6 +39,7 @@ public class UI_HpBarScript : MonoBehaviour
             {
                 Entity.GetComponent<SpriteRenderer>().material = DamageBlinkMaterial;
                 _isBlinking = true;
+                _blinkingStopTime = Time.time + _howLongShouldBlink;
             }
             transform.GetChild(2).gameObject.transform.localScale = new Vector3(currentHpPercent, 1, 1);
             _oldHp = currentHpPercent;

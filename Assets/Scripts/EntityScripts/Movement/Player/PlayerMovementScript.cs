@@ -3,7 +3,6 @@ using UnityEngine;
 
 public class PlayerMovementScript : EntityMovementScript
 {
-    public AnimationClip[] PositionFreezingAnimations = null;
 
     private bool _canDash = true;
     private bool _isDashing = false;
@@ -32,10 +31,7 @@ public class PlayerMovementScript : EntityMovementScript
             float yAxis = Input.GetAxisRaw("Vertical");
 
             GetMoveVector(xAxis, yAxis);
-            if (!IsFreezingAnimationPlaying())
-            {
-                Move(MoveVector);
-            }
+            Move(MoveVector);
         }
     }
 
@@ -67,12 +63,5 @@ public class PlayerMovementScript : EntityMovementScript
         }
     }
 
-    private bool IsFreezingAnimationPlaying()
-    {
-        if (PositionFreezingAnimations != null && PositionFreezingAnimations.Length > 0)
-        {
-            return PositionFreezingAnimations.Any(animation => EntityAnimator.GetCurrentAnimatorStateInfo(0).IsName(animation.name));
-        }
-        return false;
-    }
+
 }

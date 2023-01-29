@@ -1,8 +1,12 @@
 using UnityEngine;
 
+
+[DefaultExecutionOrder(-1000)]
 public class StartScript : MonoBehaviour
 {
+    public bool IsMenu = false;
     public GameObject Player = null;
+    public Vector3 PlayerSpawnLocation = Vector3.zero;
 
     void Start()
     {
@@ -11,10 +15,13 @@ public class StartScript : MonoBehaviour
 
     private void ResetGame()
     {
-        DestroyAllObjectWithTag("Player");
-        DestroyAllObjectWithTag("Enemy");
+        //DestroyAllObjectWithTag("Player");
+        //DestroyAllObjectWithTag("Enemy");
 
-        Instantiate(Player, new Vector3(-1f, -0.6f, 0.005f), Quaternion.identity);
+        if (!IsMenu)
+        {
+            SpawnPlayer();
+        }
     }
 
     private void DestroyAllObjectWithTag(string tag)
@@ -24,5 +31,10 @@ public class StartScript : MonoBehaviour
         {
             Destroy(obj);
         }
+    }
+
+    private void SpawnPlayer()
+    {
+        Instantiate(Player, PlayerSpawnLocation, Quaternion.identity);
     }
 }
