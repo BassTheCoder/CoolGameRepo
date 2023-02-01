@@ -16,7 +16,7 @@ public class UI_HpBarScript : MonoBehaviour
     {
         if (Entity == null)
         {
-            Debug.Log("Sctipt has no entity given to track health!");
+            Debug.Log("Script has no entity given to track health!");
         }
         else
         {

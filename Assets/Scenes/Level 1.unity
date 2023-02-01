@@ -1706,6 +1706,9 @@ MonoBehaviour:
   MaxHP: 30
   CurrentHP: 20
   AttackPower: 2
+  AxeAttackPower: 2
+  HammerAttackPower: 2
+  Piercing: 1
   ShootingPower: 1
   MaxAmmo: 1
   CritChancePercent: 5

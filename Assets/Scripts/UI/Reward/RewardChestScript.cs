@@ -83,7 +83,19 @@ public class RewardChestScript : MonoBehaviour
             }
             else if (reward.StatToUpgrade == "AttackPower")
             {
-                reward.UpgradeText = $"MELEE DMG \n+\n{reward.UpgradeValue}";
+                reward.UpgradeText = $"SWORD DMG\n+\n{reward.UpgradeValue}";
+            }
+            else if (reward.StatToUpgrade == "AxeAttackPower")
+            {
+                reward.UpgradeText = $"AXE DMG\n+\n{reward.UpgradeValue}";
+            }
+            else if (reward.StatToUpgrade == "HammerAttackPower")
+            {
+                reward.UpgradeText = $"HAMMER DMG\n+\n{reward.UpgradeValue}";
+            }
+            else if (reward.StatToUpgrade == "Piercing")
+            {
+                reward.UpgradeText = $"PIERCING\n+\n{reward.UpgradeValue}";
             }
             else if (reward.StatToUpgrade == "ShootingPower")
             {

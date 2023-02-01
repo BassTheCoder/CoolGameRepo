@@ -6,6 +6,9 @@ public class PossibleRewards : MonoBehaviour
     public int MaxHP = 0;
     public int CurrentHP = 0;
     public int AttackPower = 0;
+    public int AxeAttackPower = 0;
+    public int HammerAttackPower = 0;
+    public int Piercing = 0;
     public int ShootingPower = 0;
     public int MaxAmmo = 0;
     public int CritChancePercent = 0;
@@ -29,6 +32,9 @@ public class PossibleRewards : MonoBehaviour
         MaxHP = chestSpawner.MaxHP;
         CurrentHP = chestSpawner.CurrentHP;
         AttackPower = chestSpawner.AttackPower;
+        AxeAttackPower = chestSpawner.AxeAttackPower;
+        HammerAttackPower = chestSpawner.HammerAttackPower;
+        Piercing = chestSpawner.Piercing;
         ShootingPower = chestSpawner.ShootingPower;
         MaxAmmo = chestSpawner.MaxAmmo;
         CritChancePercent = chestSpawner.CritChancePercent;

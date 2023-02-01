@@ -480,13 +480,13 @@ MonoBehaviour:
   CurrentHP: 100
   AttackPower: 10
   Defense: 0
-  AxeAttackPower: 12
-  HammerAttackPower: 15
+  AxeAttackPower: 15
+  HammerAttackPower: 20
   ShootingPower: 3
   Ammo: 10
   MaxAmmo: 10
   ArrowPiercing: 0
-  CritChancePercent: 0
+  CritChancePercent: 10
   CritDamageMultiplier: 2
 --- !u!114 &5342907080460422265
 MonoBehaviour:

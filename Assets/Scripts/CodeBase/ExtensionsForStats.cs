@@ -172,13 +172,15 @@ public static class ExtensionsForStats
             Debug.Log("This method is for player object only.");
             return;
         }
-        var playerStats = entity.GetComponent<PlayerStats>();
 
+        var playerStats = entity.GetComponent<PlayerStats>();
         playerStats.Ammo += amount;
+
         if (playerStats.Ammo > playerStats.MaxAmmo)
         {
             entity.GetComponent<PlayerStats>().Ammo = playerStats.MaxAmmo;
         }
+
     }
 
     public static void RefillAmmo(this GameObject entity)
