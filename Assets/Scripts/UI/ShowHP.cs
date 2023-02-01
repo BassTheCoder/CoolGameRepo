@@ -3,14 +3,14 @@ using UnityEngine;
 public class ShowHP : MonoBehaviour
 {
     private GameObject _character;
-    private Stats _characterStats;
+    private EntityStats _characterStats;
     private float _hp;
     private float _hpPercent;
     
     void Start()
     {
         _character = gameObject.transform.parent.parent.gameObject;
-        _characterStats = _character.GetComponent<Stats>();
+        _characterStats = _character.GetComponent<EntityStats>();
         GetHpValues();
         if (_hpPercent == 1)
         {
@@ -32,7 +32,7 @@ public class ShowHP : MonoBehaviour
 
     private void GetHp()
     {
-        _hp = _character.GetComponent<Stats>().CurrentHP;
+        _hp = _character.GetComponent<EntityStats>().CurrentHP;
     }
 
     private void GetHpPercent()

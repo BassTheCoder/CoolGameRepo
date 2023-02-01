@@ -129,7 +129,7 @@ public class EnemySpawner : MonoBehaviour
         }
     }
 
-    private void SpawnEnemy(GameObject enemyGameObject, Stats stats = null, bool isBoss = false)
+    private void SpawnEnemy(GameObject enemyGameObject, EntityStats stats = null, bool isBoss = false)
     {
         if (stats != null)
         {

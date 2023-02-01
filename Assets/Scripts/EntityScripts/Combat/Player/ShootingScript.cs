@@ -20,7 +20,7 @@ public class ShootingScript : MonoBehaviour
     private void FixedUpdate()
     {
         CheckIfCanShoot();
-        var ammo = _player.GetComponent<Stats>().Ammo;
+        var ammo = _player.GetComponent<PlayerStats>().Ammo;
         if (ammo > 0 && _canShoot && Input.GetKey(Keybinds.AttackRanged))
         {
             Shoot();
@@ -37,7 +37,7 @@ public class ShootingScript : MonoBehaviour
         var mousePosition = Camera.main.ScreenToWorldPoint(new Vector3(Input.mousePosition.x, Input.mousePosition.y, ShootPoint.position.z));
         var angle = AngleBetweenTwoPoints(ShootPoint.position, mousePosition);
         Instantiate(Shot, ShootPoint.position, Quaternion.Euler(0f, 0f, angle + 180));
-        _player.GetComponent<Stats>().Ammo--;
+        _player.GetComponent<PlayerStats>().Ammo--;
         _nextShotTime = Time.time + _shotCooldown;
     }
 

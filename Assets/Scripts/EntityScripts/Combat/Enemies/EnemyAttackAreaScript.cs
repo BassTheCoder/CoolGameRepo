@@ -17,11 +17,11 @@ public class EnemyAttackAreaScript : AttackAreaScript
 
     protected void DealDamage(Collider2D collision)
     {
-        var player = collision.GetComponent<PlayerCombatScript>();
+        var player = collision.gameObject;
         if (player != null)
         {
             var damage = CountDamage();
-            player.Damage(damage);
+            player.DamageFor(damage);
         }
     }
 }

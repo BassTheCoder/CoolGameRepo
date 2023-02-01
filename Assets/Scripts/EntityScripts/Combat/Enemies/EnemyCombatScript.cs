@@ -17,7 +17,7 @@ public class EnemyCombatScript : CombatBase
 
     void FixedUpdate()
     {
-        var currentHpPercent = GetCurrentHpPercent();
+        var currentHpPercent = gameObject.GetCurrentHpPercent();
         if (currentHpPercent < 100 && !_isHpBarActive)
         {
             ActivateHpBar();
@@ -68,7 +68,7 @@ public class EnemyCombatScript : CombatBase
 
     private void ReplenishPlayerAmmo()
     {
-        _player.GetComponent<Stats>().Ammo = _player.GetComponent<Stats>().MaxAmmo;
+        _player.RefillAmmo();
     }
 
     private void UpdateEnemyCounter()

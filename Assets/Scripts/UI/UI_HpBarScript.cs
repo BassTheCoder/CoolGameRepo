@@ -34,7 +34,7 @@ public class UI_HpBarScript : MonoBehaviour
                 _isBlinking = false;
             }
 
-            var currentHpPercent = Entity.GetEntityCurrentHpPercent();
+            var currentHpPercent = Entity.GetCurrentHpDecimal();
             if (currentHpPercent < _oldHp && DamageBlinkMaterial != null)
             {
                 Entity.GetComponent<SpriteRenderer>().material = DamageBlinkMaterial;

@@ -39,6 +39,11 @@ public class PlayerCombatScript : CombatBase
         }
     }
 
+    protected override void GetStats()
+    {
+        Stats = gameObject.GetComponent<PlayerStats>();
+    }
+
     private void Attack()
     {
         _isPlayerAttacking = true;

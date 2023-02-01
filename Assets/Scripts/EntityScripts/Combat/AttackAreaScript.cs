@@ -4,15 +4,13 @@ using UnityEngine;
 public class AttackAreaScript : MonoBehaviour
 {
     protected int Damage;
-    protected int CritChance;
-    protected int CritDamage;
+    protected int CritChance = 0;
+    protected int CritDamage = 0;
 
-    protected void InitiateStats()
+    protected virtual void InitiateStats()
     {
-        var parentStats = transform.parent.gameObject.GetComponent<Stats>();
+        var parentStats = transform.parent.gameObject.GetComponent<EntityStats>();
         Damage = parentStats.AttackPower;
-        CritChance = parentStats.CritChancePercent;
-        CritDamage = parentStats.CritDamageMultiplier * Damage;
     }
 
     protected int CountDamage()

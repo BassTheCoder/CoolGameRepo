@@ -19,7 +19,7 @@ public class EnemyMovementScript : EntityMovementScript
 
     void FixedUpdate()
     {
-        if (ShouldFollowPlayer)
+        if (ShouldFollowPlayer && PlayerObjectTransform != null)
         {
             if (_followingPlayer)
             {
@@ -38,7 +38,6 @@ public class EnemyMovementScript : EntityMovementScript
         {
             FreezePosition();
         }
-
     }
 
     void OnCollisionEnter2D(Collision2D collision)

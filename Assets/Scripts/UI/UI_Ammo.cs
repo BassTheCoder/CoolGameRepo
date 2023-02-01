@@ -15,7 +15,7 @@ public class UI_Ammo : MonoBehaviour
     {
         if (_player != null)
         {
-            GetComponent<TextMeshProUGUI>().text = _player.GetComponent<Stats>().Ammo.ToString();
+            GetComponent<TextMeshProUGUI>().text = _player.GetComponent<PlayerStats>().Ammo.ToString();
         }
 
         GetTextColor();

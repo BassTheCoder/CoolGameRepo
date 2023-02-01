@@ -285,9 +285,9 @@ GameObject:
   - component: {fileID: 6851744093692570316}
   - component: {fileID: 6851744093692570317}
   - component: {fileID: 6851744093692570318}
-  - component: {fileID: 6851744093692570320}
-  - component: {fileID: 3215522591053794303}
+  - component: {fileID: 8195400752911777773}
   - component: {fileID: 5342907080460422265}
+  - component: {fileID: 3215522591053794303}
   m_Layer: 7
   m_Name: Player
   m_TagString: Player
@@ -426,9 +426,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   EntityAnimator: {fileID: 6851744093692570317}
-  MovementSpeedMultiplier: 0.8
   PositionFreezingAnimations:
   - {fileID: 7400000, guid: 2b800066ed91432489b14f1c4f74fde9, type: 2}
+  MovementSpeedMultiplier: 0.8
 --- !u!95 &6851744093692570317
 Animator:
   serializedVersion: 5
@@ -463,7 +463,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   EntityAnimator: {fileID: 6851744093692570317}
   ActiveWeapon: 1
---- !u!114 &6851744093692570320
+--- !u!114 &8195400752911777773
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -472,32 +472,22 @@ MonoBehaviour:
   m_GameObject: {fileID: 6851744093692570312}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9de9c84d9d253a04282a4833fc3d1c9f, type: 3}
+  m_Script: {fileID: 11500000, guid: 7c7933ca43fb87f4f80cc6b4a9ce3ac3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   OverrideDefaultStats: 1
   MaxHP: 100
   CurrentHP: 100
   AttackPower: 10
-  ShootingPower: 2
+  Defense: 0
+  AxeAttackPower: 12
+  HammerAttackPower: 15
+  ShootingPower: 3
   Ammo: 10
   MaxAmmo: 10
-  AttackSpeed: 0.3
-  CritChancePercent: 5
+  ArrowPiercing: 0
+  CritChancePercent: 0
   CritDamageMultiplier: 2
-  Defense: 0
---- !u!114 &3215522591053794303
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6851744093692570312}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: caa2cd6d76909d34f88e324fa1e0c339, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &5342907080460422265
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -512,3 +502,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ShootPoint: {fileID: 4831854225136153307}
   Shot: {fileID: 5140950185803067748, guid: 32cef8d7813951842b323615af6a614d, type: 3}
+--- !u!114 &3215522591053794303
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6851744093692570312}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: caa2cd6d76909d34f88e324fa1e0c339, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
