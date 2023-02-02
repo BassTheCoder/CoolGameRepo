@@ -25,7 +25,7 @@ public class PlayerCombatScript : CombatBase
             SwitchWeapon();
         }
 
-        if (!_isPlayerAttacking && Input.GetKeyDown(Keybinds.AttackMelee))
+        if (CanPlayerAttack() && Input.GetKeyDown(Keybinds.AttackMelee))
         {
             Attack();
         }
@@ -42,6 +42,15 @@ public class PlayerCombatScript : CombatBase
     protected override void GetStats()
     {
         Stats = gameObject.GetComponent<PlayerStats>();
+    }
+
+    private bool CanPlayerAttack()
+    {
+        var rewards = GameObject.FindGameObjectWithTag("UI_Rewards");
+
+        return 
+            !_isPlayerAttacking &&
+            (rewards == null || !rewards.activeSelf);
     }
 
     private void Attack()
