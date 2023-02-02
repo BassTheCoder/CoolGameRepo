@@ -73,9 +73,21 @@ public static class ExtensionsForStats
         {
             player.UpdateAttackPowerBy(UpgradeValue);
         }
+        else if (StatToUpgrade == "AxeAttackPower")
+        {
+            player.UpdateAxeAttackPowerBy(UpgradeValue);
+        }
+        else if (StatToUpgrade == "HammerAttackPower")
+        {
+            player.UpdateHammerAttackPowerBy(UpgradeValue);
+        }
         else if (StatToUpgrade == "ShootingPower")
         {
             player.UpdateShootingPowerBy(UpgradeValue);
+        }
+        else if (StatToUpgrade == "Piercing")
+        {
+            player.UpdatePiercingBy(UpgradeValue);
         }
         else if (StatToUpgrade == "MaxAmmo")
         {
@@ -145,7 +157,7 @@ public static class ExtensionsForStats
         entity.GetComponent<PlayerStats>().AxeAttackPower += amount;
     }
 
-    public static void UpdateHammerttackPowerBy(this GameObject entity, int amount)
+    public static void UpdateHammerAttackPowerBy(this GameObject entity, int amount)
     {
         if (!entity.CompareTag("Player"))
         {
@@ -163,6 +175,16 @@ public static class ExtensionsForStats
             return;
         }
         entity.GetComponent<PlayerStats>().ShootingPower += amount;
+    }
+
+    public static void UpdatePiercingBy(this GameObject entity, int amount)
+    {
+        if (!entity.CompareTag("Player"))
+        {
+            Debug.Log("This method is for player object only.");
+            return;
+        }
+        entity.GetComponent<PlayerStats>().ArrowPiercing += amount;
     }
 
     public static void UpdateAmmoBy(this GameObject entity, int amount)
