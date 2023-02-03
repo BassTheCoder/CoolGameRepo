@@ -146,6 +146,27 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: scroll_borzoi
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 108
+        width: 59
+        height: 90
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f8b51931cd6475e47ae67243d16022d9
+      internalID: -1235126983
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -158,6 +179,7 @@ TextureImporter:
     secondaryTextures: []
     nameFileIdTable:
       scroll: 954831713
+      scroll_borzoi: -1235126983
       scroll_button_overlay: -446961390
   spritePackingTag: 
   pSDRemoveMatte: 0

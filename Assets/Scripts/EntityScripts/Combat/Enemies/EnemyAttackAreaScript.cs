@@ -4,7 +4,7 @@ public class EnemyAttackAreaScript : AttackAreaScript
 {
     void Start()
     {
-        InitiateStats();
+        GetStats();
     }
 
     private void OnTriggerEnter2D(Collider2D collision)

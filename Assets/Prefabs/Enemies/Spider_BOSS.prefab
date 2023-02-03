@@ -25,8 +25,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6162815057775228229}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -0.0601, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: -0.0089, y: -0.1002, z: 0}
+  m_LocalScale: {x: 1.81038, y: 1.0972, z: 1.0972}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 8791920912943786318}
@@ -142,14 +142,14 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: 0.7299545, y: 0.5309364}
-      - {x: 0.3356845, y: 0.55077565}
-      - {x: -0.092099786, y: 0.5311607}
-      - {x: -0.009901501, y: -0.3300466}
-      - {x: 0.22180575, y: -0.73990566}
-      - {x: 1.2690263, y: -0.734969}
-      - {x: 1.244878, y: -0.2519011}
-      - {x: 1.0004216, y: 0.19054054}
+    - - {x: -0.079521775, y: 0.9382858}
+      - {x: -0.06644264, y: 0.60822225}
+      - {x: -0.050320588, y: -0.429766}
+      - {x: 0.20421796, y: -0.6799493}
+      - {x: 0.4202578, y: -1.4188212}
+      - {x: 2.1881733, y: -1.4295518}
+      - {x: 2.1692483, y: -0.46602064}
+      - {x: 1.2145411, y: 0.9582374}
 --- !u!114 &6109829516629931720
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -176,8 +176,8 @@ GameObject:
   - component: {fileID: 8791920912943786323}
   - component: {fileID: 8791920912943786321}
   - component: {fileID: 8791920912943786320}
-  - component: {fileID: 8791920912943786327}
   - component: {fileID: 1837560030970668840}
+  - component: {fileID: 2430931613516860856}
   m_Layer: 7
   m_Name: Spider_BOSS
   m_TagString: Boss
@@ -194,7 +194,7 @@ Transform:
   m_GameObject: {fileID: 8791920912943786326}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0.6197596, y: 0.103445426, z: 0}
-  m_LocalScale: {x: 2.3258, y: 2.3258, z: 2.3258}
+  m_LocalScale: {x: 2, y: 2, z: 2}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 238996916885742118}
@@ -243,7 +243,7 @@ SpriteRenderer:
   m_SortingLayerID: 580791791
   m_SortingLayer: 7
   m_SortingOrder: 1
-  m_Sprite: {fileID: 1300039837, guid: 4f4208ac5cf981e44a64cdb064606c32, type: 3}
+  m_Sprite: {fileID: -2117833746, guid: 2270ffcf20ba19a4dbcbdc053d4668d2, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -267,18 +267,18 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.0046218336, y: -0.01638665}
+  m_Offset: {x: -0.010737479, y: -0.015121341}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.2, y: 0.2}
+    oldSize: {x: 0.32, y: 0.32}
     newSize: {x: 0.2, y: 0.2}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.09159607, y: 0.054620996}
+  m_Size: {x: 0.1805892, y: 0.09173663}
   m_EdgeRadius: 0
 --- !u!50 &8791920912943786323
 Rigidbody2D:
@@ -330,27 +330,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1137dfe1da09bff43b93cbca54b62659, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  EntityAnimator: {fileID: 8791920912943786327}
---- !u!95 &8791920912943786327
-Animator:
-  serializedVersion: 5
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8791920912943786326}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 1f565a3c75b6b5f4d9227f367663ee90, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorStateOnDisable: 0
+  EntityAnimator: {fileID: 2430931613516860856}
 --- !u!114 &1837560030970668840
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -363,7 +343,27 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4a1e37f322d80ad4e8beb29b2d103f52, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  EntityAnimator: {fileID: 8791920912943786327}
+  EntityAnimator: {fileID: 2430931613516860856}
   PositionFreezingAnimations: []
   MovementSpeedMultiplier: 0.7
   ShouldFollowPlayer: 1
+--- !u!95 &2430931613516860856
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8791920912943786326}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: fcbc7de22b84cfa42a25e134532de667, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0

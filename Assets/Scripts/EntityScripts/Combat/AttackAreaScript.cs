@@ -7,7 +7,7 @@ public class AttackAreaScript : MonoBehaviour
     protected int CritChance = 0;
     protected int CritDamage = 0;
 
-    protected virtual void InitiateStats()
+    protected virtual void GetStats()
     {
         var parentStats = transform.parent.gameObject.GetComponent<EntityStats>();
         Damage = parentStats.AttackPower;

@@ -2,6 +2,7 @@ using UnityEngine;
 
 public static class Keybinds
 {
+    public static KeyCode Stats = KeyCode.Tab;
     public static KeyCode Interact = KeyCode.E;
 
     public static KeyCode Weapon1 = KeyCode.Alpha1;

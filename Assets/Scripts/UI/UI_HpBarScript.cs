@@ -44,5 +44,9 @@ public class UI_HpBarScript : MonoBehaviour
             transform.GetChild(2).gameObject.transform.localScale = new Vector3(currentHpPercent, 1, 1);
             _oldHp = currentHpPercent;
         }
+        else
+        {
+            gameObject.SetActive(false);
+        }
     }
 }

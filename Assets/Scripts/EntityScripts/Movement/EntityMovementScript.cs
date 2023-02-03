@@ -33,7 +33,7 @@ public class EntityMovementScript : MonoBehaviour
 
     protected void Move(Vector3 moveVector)
     {
-        if (!IsFreezingAnimationPlaying())
+        if (CanPlayerMove())
         {
             OrientateEntityModelOnMovement(MoveVector.x);
             if (EntityAnimator != null)
@@ -43,6 +43,15 @@ public class EntityMovementScript : MonoBehaviour
 
             transform.Translate(MovementSpeedMultiplier * Time.fixedDeltaTime * moveVector);
         }
+    }
+
+    private bool CanPlayerMove()
+    {
+        var rewards = GameObject.FindGameObjectWithTag("UI_Rewards");
+
+        return
+            !IsFreezingAnimationPlaying() &&
+            (rewards == null || !rewards.activeSelf);
     }
 
     protected void OrientateEntityModelOnMovement(float x)

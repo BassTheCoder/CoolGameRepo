@@ -6,14 +6,13 @@ public class PlayerAttackAreaScript : AttackAreaScript
     private void Start()
     {
         _stats = transform.parent.gameObject.GetComponent<PlayerStats>();
-        InitiateStats();
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.CompareTag("Enemy") || collision.CompareTag("Boss"))
         {
-            GetWeaponDamage();
+            GetStats();
             var enemy = collision.gameObject;
             if (enemy != null)
             {
@@ -23,7 +22,7 @@ public class PlayerAttackAreaScript : AttackAreaScript
         }
     }
 
-    protected override void InitiateStats()
+    protected override void GetStats()
     {
         GetWeaponDamage();
         CritChance = _stats.CritChancePercent;

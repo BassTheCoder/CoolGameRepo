@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 2270ffcf20ba19a4dbcbdc053d4668d2
+guid: 832293f7294cf6c4e988357a8c2ec921
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -105,34 +105,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: spider boss v1_0
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 32
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 932eb8cd93ecb1748adf8a1cada83536
-      internalID: -2117833746
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: spider boss v1_1
+      name: spider boss attack draft_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 32
-        height: 32
+        width: 35
+        height: 35
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -140,20 +119,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d38eac4dd3ddd97498a03dc9ecc7e8aa
-      internalID: 1425988983
+      spriteID: 965458672bceb8f4984af75f38a98950
+      internalID: 1994227977
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spider boss v1_2
+      name: spider boss attack draft_1
       rect:
         serializedVersion: 2
-        x: 32
+        x: 35
         y: 0
-        width: 32
-        height: 32
+        width: 35
+        height: 35
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -161,8 +140,134 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d3c6b7d0af6290a47873a05a0c80385b
-      internalID: -417586496
+      spriteID: 9783f88227173d24ab7b83ec2ea52859
+      internalID: -1100435713
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spider boss attack draft_2
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 0
+        width: 35
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 528d2508b7d5e37488285ceae1ad8d86
+      internalID: -288384500
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spider boss attack draft_3
+      rect:
+        serializedVersion: 2
+        x: 105
+        y: 0
+        width: 35
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f17b36b7c7fcc8f49a5390b9220b0ec5
+      internalID: -1466710240
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spider boss attack draft_4
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 0
+        width: 35
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6aa0f931486fc3643b0774c1686f7d10
+      internalID: -1989649893
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spider boss attack draft_5
+      rect:
+        serializedVersion: 2
+        x: 175
+        y: 0
+        width: 35
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9191cab83916fff43b55d0a73d896b62
+      internalID: 1301774682
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spider boss attack draft_6
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 0
+        width: 35
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b4f68a7a831478c4aba7db4236f88de6
+      internalID: 535611550
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spider boss attack draft_7
+      rect:
+        serializedVersion: 2
+        x: 245
+        y: 0
+        width: 35
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 16d35920e36dfc44ca5be17d847b7ecf
+      internalID: -1633661289
       vertices: []
       indices: 
       edges: []
@@ -178,9 +283,14 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      spider boss v1_0: -2117833746
-      spider boss v1_1: 1425988983
-      spider boss v1_2: -417586496
+      spider boss attack draft_0: 1994227977
+      spider boss attack draft_6: 535611550
+      spider boss attack draft_1: -1100435713
+      spider boss attack draft_2: -288384500
+      spider boss attack draft_5: 1301774682
+      spider boss attack draft_7: -1633661289
+      spider boss attack draft_3: -1466710240
+      spider boss attack draft_4: -1989649893
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

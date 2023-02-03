@@ -11,4 +11,9 @@ public class RewardButtonScript : MonoBehaviour
 
         player.UpgradeStat(StatToUpgrade, UpgradeValue);
     }
+
+    public void DeactivateRewardsPanel()
+    {
+        GameObject.FindGameObjectWithTag("UI_Rewards").SetActive(false);
+    }
 }

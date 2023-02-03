@@ -105,7 +105,8 @@ public static class ExtensionsForStats
 
     public static void UpdateMaxHpBy(this GameObject entity, int amount)
     {
-        entity.GetComponent<EntityStats>().MaxHP += amount;
+        entity.GetComponent<EntityStats>().MaxHP += amount;        
+        entity.GetComponent<EntityStats>().CurrentHP += amount;
     }
 
     public static void HealFor(this GameObject entity, int amount)

@@ -9,12 +9,16 @@ public class CameraScript : MonoBehaviour
 
     private void Start()
     {
-        _playerPosition = GameObject.FindGameObjectWithTag("Player").transform;
+        GetPlayerPosition();
     }
 
     void Update()
     {
-        if (_playerPosition != null)
+        if (_playerPosition == null)
+        {
+            GetPlayerPosition();
+        }
+        else
         {
             if (MoveWithCursorExtension)
             {
@@ -24,6 +28,15 @@ public class CameraScript : MonoBehaviour
             {
                 Movement_Classic();
             }
+        }
+    }
+
+    private void GetPlayerPosition()
+    {
+        var player = GameObject.FindGameObjectWithTag("Player");
+        if (player != null)
+        {
+            _playerPosition = player.transform;
         }
     }
 
