@@ -52,7 +52,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -398,7 +398,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -493,12 +493,6 @@ MonoBehaviour:
   MaxHP: 30
   CurrentHP: 30
   AttackPower: 1
-  ShootingPower: 3
-  Ammo: 10
-  MaxAmmo: 10
-  AttackSpeed: 0.5
-  CritChancePercent: 0
-  CritDamageMultiplier: 2
   Defense: 0
 --- !u!114 &8791920912943786320
 MonoBehaviour:
@@ -546,6 +540,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   EntityAnimator: {fileID: 8791920912943786327}
+  PositionFreezingAnimations: []
   MovementSpeedMultiplier: 0.7
   ShouldFollowPlayer: 1
 --- !u!1 &8791920913513251289
