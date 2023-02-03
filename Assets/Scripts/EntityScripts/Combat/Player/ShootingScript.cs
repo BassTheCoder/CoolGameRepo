@@ -29,7 +29,9 @@ public class ShootingScript : MonoBehaviour
 
     private void CheckIfCanShoot()
     {
-        _canShoot = Time.time >= _nextShotTime;
+        var rewards = GameObject.FindGameObjectWithTag("UI_Rewards");
+
+        _canShoot = (Time.time >= _nextShotTime) && (rewards == null || !rewards.activeSelf);
     }
 
     void Shoot()

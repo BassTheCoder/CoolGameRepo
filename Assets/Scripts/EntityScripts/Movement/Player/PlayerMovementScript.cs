@@ -10,8 +10,10 @@ public class PlayerMovementScript : EntityMovementScript
     private float _dashDuration = 0.13f;
     private float _dashStopTime = 0f;
     private float _dashDistance = 3.5f;
-    private float _dashCooldown = 0.5f;
-    private float _dashCooldownTime = 0f;
+    private float _dashCooldown = 1f;
+    private float NextDashTime = 0f;
+
+    public float DashCooldownDelta = 0f;
 
     private void Start()
     {
@@ -37,7 +39,8 @@ public class PlayerMovementScript : EntityMovementScript
 
     private void Update()
     {
-        if (Input.GetKeyDown(Keybinds.Dash) && _canDash && !_isDashing)
+        GetDashCooldownDelta();
+        if (Input.GetKeyDown(Keybinds.Dash) && CanDash() && !_isDashing)
         {
             Dash();
         }
@@ -50,7 +53,13 @@ public class PlayerMovementScript : EntityMovementScript
         _canDash = false;
         _dashingVector = MoveVector * _dashDistance;
         _dashStopTime = Time.time + _dashDuration;
-        _dashCooldownTime = Time.time + _dashCooldown;
+        NextDashTime = Time.time + _dashCooldown;
+        DashCooldownDelta = _dashCooldown;
+    }
+
+    private bool CanDash()
+    {
+        return Time.time >= NextDashTime && _canDash;
     }
 
     private void UpdateDashStatus()
@@ -63,5 +72,10 @@ public class PlayerMovementScript : EntityMovementScript
         }
     }
 
-
+    private void GetDashCooldownDelta()
+    {
+        var result = NextDashTime - Time.time;
+        
+        DashCooldownDelta = result > 0 ? result : 0;
+    }
 }
