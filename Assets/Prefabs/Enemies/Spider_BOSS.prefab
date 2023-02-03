@@ -52,7 +52,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -142,14 +142,14 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: -0.079521775, y: 0.9382858}
-      - {x: -0.06644264, y: 0.60822225}
+    - - {x: 0.026094735, y: 0.38265017}
+      - {x: -0.06185057, y: 0.1949395}
       - {x: -0.050320588, y: -0.429766}
       - {x: 0.20421796, y: -0.6799493}
       - {x: 0.4202578, y: -1.4188212}
-      - {x: 2.1881733, y: -1.4295518}
-      - {x: 2.1692483, y: -0.46602064}
-      - {x: 1.2145411, y: 0.9582374}
+      - {x: 1.9218354, y: -1.3055669}
+      - {x: 1.9580146, y: -0.47061267}
+      - {x: 1.4946551, y: 0.2969848}
 --- !u!114 &6109829516629931720
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -318,6 +318,7 @@ MonoBehaviour:
   CurrentHP: 120
   AttackPower: 15
   Defense: 0
+  MovementSpeed: 0.7
 --- !u!114 &8791920912943786320
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -345,7 +346,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   EntityAnimator: {fileID: 2430931613516860856}
   PositionFreezingAnimations: []
-  MovementSpeedMultiplier: 0.7
   ShouldFollowPlayer: 1
 --- !u!95 &2430931613516860856
 Animator:

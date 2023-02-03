@@ -4,6 +4,7 @@ using UnityEngine;
 public class WinCondition : MonoBehaviour
 {
     public bool IsLevelFinished = false;
+    public bool LastLevel = false;
 
     private EnemySpawner[] ChildrenSpawners = null;
 

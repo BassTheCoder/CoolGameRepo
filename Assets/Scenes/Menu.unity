@@ -137,7 +137,7 @@ GameObject:
   - component: {fileID: 339315887}
   - component: {fileID: 339315886}
   m_Layer: 5
-  m_Name: Button (2)
+  m_Name: EXITbutton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -581,7 +581,7 @@ GameObject:
   - component: {fileID: 825102206}
   - component: {fileID: 825102205}
   m_Layer: 5
-  m_Name: Button (1)
+  m_Name: KEYBINDSbutton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -666,7 +666,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 825102205}
         m_TargetAssemblyTypeName: MenuButtonScript, Assembly-CSharp
-        m_MethodName: Exit
+        m_MethodName: GoToKeybinds
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -726,7 +726,7 @@ GameObject:
   - component: {fileID: 1123802810}
   - component: {fileID: 1123802809}
   m_Layer: 5
-  m_Name: Text (TMP)
+  m_Name: TITLE
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -772,7 +772,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: DANKEST DUNGEON
+  m_text: DEAD PIXELS II
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 5af1a3d0217fb874aa9e226cf5b5e0f9, type: 2}
   m_sharedMaterial: {fileID: 2100000, guid: 4381e82b501bd0d4cb252e3efb0a62ff, type: 2}
@@ -805,7 +805,7 @@ MonoBehaviour:
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
-  m_fontStyle: 1
+  m_fontStyle: 33
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
   m_textAlignment: 65535
@@ -1030,7 +1030,7 @@ GameObject:
   - component: {fileID: 1251687445}
   - component: {fileID: 1251687444}
   m_Layer: 5
-  m_Name: Button
+  m_Name: STARTbutton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1581,7 +1581,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: OPTIONS
+  m_text: KEYBINDS
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 5af1a3d0217fb874aa9e226cf5b5e0f9, type: 2}
   m_sharedMaterial: {fileID: 2100000, guid: 4381e82b501bd0d4cb252e3efb0a62ff, type: 2}
@@ -1778,8 +1778,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 0, y: -185}
-  m_SizeDelta: {x: 1000, y: 200}
+  m_AnchoredPosition: {x: 0, y: -198}
+  m_SizeDelta: {x: 1000, y: 250}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2134266732
 MonoBehaviour:

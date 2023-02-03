@@ -394,7 +394,7 @@ MonoBehaviour:
   OverrideDefaultStats: 1
   MaxHP: 100
   CurrentHP: 100
-  AttackPower: 5
+  AttackPower: 10
   Defense: 0
   MovementSpeed: 0.75
   AxeAttackPower: 15

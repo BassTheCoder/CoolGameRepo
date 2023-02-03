@@ -108,8 +108,8 @@ TextureImporter:
       name: frame1
       rect:
         serializedVersion: 2
-        x: 28
-        y: 62
+        x: 27
+        y: 50
         width: 26
         height: 25
       alignment: 0
@@ -213,8 +213,8 @@ TextureImporter:
       name: frame2
       rect:
         serializedVersion: 2
-        x: 30
-        y: 87
+        x: 29
+        y: 75
         width: 24
         height: 25
       alignment: 0
@@ -234,7 +234,7 @@ TextureImporter:
       name: frame3
       rect:
         serializedVersion: 2
-        x: 2
+        x: 0
         y: 51
         width: 26
         height: 36
@@ -365,7 +365,7 @@ TextureImporter:
         width: 18
         height: 18
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -373,6 +373,195 @@ TextureImporter:
       bones: []
       spriteID: 850092a8ab5ba7c4aaa84a0c2ddf8328
       internalID: 802278754
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: attack
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 119
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e4f29ea56306a14490a6a03fa2d0fbd
+      internalID: 535204667
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stats
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 100
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c04595d6abfcdfe429632ecb50869997
+      internalID: 777231689
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: icon_background
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 108
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf1c632b23a9cbb4fbea2f465c6e07dd
+      internalID: -155241381
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: movement_icon
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 108
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 278617085ae82cc4f906e9dc46760cda
+      internalID: 563282664
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: axe_icon
+      rect:
+        serializedVersion: 2
+        x: 109
+        y: 22
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2199049ca0088ea4eaa3ab06acf2d626
+      internalID: 2011784124
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sword_icon
+      rect:
+        serializedVersion: 2
+        x: 109
+        y: 41
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 812cc1eb25e1bfe48a722445701ac448
+      internalID: 684054085
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hammer_icon
+      rect:
+        serializedVersion: 2
+        x: 109
+        y: 60
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f1234f207b81c448ae961764fcc212f
+      internalID: 813042022
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: crossbow_icon
+      rect:
+        serializedVersion: 2
+        x: 109
+        y: 79
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 886907bb125af384183c793012d200db
+      internalID: 1523233413
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: attack_ranged_icon
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 81
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e37e39fc3c945243be9ac19ec35b235
+      internalID: -1095786216
       vertices: []
       indices: 
       edges: []
@@ -388,17 +577,26 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
+      stats: 777231689
+      movement_icon: 563282664
+      attack_ranged_icon: -1095786216
       frame2: 1659960579
       frame3: -1799078303
       sword: 298956178
+      sword_icon: 684054085
+      axe_icon: 2011784124
       sword_inactive: -1681817275
       hammer_inactive: -774006936
+      hammer_icon: 813042022
       crossbow: -1008019466
       axe: 843201556
+      icon_background: -155241381
       frame1: 2058661294
       frame_red: -1913472149
+      attack: 535204667
       axe_inactive: 679058286
       dash: 2060123216
+      crossbow_icon: 1523233413
       cooldown_mask: 802278754
       hammer: 1129318863
   spritePackingTag: 

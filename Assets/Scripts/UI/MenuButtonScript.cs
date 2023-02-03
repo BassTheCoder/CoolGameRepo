@@ -7,8 +7,18 @@ public class MenuButtonScript : MonoBehaviour
         SceneSwapperScript.LoadLevelScene(1);
     }
 
+    public void GoToKeybinds()
+    {
+        SceneSwapperScript.LoadKeybindsScene();
+    }
+
     public void Exit()
     {
         Application.Quit();
+    }
+
+    public void BackToMenu()
+    {
+        SceneSwapperScript.LoadMenuScene();
     }
 }

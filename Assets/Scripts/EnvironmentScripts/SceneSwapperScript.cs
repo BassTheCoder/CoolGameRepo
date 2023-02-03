@@ -7,14 +7,9 @@ public static class SceneSwapperScript
         SceneManager.LoadScene("Menu");
     }
 
-    public static void LoadOptionsScene()
+    public static void LoadKeybindsScene()
     {
-        SceneManager.LoadScene("Options");
-    }
-
-    public static void LoadGameScene()
-    {
-        SceneManager.LoadScene("Game");
+        SceneManager.LoadScene("Keybinds");
     }
 
     public static void LoadLevelScene(int level)
