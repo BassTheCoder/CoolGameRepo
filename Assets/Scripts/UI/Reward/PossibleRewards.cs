@@ -13,6 +13,7 @@ public class PossibleRewards : MonoBehaviour
     public int MaxAmmo = 0;
     public int CritChancePercent = 0;
     public int Defense = 0;
+    public int MovementSpeed = 0;
 
     public List<Reward> RewardsPool;
 
@@ -39,6 +40,7 @@ public class PossibleRewards : MonoBehaviour
         MaxAmmo = chestSpawner.MaxAmmo;
         CritChancePercent = chestSpawner.CritChancePercent;
         Defense = chestSpawner.Defense;
+        MovementSpeed = chestSpawner.MovementSpeed;
     }
 
     private void GetRewardsPool()

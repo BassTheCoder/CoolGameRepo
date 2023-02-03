@@ -101,6 +101,10 @@ public static class ExtensionsForStats
         {
             player.UpdateDefenseBy(UpgradeValue);
         }
+        else if (StatToUpgrade == "MovementSpeed")
+        {
+            player.UpdateMovementSpeedBy(UpgradeValue);
+        }
     }
 
     public static void UpdateMaxHpBy(this GameObject entity, int amount)
@@ -146,6 +150,12 @@ public static class ExtensionsForStats
     public static void UpdateDefenseBy(this GameObject entity, int amount)
     {
         entity.GetComponent<EntityStats>().Defense += amount;
+    }
+
+    public static void UpdateMovementSpeedBy(this GameObject entity, float amount)
+    {
+        amount /= 10;
+        entity.GetComponent<EntityStats>().MovementSpeed += amount;
     }
 
     public static void UpdateAxeAttackPowerBy(this GameObject entity, int amount)

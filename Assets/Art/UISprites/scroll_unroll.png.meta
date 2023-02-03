@@ -320,10 +320,10 @@ TextureImporter:
         serializedVersion: 2
         x: 0
         y: 57
-        width: 59
+        width: 69
         height: 90
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -339,12 +339,12 @@ TextureImporter:
       name: scroll_unroll_11
       rect:
         serializedVersion: 2
-        x: 60
+        x: 70
         y: 57
-        width: 59
+        width: 69
         height: 90
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -360,12 +360,12 @@ TextureImporter:
       name: scroll_unroll_12
       rect:
         serializedVersion: 2
-        x: 120
+        x: 140
         y: 57
-        width: 59
+        width: 69
         height: 90
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -381,12 +381,12 @@ TextureImporter:
       name: scroll_unroll_13
       rect:
         serializedVersion: 2
-        x: 180
+        x: 210
         y: 57
-        width: 59
+        width: 69
         height: 90
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -402,12 +402,12 @@ TextureImporter:
       name: scroll_unroll_14
       rect:
         serializedVersion: 2
-        x: 240
+        x: 280
         y: 57
-        width: 59
+        width: 69
         height: 90
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -423,12 +423,12 @@ TextureImporter:
       name: scroll_unroll_15
       rect:
         serializedVersion: 2
-        x: 300
+        x: 350
         y: 57
-        width: 59
+        width: 69
         height: 90
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -444,12 +444,12 @@ TextureImporter:
       name: scroll_unroll_16
       rect:
         serializedVersion: 2
-        x: 360
+        x: 420
         y: 57
-        width: 59
+        width: 69
         height: 90
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -465,12 +465,12 @@ TextureImporter:
       name: scroll_unroll_17
       rect:
         serializedVersion: 2
-        x: 420
+        x: 490
         y: 57
-        width: 59
+        width: 69
         height: 90
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -486,12 +486,12 @@ TextureImporter:
       name: scroll_unroll_18
       rect:
         serializedVersion: 2
-        x: 480
+        x: 560
         y: 57
-        width: 59
+        width: 69
         height: 90
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -507,12 +507,12 @@ TextureImporter:
       name: scroll_unroll_19
       rect:
         serializedVersion: 2
-        x: 541
+        x: 631
         y: 57
-        width: 59
+        width: 69
         height: 90
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -535,7 +535,7 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      scroll_unroll_16: -215322962
+      scroll_unroll_12: -572271165
       scroll_unroll_1: -1737956089
       scroll_unroll_9: 1038209163
       scroll_unroll_6: 83303637
@@ -554,7 +554,7 @@ TextureImporter:
       scroll_unroll_19: 164564018
       scroll_unroll_14: 652669537
       scroll_unroll_11: -718730366
-      scroll_unroll_12: -572271165
+      scroll_unroll_16: -215322962
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

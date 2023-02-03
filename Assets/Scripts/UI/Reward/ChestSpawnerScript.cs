@@ -15,6 +15,7 @@ public class ChestSpawnerScript : MonoBehaviour
     public int MaxAmmo = 0;
     public int CritChancePercent = 0;
     public int Defense = 0;
+    public int MovementSpeed = 0;
 
     private bool _chestSpawned = false;
     private bool _shouldSpawnRewardChest = false;

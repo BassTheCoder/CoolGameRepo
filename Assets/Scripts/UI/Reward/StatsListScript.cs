@@ -23,9 +23,9 @@ public class StatsListScript : MonoBehaviour
     {
         StringBuilder statValues = new();
 
-        statValues.AppendLine($"{_stats.CurrentHP}");
+        statValues.AppendLine($"{_stats.CurrentHP}/{_stats.MaxHP}");
         statValues.AppendLine($"{_stats.Defense}");
-        statValues.AppendLine($"{_stats.MovementSpeed}");
+        statValues.AppendLine($"{_stats.MovementSpeed*10}");
         statValues.AppendLine($"{_stats.AttackPower}");
         statValues.AppendLine($"{_stats.AxeAttackPower}");
         statValues.AppendLine($"{_stats.HammerAttackPower}");

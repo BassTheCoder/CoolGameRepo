@@ -113,6 +113,10 @@ public class RewardChestScript : MonoBehaviour
             {
                 reward.UpgradeText = $"DEFENSE\n+\n{reward.UpgradeValue}";
             }
+            else if (reward.StatToUpgrade == "MovementSpeed")
+            {
+                reward.UpgradeText = $"SPEED\n+\n{reward.UpgradeValue}";
+            }
         }
     }
 }

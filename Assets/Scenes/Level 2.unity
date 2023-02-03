@@ -657,6 +657,7 @@ MonoBehaviour:
   MaxAmmo: 2
   CritChancePercent: 10
   Defense: 3
+  MovementSpeed: 0
 --- !u!1 &143151432
 GameObject:
   m_ObjectHideFlags: 0
