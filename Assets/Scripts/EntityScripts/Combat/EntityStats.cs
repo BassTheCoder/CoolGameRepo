@@ -8,4 +8,5 @@ public class EntityStats : MonoBehaviour
     public int CurrentHP = 100;
     public int AttackPower = 10;
     public int Defense = 0;
+    public float MovementSpeed = 0.7f;
 }

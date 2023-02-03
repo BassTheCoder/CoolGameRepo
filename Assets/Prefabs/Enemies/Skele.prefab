@@ -154,7 +154,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   EntityAnimator: {fileID: 431705457544701443}
   PositionFreezingAnimations: []
-  MovementSpeedMultiplier: 0.5
   ShouldFollowPlayer: 1
 --- !u!114 &431705457544701441
 MonoBehaviour:
@@ -173,6 +172,7 @@ MonoBehaviour:
   CurrentHP: 50
   AttackPower: 2
   Defense: 0
+  MovementSpeed: 0.6
 --- !u!114 &431705457544701442
 MonoBehaviour:
   m_ObjectHideFlags: 0

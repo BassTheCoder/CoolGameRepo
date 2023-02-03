@@ -372,7 +372,6 @@ MonoBehaviour:
   EntityAnimator: {fileID: 6068002934748027195}
   PositionFreezingAnimations:
   - {fileID: 7400000, guid: 17b3da42dbfced048acb1acb3fa27910, type: 2}
-  MovementSpeedMultiplier: 0.3
   ShouldFollowPlayer: 1
 --- !u!114 &431705457544701441
 MonoBehaviour:
@@ -391,6 +390,7 @@ MonoBehaviour:
   CurrentHP: 130
   AttackPower: 5
   Defense: 0
+  MovementSpeed: 0.5
 --- !u!114 &431705457544701442
 MonoBehaviour:
   m_ObjectHideFlags: 0

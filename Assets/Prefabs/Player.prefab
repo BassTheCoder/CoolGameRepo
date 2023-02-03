@@ -344,7 +344,7 @@ MonoBehaviour:
   EntityAnimator: {fileID: 6851744093692570317}
   PositionFreezingAnimations:
   - {fileID: 7400000, guid: 2b800066ed91432489b14f1c4f74fde9, type: 2}
-  MovementSpeedMultiplier: 0.8
+  DashCooldownDelta: 0
 --- !u!95 &6851744093692570317
 Animator:
   serializedVersion: 5
@@ -396,6 +396,7 @@ MonoBehaviour:
   CurrentHP: 100
   AttackPower: 5
   Defense: 0
+  MovementSpeed: 0.75
   AxeAttackPower: 15
   HammerAttackPower: 20
   ShootingPower: 3
