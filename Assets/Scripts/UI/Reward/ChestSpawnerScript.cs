@@ -48,6 +48,7 @@ public class ChestSpawnerScript : MonoBehaviour
     {
         _shouldSpawnRewardChest =
             GetComponent<WinCondition>().IsLevelFinished &&
+            !GetComponent<WinCondition>().LastLevel &&
             !_chestSpawned;
     }
 }

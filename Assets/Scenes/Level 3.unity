@@ -3362,6 +3362,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   IsLevelFinished: 0
+  LastLevel: 1
 --- !u!114 &133876382
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3413,6 +3414,7 @@ MonoBehaviour:
   MaxAmmo: 2
   CritChancePercent: 5
   Defense: 2
+  MovementSpeed: 0
 --- !u!1001 &325208088
 PrefabInstance:
   m_ObjectHideFlags: 0
