@@ -1844,6 +1844,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   IsLevelFinished: 0
+  LastLevel: 0
 --- !u!114 &133876382
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13765,6 +13766,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 185088916905886244, guid: baa8d28064a68534a9198815f8612b51, type: 3}
+      propertyPath: m_Intensity
+      value: 0.2
+      objectReference: {fileID: 0}
     - target: {fileID: 4862946887352684964, guid: baa8d28064a68534a9198815f8612b51, type: 3}
       propertyPath: m_Name
       value: Global light
