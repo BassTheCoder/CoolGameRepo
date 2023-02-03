@@ -386,11 +386,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   OverrideDefaultStats: 1
-  MaxHP: 130
-  CurrentHP: 130
-  AttackPower: 5
-  Defense: 0
-  MovementSpeed: 0.5
+  MaxHP: 200
+  CurrentHP: 200
+  AttackPower: 30
+  Defense: 2
+  MovementSpeed: 0.6
 --- !u!114 &431705457544701442
 MonoBehaviour:
   m_ObjectHideFlags: 0
