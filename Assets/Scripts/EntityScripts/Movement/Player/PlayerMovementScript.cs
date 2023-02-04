@@ -23,7 +23,7 @@ public class PlayerMovementScript : EntityMovementScript
     {
         if (_isDashing)
         {
-            Move(_dashingVector);
+            Dash(_dashingVector);
             UpdateDashStatus();
         }
         else
@@ -41,10 +41,10 @@ public class PlayerMovementScript : EntityMovementScript
         GetDashCooldownDelta();
         if (Input.GetKeyDown(Keybinds.Dash) && CanDash() && !_isDashing)
         {
-            Dash();
+            StartDash();
         }
     }
-    protected override bool CanMove()
+    protected bool CanMoveInDash()
     {
         var rewards = GameObject.FindGameObjectWithTag("UI_Rewards");
         GetRaycastHit();
@@ -56,7 +56,21 @@ public class PlayerMovementScript : EntityMovementScript
             (rewards == null || !rewards.activeSelf);
     }
 
-    private void Dash()
+    private void Dash(Vector3 moveVector)
+    {
+        if (CanMoveInDash())
+        {
+            OrientateEntityModelOnMovement(MoveVector.x);
+            if (EntityAnimator != null)
+            {
+                EntityAnimator.SetFloat("Speed", moveVector.sqrMagnitude);
+            }
+
+            transform.Translate(MovementSpeedMultiplier * Time.fixedDeltaTime * moveVector);
+        }
+    }
+
+    private void StartDash()
     {
         _isDashing = true;
         EntityAnimator.SetBool("IsPlayerDashing", true);

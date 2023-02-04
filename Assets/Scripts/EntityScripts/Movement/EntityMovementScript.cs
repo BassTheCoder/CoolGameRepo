@@ -10,18 +10,16 @@ public class EntityMovementScript : MonoBehaviour
     public AnimationClip[] PositionFreezingAnimations = null;
     public bool CanEntityMove = true;
 
-    private float _movementSpeedMultiplier;
-
+    protected float MovementSpeedMultiplier;
     protected BoxCollider2D BoxCollider;
     protected Rigidbody2D Rigidbody;
     protected Vector3 MoveVector;
-
     protected RaycastHit2D RaycastHit;
 
     #region Methods
     protected void GetPhysicsProperties()
     {
-        _movementSpeedMultiplier = GetComponent<EntityStats>().MovementSpeed;
+        MovementSpeedMultiplier = GetComponent<EntityStats>().MovementSpeed;
         BoxCollider = GetComponent<BoxCollider2D>();
         Rigidbody = GetComponent<Rigidbody2D>();
         Rigidbody.gravityScale = 0;
@@ -46,11 +44,11 @@ public class EntityMovementScript : MonoBehaviour
                 EntityAnimator.SetFloat("Speed", moveVector.sqrMagnitude);
             }
 
-            transform.Translate(_movementSpeedMultiplier * Time.fixedDeltaTime * moveVector);
+            transform.Translate(MovementSpeedMultiplier * Time.fixedDeltaTime * moveVector);
         }
     }
 
-    protected virtual bool CanMove()
+    protected bool CanMove()
     {
         var rewards = GameObject.FindGameObjectWithTag("UI_Rewards");
         
