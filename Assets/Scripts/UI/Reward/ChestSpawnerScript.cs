@@ -41,7 +41,10 @@ public class ChestSpawnerScript : MonoBehaviour
     private void SpawnRewardChest()
     {
         Instantiate(ChestObject, ChestSpawnPoint, Quaternion.identity);
-        _chestSpawned = true;
+        if (GameObject.FindGameObjectWithTag("RewardChest") != null)
+        {
+            _chestSpawned = true;
+        }
     }
 
     private void CheckIfShouldSpawnChest()

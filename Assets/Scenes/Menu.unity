@@ -772,7 +772,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: DEAD PIXELS II
+  m_text: pixel rogue
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 5af1a3d0217fb874aa9e226cf5b5e0f9, type: 2}
   m_sharedMaterial: {fileID: 2100000, guid: 4381e82b501bd0d4cb252e3efb0a62ff, type: 2}

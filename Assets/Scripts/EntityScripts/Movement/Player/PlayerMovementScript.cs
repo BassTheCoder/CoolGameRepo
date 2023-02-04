@@ -1,4 +1,3 @@
-using System.Linq;
 using UnityEngine;
 
 public class PlayerMovementScript : EntityMovementScript
@@ -44,6 +43,17 @@ public class PlayerMovementScript : EntityMovementScript
         {
             Dash();
         }
+    }
+    protected override bool CanMove()
+    {
+        var rewards = GameObject.FindGameObjectWithTag("UI_Rewards");
+        GetRaycastHit();
+
+        return
+            CanEntityMove &&
+            RaycastHit.collider == null &&
+            !IsFreezingAnimationPlaying() &&
+            (rewards == null || !rewards.activeSelf);
     }
 
     private void Dash()

@@ -219,7 +219,7 @@ SpriteRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 0
   m_RayTraceProcedural: 0
-  m_RenderingLayerMask: 1
+  m_RenderingLayerMask: 4294967295
   m_RendererPriority: 0
   m_Materials:
   - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
@@ -346,6 +346,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   EntityAnimator: {fileID: 2430931613516860856}
   PositionFreezingAnimations: []
+  CanEntityMove: 1
   ShouldFollowPlayer: 1
 --- !u!95 &2430931613516860856
 Animator:

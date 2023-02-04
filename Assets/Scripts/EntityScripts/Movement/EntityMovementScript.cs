@@ -16,7 +16,7 @@ public class EntityMovementScript : MonoBehaviour
     protected Rigidbody2D Rigidbody;
     protected Vector3 MoveVector;
 
-    private RaycastHit2D _raycast;
+    protected RaycastHit2D RaycastHit;
 
     #region Methods
     protected void GetPhysicsProperties()
@@ -50,21 +50,19 @@ public class EntityMovementScript : MonoBehaviour
         }
     }
 
-    private bool CanMove()
+    protected virtual bool CanMove()
     {
         var rewards = GameObject.FindGameObjectWithTag("UI_Rewards");
-        GetRaycastHit();
         
         return
             CanEntityMove &&
-            _raycast.collider == null &&
             !IsFreezingAnimationPlaying() &&
             (rewards == null || !rewards.activeSelf);
     }
 
-    private void GetRaycastHit()
+    protected void GetRaycastHit()
     {
-        _raycast = Physics2D.BoxCast(
+        RaycastHit = Physics2D.BoxCast(
             origin: transform.position, 
             size: BoxCollider.size, 
             angle: 0, 
@@ -100,7 +98,7 @@ public class EntityMovementScript : MonoBehaviour
         Rigidbody.constraints = RigidbodyConstraints2D.FreezeRotation;
     }
 
-    private bool IsFreezingAnimationPlaying()
+    protected bool IsFreezingAnimationPlaying()
     {
         if (PositionFreezingAnimations != null && PositionFreezingAnimations.Length > 0)
         {
