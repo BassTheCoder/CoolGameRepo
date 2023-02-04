@@ -3377,6 +3377,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   StartingPosition: {x: -0.723, y: 0.703, z: 0.005871862}
   IsFinishScene: 0
+  Stats: {fileID: 0}
 --- !u!114 &133876383
 MonoBehaviour:
   m_ObjectHideFlags: 0

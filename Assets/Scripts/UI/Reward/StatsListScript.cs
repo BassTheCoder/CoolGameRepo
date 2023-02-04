@@ -12,7 +12,7 @@ public class StatsListScript : MonoBehaviour
     {
         if (EndGameScreen)
         {
-            Stats = GameObject.FindGameObjectWithTag("Player").GetComponent<InitializePlayer>().Stats;
+            Stats = GameObject.FindGameObjectWithTag("GameController").GetComponent<InitializePlayer>().Stats;
         }
         else
         {

@@ -24,7 +24,7 @@ public class InitializePlayer : MonoBehaviour
         else if (_player != null && IsFinishScene)
         {
             _deadSplash = GameObject.FindGameObjectWithTag("DeadSplash");
-            Stats = Stats == null ? _player.GetComponent<PlayerStats>() : Stats;
+            Stats = _player.GetComponent<PlayerStats>();
             _deadSplashSprite = _player.GetComponent<SpriteRenderer>().sprite;
             _player.GetComponent<SpriteRenderer>().enabled = false;
             _deadSplashScale = _player.transform.localScale;
