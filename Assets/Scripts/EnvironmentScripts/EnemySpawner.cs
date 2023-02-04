@@ -89,7 +89,6 @@ public class EnemySpawner : MonoBehaviour
                 {
                     Debug.Log("Congrats! You finished the level!");
                     IsRoomFinished = true;
-                    UpdateBossStatusInMusicBox(false);
                 }
             }
         }
@@ -154,7 +153,6 @@ public class EnemySpawner : MonoBehaviour
     {
         SpawnEnemy(LevelBoss, isBoss: true);
         SpawnBossHpBar();
-        UpdateBossStatusInMusicBox(true);
     }
 
     private void SpawnBossHpBar()
@@ -162,11 +160,6 @@ public class EnemySpawner : MonoBehaviour
         GameObject.FindGameObjectWithTag("UI_BossHpBar").transform.GetChild(0).gameObject.SetActive(true);
         //GameObject.FindGameObjectWithTag("UI_BossHpBar").transform.GetChild(1).gameObject.SetActive(true); //Name
         GameObject.FindGameObjectWithTag("UI_BossHpBar").transform.GetChild(0).gameObject.GetComponent<UI_HpBarScript>().Entity = GameObject.FindGameObjectWithTag("Boss");
-    }
-
-    private void UpdateBossStatusInMusicBox(bool isBossAlive)
-    {
-        GameObject.FindGameObjectWithTag("GameController").GetComponent<MusicScript>().IsBossAlive = isBossAlive;
     }
 
     private Vector3 GetRandomSpawnPoint()
