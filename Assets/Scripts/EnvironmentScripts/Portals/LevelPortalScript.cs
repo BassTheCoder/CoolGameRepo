@@ -16,7 +16,7 @@ public class LevelPortalScript : PortalScript
     {
         if (NextLevel == 0)
         {
-            SceneSwapperScript.LoadMenuScene();
+            SceneSwapperScript.LoatWinScene();
         }
         else
         {

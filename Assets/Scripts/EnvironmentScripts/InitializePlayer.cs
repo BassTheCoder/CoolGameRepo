@@ -10,7 +10,7 @@ public class InitializePlayer : MonoBehaviour
     private GameObject _deadSplash = default;
     private Sprite _deadSplashSprite = default;
     private Vector3 _deadSplashScale = default;
-    private PlayerStats _stats = default;
+    public PlayerStats Stats = default;
 
     private void Start()
     {
@@ -24,7 +24,7 @@ public class InitializePlayer : MonoBehaviour
         else if (_player != null && IsFinishScene)
         {
             _deadSplash = GameObject.FindGameObjectWithTag("DeadSplash");
-            _stats = _player.GetComponent<PlayerStats>();
+            Stats = Stats == null ? _player.GetComponent<PlayerStats>() : Stats;
             _deadSplashSprite = _player.GetComponent<SpriteRenderer>().sprite;
             _player.GetComponent<SpriteRenderer>().enabled = false;
             _deadSplashScale = _player.transform.localScale;

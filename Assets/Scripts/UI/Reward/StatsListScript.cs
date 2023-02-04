@@ -2,13 +2,22 @@ using System.Text;
 using TMPro;
 using UnityEngine;
 
+[DefaultExecutionOrder(0)]
 public class StatsListScript : MonoBehaviour
 {
-    private PlayerStats _stats;
-    
+    public PlayerStats Stats;
+    public bool EndGameScreen = false;
+
     void Start()
     {
-        _stats = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerStats>();
+        if (EndGameScreen)
+        {
+            Stats = GameObject.FindGameObjectWithTag("Player").GetComponent<InitializePlayer>().Stats;
+        }
+        else
+        {
+            Stats = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerStats>();
+        }
     }
 
     private void Update()
@@ -20,16 +29,16 @@ public class StatsListScript : MonoBehaviour
     {
         StringBuilder statValues = new();
 
-        statValues.AppendLine($"{_stats.CurrentHP}/{_stats.MaxHP}");
-        statValues.AppendLine($"{_stats.Defense}");
-        statValues.AppendLine($"{_stats.MovementSpeed*10}");
-        statValues.AppendLine($"{_stats.AttackPower}");
-        statValues.AppendLine($"{_stats.AxeAttackPower}");
-        statValues.AppendLine($"{_stats.HammerAttackPower}");
-        statValues.AppendLine($"{_stats.ShootingPower}");
-        statValues.AppendLine($"{_stats.MaxAmmo}");
-        statValues.AppendLine($"{_stats.ArrowPiercing}");
-        statValues.AppendLine($"{_stats.CritChancePercent}%");
+        statValues.AppendLine($"{Stats.CurrentHP}/{Stats.MaxHP}");
+        statValues.AppendLine($"{Stats.Defense}");
+        statValues.AppendLine($"{Stats.MovementSpeed * 10}");
+        statValues.AppendLine($"{Stats.AttackPower}");
+        statValues.AppendLine($"{Stats.AxeAttackPower}");
+        statValues.AppendLine($"{Stats.HammerAttackPower}");
+        statValues.AppendLine($"{Stats.ShootingPower}");
+        statValues.AppendLine($"{Stats.MaxAmmo}");
+        statValues.AppendLine($"{Stats.ArrowPiercing}");
+        statValues.AppendLine($"{Stats.CritChancePercent}%");
 
         GetComponent<TextMeshProUGUI>().text = statValues.ToString();
     }
