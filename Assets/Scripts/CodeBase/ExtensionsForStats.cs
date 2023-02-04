@@ -25,6 +25,11 @@ public static class ExtensionsForStats
         }
     }
 
+    public static int GetCurrentHp(this GameObject entity)
+    {
+        return entity.GetComponent<EntityStats>().CurrentHP;
+    }
+
     public static int GetCurrentHpPercent(this GameObject entity)
     {
         return Mathf.FloorToInt(entity.GetCurrentHpDecimal() * 100);

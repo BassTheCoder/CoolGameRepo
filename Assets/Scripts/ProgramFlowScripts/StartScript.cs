@@ -15,12 +15,14 @@ public class StartScript : MonoBehaviour
 
     private void ResetGame()
     {
-        //DestroyAllObjectWithTag("Player");
-        //DestroyAllObjectWithTag("Enemy");
-
         if (!IsMenu)
         {
             SpawnPlayer();
+        }
+        else
+        {
+            DestroyAllObjectWithTag("Player");
+            DestroyAllObjectWithTag("Enemy");
         }
     }
 

@@ -20,13 +20,13 @@ public class CombatBase : MonoBehaviour
 
     protected void CheckDeath()
     {
-        if (gameObject.GetCurrentHpPercent() <= 0) 
+        if (gameObject.GetCurrentHp() <= 0) 
         { 
             _isEntityAlive = false;
         }
     }
 
-    protected void Die()
+    protected virtual void Die()
     {
         Destroy(gameObject);
     }

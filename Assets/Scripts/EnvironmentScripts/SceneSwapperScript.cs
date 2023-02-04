@@ -16,4 +16,9 @@ public static class SceneSwapperScript
     {
         SceneManager.LoadScene($"Level {level}");
     }
+
+    public static void LoadFailScene()
+    {
+        SceneManager.LoadScene("GameOver");
+    }
 }

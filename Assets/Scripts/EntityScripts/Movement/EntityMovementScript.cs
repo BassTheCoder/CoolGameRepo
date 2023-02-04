@@ -8,6 +8,7 @@ public class EntityMovementScript : MonoBehaviour
 {
     public Animator EntityAnimator;
     public AnimationClip[] PositionFreezingAnimations = null;
+    public bool CanEntityMove = true;
 
     private float _movementSpeedMultiplier;
 
@@ -37,7 +38,7 @@ public class EntityMovementScript : MonoBehaviour
 
     protected void Move(Vector3 moveVector)
     {
-        if (CanEntityMove())
+        if (CanMove())
         {
             OrientateEntityModelOnMovement(MoveVector.x);
             if (EntityAnimator != null)
@@ -49,12 +50,13 @@ public class EntityMovementScript : MonoBehaviour
         }
     }
 
-    private bool CanEntityMove()
+    private bool CanMove()
     {
         var rewards = GameObject.FindGameObjectWithTag("UI_Rewards");
         GetRaycastHit();
         
         return
+            CanEntityMove &&
             _raycast.collider == null &&
             !IsFreezingAnimationPlaying() &&
             (rewards == null || !rewards.activeSelf);

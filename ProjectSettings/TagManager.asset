@@ -19,6 +19,7 @@ TagManager:
   - HammerSprite
   - UI_EnemyCounter
   - UI_Rewards
+  - DeadSplash
   layers:
   - Default
   - TransparentFX

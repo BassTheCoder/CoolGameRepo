@@ -1,4 +1,6 @@
+using UnityEditor.SearchService;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerCombatScript : CombatBase
 {
@@ -6,6 +8,7 @@ public class PlayerCombatScript : CombatBase
     public int ActiveWeapon = 1;
 
     private bool _isPlayerAttacking = false;
+    private bool _hasAlreadyDied = false;
 
     void Start()
     {
@@ -15,9 +18,13 @@ public class PlayerCombatScript : CombatBase
 
     void Update()
     {
-        if (!IsAlive())
+        if (!IsAlive() && !_hasAlreadyDied)
         {
             Die();
+        }
+        else if (_hasAlreadyDied)
+        {
+            return;
         }
 
         if (WeaponSwitchPressed())
@@ -126,5 +133,11 @@ public class PlayerCombatScript : CombatBase
         {
             EntityAnimator.SetInteger("ActiveWeapon", ActiveWeapon);
         }
+    }
+
+    protected override void Die()
+    {
+        _hasAlreadyDied = true;
+        SceneSwapperScript.LoadFailScene();
     }
 }
