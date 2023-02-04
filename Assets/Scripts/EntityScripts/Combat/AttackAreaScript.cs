@@ -30,7 +30,7 @@ public class AttackAreaScript : MonoBehaviour
     private bool RollForCrit(int critChancePercent)
     {
         var random = new System.Random();
-        var roll = random.Next(0, 100);
+        var roll = random.Next(1, 100);
         return roll <= critChancePercent;
     }
 }
