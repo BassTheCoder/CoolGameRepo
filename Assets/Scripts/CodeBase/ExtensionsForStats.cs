@@ -120,7 +120,12 @@ public static class ExtensionsForStats
 
     public static void HealFor(this GameObject entity, int amount)
     {
-        entity.GetComponent<EntityStats>().CurrentHP += amount;
+        var stats = entity.GetComponent<EntityStats>();
+        stats.CurrentHP += amount;
+        if (stats.CurrentHP > stats.MaxHP)
+        {
+            stats.CurrentHP = stats.MaxHP;
+        }
     }
 
     public static void DamageFor(this GameObject entity, int amount)
