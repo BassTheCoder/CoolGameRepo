@@ -20,6 +20,7 @@ TagManager:
   - UI_EnemyCounter
   - UI_Rewards
   - DeadSplash
+  - UI_Weapons
   layers:
   - Default
   - TransparentFX

@@ -66,55 +66,49 @@ public static class ExtensionsForStats
             return;
         }
 
-        if (StatToUpgrade == "MaxHP")
+        switch (StatToUpgrade)
         {
-            player.UpdateMaxHpBy(UpgradeValue);
-        }
-        else if (StatToUpgrade == "CurrentHP")
-        {
-            player.HealFor(UpgradeValue);
-        }
-        else if (StatToUpgrade == "AttackPower")
-        {
-            player.UpdateAttackPowerBy(UpgradeValue);
-        }
-        else if (StatToUpgrade == "AxeAttackPower")
-        {
-            player.UpdateAxeAttackPowerBy(UpgradeValue);
-        }
-        else if (StatToUpgrade == "HammerAttackPower")
-        {
-            player.UpdateHammerAttackPowerBy(UpgradeValue);
-        }
-        else if (StatToUpgrade == "ShootingPower")
-        {
-            player.UpdateShootingPowerBy(UpgradeValue);
-        }
-        else if (StatToUpgrade == "Piercing")
-        {
-            player.UpdatePiercingBy(UpgradeValue);
-        }
-        else if (StatToUpgrade == "MaxAmmo")
-        {
-            player.UpdateMaxAmmoBy(UpgradeValue);
-        }
-        else if (StatToUpgrade == "CritChancePercent")
-        {
-            player.UpdateCritChanceBy(UpgradeValue);
-        }
-        else if (StatToUpgrade == "Defense")
-        {
-            player.UpdateDefenseBy(UpgradeValue);
-        }
-        else if (StatToUpgrade == "MovementSpeed")
-        {
-            player.UpdateMovementSpeedBy(UpgradeValue);
+            case "MaxHP":
+                player.UpdateMaxHpBy(UpgradeValue);
+                break;
+            case "CurrentHP":
+                player.HealFor(UpgradeValue);
+                break;
+            case "AttackPower":
+                player.UpdateAttackPowerBy(UpgradeValue);
+                break;
+            case "AxeAttackPower":
+                player.UpdateAxeAttackPowerBy(UpgradeValue);
+                break;
+            case "HammerAttackPower":
+                player.UpdateHammerAttackPowerBy(UpgradeValue);
+                break;
+            case "ShootingPower":
+                player.UpdateShootingPowerBy(UpgradeValue);
+                break;
+            case "Piercing":
+                player.UpdatePiercingBy(UpgradeValue);
+                break;
+            case "MaxAmmo":
+                player.UpdateMaxAmmoBy(UpgradeValue);
+                break;
+            case "CritChancePercent":
+                player.UpdateCritChanceBy(UpgradeValue);
+                break;
+            case "Defense":
+                player.UpdateDefenseBy(UpgradeValue);
+                break;
+            case "MovementSpeed":
+                player.UpdateMovementSpeedBy(UpgradeValue);
+                break;
+            default:
+                break;
         }
     }
 
     public static void UpdateMaxHpBy(this GameObject entity, int amount)
     {
-        entity.GetComponent<EntityStats>().MaxHP += amount;        
+        entity.GetComponent<EntityStats>().MaxHP += amount;
         entity.GetComponent<EntityStats>().CurrentHP += amount;
     }
 
@@ -159,7 +153,13 @@ public static class ExtensionsForStats
 
     public static void UpdateDefenseBy(this GameObject entity, int amount)
     {
-        entity.GetComponent<EntityStats>().Defense += amount;
+        var stats = entity.GetComponent<EntityStats>();
+        stats.Defense += amount;
+
+        if (stats.Defense > 100)
+        {
+            stats.Defense = 100;
+        }
     }
 
     public static void UpdateMovementSpeedBy(this GameObject entity, float amount)

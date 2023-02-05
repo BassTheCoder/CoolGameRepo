@@ -191,7 +191,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0.05427289, y: -0.23309043}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -202,7 +202,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 1.7236364, y: 1.4661808}
   m_EdgeRadius: 0
 --- !u!114 &5094853594018070104
 MonoBehaviour:
@@ -372,6 +372,7 @@ MonoBehaviour:
   EntityAnimator: {fileID: 6068002934748027195}
   PositionFreezingAnimations:
   - {fileID: 7400000, guid: 17b3da42dbfced048acb1acb3fa27910, type: 2}
+  CanEntityMove: 1
   ShouldFollowPlayer: 1
 --- !u!114 &431705457544701441
 MonoBehaviour:
@@ -388,9 +389,9 @@ MonoBehaviour:
   OverrideDefaultStats: 1
   MaxHP: 200
   CurrentHP: 200
-  AttackPower: 30
-  Defense: 2
-  MovementSpeed: 0.6
+  AttackPower: 25
+  Defense: 20
+  MovementSpeed: 0.55
 --- !u!114 &431705457544701442
 MonoBehaviour:
   m_ObjectHideFlags: 0

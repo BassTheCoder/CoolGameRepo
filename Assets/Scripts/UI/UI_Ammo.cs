@@ -23,7 +23,7 @@ public class UI_Ammo : MonoBehaviour
 
     private void GetTextColor()
     {
-        if (int.Parse(_textMeshPro.text) <= 10)
+        if (int.Parse(_textMeshPro.text) > 5)
         {
             _textMeshPro.color = Color.white;
         }
@@ -39,6 +39,5 @@ public class UI_Ammo : MonoBehaviour
         {
             _textMeshPro.color = Color.red;
         }
-        
     }
 }

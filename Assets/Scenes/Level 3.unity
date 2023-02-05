@@ -3264,16 +3264,16 @@ MonoBehaviour:
   ChestObject: {fileID: 7984495803707051328, guid: d2069ffe4338df94e87a76825761828d, type: 3}
   ChestSpawnPoint: {x: 4.8589783, y: 0.17400163, z: 0}
   MaxHP: 50
-  CurrentHP: 50
-  AttackPower: 2
-  AxeAttackPower: 0
-  HammerAttackPower: 0
-  Piercing: 0
+  CurrentHP: 100
+  AttackPower: 5
+  AxeAttackPower: 5
+  HammerAttackPower: 5
+  Piercing: 2
   ShootingPower: 2
   MaxAmmo: 2
-  CritChancePercent: 5
-  Defense: 2
-  MovementSpeed: 0
+  CritChancePercent: 10
+  Defense: 10
+  MovementSpeed: 1
 --- !u!1001 &325208088
 PrefabInstance:
   m_ObjectHideFlags: 0

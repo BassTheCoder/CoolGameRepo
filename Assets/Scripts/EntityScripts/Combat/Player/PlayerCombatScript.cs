@@ -103,23 +103,18 @@ public class PlayerCombatScript : CombatBase
 
     private void SwitchWeapon()
     {
+        var uiWeaponsScript = GameObject.FindGameObjectWithTag("UI_Weapons").GetComponent<UI_WeaponScript>();
         if (ActiveWeapon == 1)
         {
-            GameObject.FindGameObjectWithTag("SwordSprite").GetComponent<UI_WeaponSpriteScript>().Activate();
-            GameObject.FindGameObjectWithTag("AxeSprite").GetComponent<UI_WeaponSpriteScript>().Deactivate();
-            GameObject.FindGameObjectWithTag("HammerSprite").GetComponent<UI_WeaponSpriteScript>().Deactivate();
+            uiWeaponsScript.ActivateSwordUi();
         }
         else if (ActiveWeapon == 2)
         {
-            GameObject.FindGameObjectWithTag("SwordSprite").GetComponent<UI_WeaponSpriteScript>().Deactivate();
-            GameObject.FindGameObjectWithTag("AxeSprite").GetComponent<UI_WeaponSpriteScript>().Activate();
-            GameObject.FindGameObjectWithTag("HammerSprite").GetComponent<UI_WeaponSpriteScript>().Deactivate();
+            uiWeaponsScript.ActivateAxeUi();
         }
         else if (ActiveWeapon == 3)
         {
-            GameObject.FindGameObjectWithTag("SwordSprite").GetComponent<UI_WeaponSpriteScript>().Deactivate();
-            GameObject.FindGameObjectWithTag("AxeSprite").GetComponent<UI_WeaponSpriteScript>().Deactivate();
-            GameObject.FindGameObjectWithTag("HammerSprite").GetComponent<UI_WeaponSpriteScript>().Activate();
+            uiWeaponsScript.ActivateHammerUi();
         }
 
         SetActiveWeaponForAnimator();

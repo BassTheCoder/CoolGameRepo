@@ -2371,7 +2371,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ChestObject: {fileID: 7984495803707051328, guid: d2069ffe4338df94e87a76825761828d, type: 3}
   ChestSpawnPoint: {x: 1.76, y: 0.121, z: 0.005871862}
-  MaxHP: 15
+  MaxHP: 20
   CurrentHP: 30
   AttackPower: 2
   AxeAttackPower: 2
@@ -2380,7 +2380,7 @@ MonoBehaviour:
   ShootingPower: 1
   MaxAmmo: 1
   CritChancePercent: 5
-  Defense: 1
+  Defense: 15
   MovementSpeed: 1
 --- !u!114 &133876385
 MonoBehaviour:
@@ -16093,6 +16093,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1309886369627237567, guid: 29407f7975eb11c428643b31fb7b688b, type: 3}
+      propertyPath: m_TagString
+      value: UI_Weapons
+      objectReference: {fileID: 0}
+    - target: {fileID: 4091405467144524360, guid: 29407f7975eb11c428643b31fb7b688b, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -48.800003
+      objectReference: {fileID: 0}
     - target: {fileID: 7840863662577231858, guid: 29407f7975eb11c428643b31fb7b688b, type: 3}
       propertyPath: m_Pivot.x
       value: 0
