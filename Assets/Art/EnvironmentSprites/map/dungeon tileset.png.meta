@@ -2570,7 +2570,7 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2591,7 +2591,7 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2599,6 +2599,27 @@ TextureImporter:
       bones: []
       spriteID: b7b86adc3894a6146abc865f8ed9d2f5
       internalID: -410844086
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: floor_fixed
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 169
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 25ffc3ec74a838c42a94a6d20f89c95f
+      internalID: 235629023
       vertices: []
       indices: 
       edges: []
@@ -2674,6 +2695,7 @@ TextureImporter:
       wall_bottom_left_extension: -1475996252
       wall_bottom_corner_left_inverted: -1536142855
       dungeon tileset_33: -762747066
+      floor_fixed: 235629023
       dungeon tileset_34: -410844086
       floor_pebbles_0: 1710415976
       dungeon tileset_4: 199754228
