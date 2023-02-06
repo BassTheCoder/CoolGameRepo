@@ -14,6 +14,11 @@ public class CameraScript : MonoBehaviour
 
     void Update()
     {
+        if (Input.GetKeyDown(Keybinds.CameraModeSwitch))
+        {
+            MoveWithCursorExtension = !MoveWithCursorExtension;
+        }
+
         if (_playerPosition == null)
         {
             GetPlayerPosition();

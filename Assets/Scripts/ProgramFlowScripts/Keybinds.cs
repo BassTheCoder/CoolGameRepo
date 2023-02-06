@@ -4,6 +4,7 @@ public static class Keybinds
 {
     public static KeyCode Stats = KeyCode.Tab;
     public static KeyCode Interact = KeyCode.E;
+    public static KeyCode CameraModeSwitch = KeyCode.LeftShift;
 
     public static KeyCode Weapon1 = KeyCode.Alpha1;
     public static KeyCode Weapon2 = KeyCode.Alpha2;
