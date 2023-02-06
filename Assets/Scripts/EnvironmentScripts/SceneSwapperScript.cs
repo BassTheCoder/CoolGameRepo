@@ -2,6 +2,11 @@ using UnityEngine.SceneManagement;
 
 public static class SceneSwapperScript
 {
+    public static void LoadIntroScene()
+    {
+        SceneManager.LoadScene("Intro");
+    }
+    
     public static void LoadMenuScene()
     {
         SceneManager.LoadScene("Menu");

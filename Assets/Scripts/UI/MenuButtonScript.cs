@@ -2,6 +2,11 @@ using UnityEngine;
 
 public class MenuButtonScript : MonoBehaviour
 {
+    public void Intro()
+    {
+        SceneSwapperScript.LoadIntroScene();
+    }
+    
     public void NewGame()
     {
         SceneSwapperScript.LoadLevelScene(1);
