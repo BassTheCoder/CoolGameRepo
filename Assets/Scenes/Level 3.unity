@@ -3206,7 +3206,7 @@ Transform:
   - {fileID: 1970339611}
   - {fileID: 1300539209}
   m_Father: {fileID: 0}
-  m_RootOrder: 0
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &133876379
 MonoBehaviour:
@@ -3291,7 +3291,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7840863662577231858, guid: 29407f7975eb11c428643b31fb7b688b, type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 7840863662577231858, guid: 29407f7975eb11c428643b31fb7b688b, type: 3}
       propertyPath: m_AnchorMax.x
@@ -12793,7 +12793,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6851744093692570319, guid: cb0ac38ab7269fe4d8b0c006e0f3f76f, type: 3}
       propertyPath: m_RootOrder
-      value: 4
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6851744093692570319, guid: cb0ac38ab7269fe4d8b0c006e0f3f76f, type: 3}
       propertyPath: m_LocalPosition.x
@@ -12929,7 +12929,7 @@ MonoBehaviour:
   - {x: 3.758, y: -0.531, z: 0.005871862}
   BossSpawnPoint: {x: 5.878, y: 0.198, z: 0.005871862}
   AmountOfEnemiesToKill: 13
-  MaxEnemiesOnBoard: 13
+  MaxEnemiesOnBoard: 26
   LevelEnemies:
   - {fileID: 431705457544701453, guid: 4e4fa8f4af4c0c94aa84320451879d4a, type: 3}
   LevelBoss: {fileID: 5050111374608609310, guid: c1f1cb46ed0bb744b8d3a6bb2016f9b8, type: 3}
@@ -12967,7 +12967,7 @@ SpriteRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1300539208}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
@@ -13044,7 +13044,7 @@ Transform:
   - {fileID: 1120472563}
   - {fileID: 1546163264}
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1331947360
 PrefabInstance:
@@ -13254,7 +13254,7 @@ Transform:
   m_Children:
   - {fileID: 1032262741}
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1532792062
 GameObject:
@@ -13340,7 +13340,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1532792066
 MonoBehaviour:
@@ -20035,7 +20035,7 @@ SpriteRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1970339610}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
@@ -20230,13 +20230,17 @@ PrefabInstance:
       propertyPath: m_Intensity
       value: 0.05
       objectReference: {fileID: 0}
+    - target: {fileID: 185088916905886244, guid: baa8d28064a68534a9198815f8612b51, type: 3}
+      propertyPath: m_OverlapOperation
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4862946887352684964, guid: baa8d28064a68534a9198815f8612b51, type: 3}
       propertyPath: m_Name
       value: Global light
       objectReference: {fileID: 0}
     - target: {fileID: 5639053019552705103, guid: baa8d28064a68534a9198815f8612b51, type: 3}
       propertyPath: m_RootOrder
-      value: 6
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5639053019552705103, guid: baa8d28064a68534a9198815f8612b51, type: 3}
       propertyPath: m_LocalPosition.x

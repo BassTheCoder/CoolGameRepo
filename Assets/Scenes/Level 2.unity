@@ -24620,8 +24620,8 @@ MonoBehaviour:
   - {x: 5.27, y: -0.29, z: 0.005871862}
   - {x: 6.869, y: -0.126, z: 0.005871862}
   BossSpawnPoint: {x: 0, y: 0, z: 0}
-  AmountOfEnemiesToKill: 8
-  MaxEnemiesOnBoard: 4
+  AmountOfEnemiesToKill: 9
+  MaxEnemiesOnBoard: 3
   LevelEnemies:
   - {fileID: 8791920912943786326, guid: 1234cbc4272dbb24c8aa8c68672c2825, type: 3}
   LevelBoss: {fileID: 0}
@@ -30272,7 +30272,7 @@ MonoBehaviour:
   - {x: 8.311, y: -3.015, z: 0.005871862}
   - {x: 7.167, y: -2.997, z: 0.005871862}
   BossSpawnPoint: {x: 8.084, y: -1.981, z: 0.005871862}
-  AmountOfEnemiesToKill: 10
+  AmountOfEnemiesToKill: 20
   MaxEnemiesOnBoard: 10
   LevelEnemies:
   - {fileID: 8791920912943786326, guid: 1234cbc4272dbb24c8aa8c68672c2825, type: 3}

@@ -124,9 +124,16 @@ public static class ExtensionsForStats
 
     public static void DamageFor(this GameObject entity, int amount)
     {
+        var stats = entity.GetComponent<EntityStats>();
+        if (stats == null)
+        {
+            Debug.Log("This entity does not have stats, therefore cannot be damaged.");
+            return;
+        }
+
         var damage = GetDamageRegardingDefense(amount);
 
-        entity.GetComponent<EntityStats>().CurrentHP -= damage;
+        stats.CurrentHP -= damage;
 
         int GetDamageRegardingDefense(int damage)
         {
